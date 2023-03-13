@@ -17,21 +17,27 @@
 
 .contacts__link {
   color: $color-main-white;
+  display: flex;
+  align-items: center;
+  gap: 15px;
 
-  @include vp-1023 {
-    display: none;
-  }
+
 }
 
 .contacts__email,
 .contacts__phone {
   width: 225px;
-  display: flex;
-  align-items: center;
-  gap: 15px;
 
   @include vp-1023 {
     width: auto;
     padding: 10px;
+  }
+}
+
+.contacts__email-text,
+.contacts__phone-text {
+
+  @include vp-1023 {
+    display: none;
   }
 }

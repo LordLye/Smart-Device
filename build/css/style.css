@@ -1366,11 +1366,6 @@ button,
 
 .contacts__link {
   color: #F2F5F6;
-}
-
-.contacts__email,
-.contacts__phone {
-  width: 225px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1378,6 +1373,11 @@ button,
   -ms-flex-align: center;
   align-items: center;
   gap: 15px;
+}
+
+.contacts__email,
+.contacts__phone {
+  width: 225px;
 }
 
 /* @mixin hover-focus {
@@ -1450,14 +1450,15 @@ button,
     gap: 20px;
   }
 
-  .contacts__link {
-    display: none;
-  }
-
   .contacts__email,
   .contacts__phone {
     width: auto;
     padding: 10px;
+  }
+
+  .contacts__email-text,
+  .contacts__phone-text {
+    display: none;
   }
 }
 
