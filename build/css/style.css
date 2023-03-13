@@ -384,12 +384,32 @@ template {
   display: none;
 }
 
+address {
+  font-style: normal;
+}
+
 @font-face {
   font-style: normal;
   font-weight: 400;
-  font-family: "";
+  font-family: "PT Mono";
   font-display: swap;
-  src: url("../fonts/.woff2") format("woff2");
+  src: url("../fonts/ptmono.woff2") format("woff2"), url("../fonts/ptmono.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Roboto Condensed";
+  font-display: swap;
+  src: url("../fonts/robotocondensed.woff2") format("woff2"), url("../fonts/robotocondensed.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: "Roboto Condensed";
+  font-display: swap;
+  src: url("../fonts/robotocondensedbold.woff2") format("woff2"), url("../fonts/robotocondensedbold.woff") format("woff");
 }
 
 *,
@@ -425,7 +445,6 @@ body {
 }
 
 a {
-  color: #000000;
   text-decoration: none;
 }
 
@@ -614,9 +633,7 @@ button,
 
 .container {
   width: 100%;
-  max-width: 1920px;
   margin: 0 auto;
-  padding: 0 40px;
 }
 
 .btn {
@@ -1273,6 +1290,96 @@ button,
   color: #15ab07;
 }
 
+.main-header {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(84.9%, #041827), to(rgba(4, 24, 39, 0)));
+  background: -o-linear-gradient(top, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
+  background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
+  padding: 30px 0 35px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.main-header__container {
+  max-width: 1240px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 40px 0 40px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.main-header__logo {
+  padding-right: 15px;
+}
+
+.main-header__contacts {
+  margin: 0 auto;
+}
+
+.main-header__button {
+  color: #F2F5F6;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid #F2F5F7;
+  border-radius: 3px;
+  min-width: 160px;
+  max-width: 200px;
+  font-family: "Roboto Condensed", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 10px 15px 12px 15px;
+  margin-bottom: 2.5px;
+}
+
+.main-header__button-description {
+  margin: 0;
+}
+
+.contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  font-family: "PT Mono", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 17.92px;
+  gap: 30px;
+}
+
+.contacts__link {
+  color: #F2F5F6;
+}
+
+.contacts__email,
+.contacts__phone {
+  width: 245px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 15px;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -1314,21 +1421,50 @@ button,
   }
 */
 
-@media (max-width: 1439px) {
-  .container {
-    padding: 0 32px;
-  }
-}
-
 @media (max-width: 1023px) {
   .container {
-    padding: 0 24px;
+    max-width: 1023px;
+  }
+
+  .main-header {
+    padding: 20px 0 25px 0;
+    position: relative;
+  }
+
+  .main-header__container {
+    padding: 0 70px 0 50px;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+
+  .main-header__contacts {
+    margin: 0 0 0 auto;
+  }
+
+  .main-header__button {
+    display: none;
+  }
+
+  .contacts {
+    gap: 20px;
+  }
+
+  .contacts__link {
+    display: none;
+  }
+
+  .contacts__email,
+  .contacts__phone {
+    width: auto;
+    padding: 10px;
   }
 }
 
 @media (max-width: 767px) {
   .container {
-    padding: 0 16px;
+    max-width: 767px;
+    min-width: 320px;
   }
 
   .modal__wrapper {
@@ -1342,6 +1478,18 @@ button,
 
   .modal--fit-content .modal__content {
     width: 100%;
+  }
+
+  .main-header {
+    padding: 10px 0 20px 0;
+  }
+
+  .main-header__container {
+    padding: 0 35px 0 26px;
+  }
+
+  .main-header__logo {
+    padding-top: 5px;
   }
 }
 
