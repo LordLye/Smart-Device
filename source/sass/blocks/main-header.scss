@@ -1,0 +1,74 @@
+.main-header {
+  background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
+  padding: 30px 0 35px 0;
+  position:fixed;
+  top: 0;
+  width: 100%;
+
+  @include vp-1023 {
+    padding: 20px 0 25px 0;
+    position: relative;
+  }
+
+  @include vp-767 {
+    padding: 10px 0 20px 0;
+  }
+}
+
+.main-header__container {
+  max-width: 1240px;
+  margin: 0 auto;
+  display: flex;
+  padding: 0 40px 0 40px;
+  align-items: center;
+
+  @include vp-1023 {
+    padding: 0 70px 0 50px;
+    align-items: flex-start;
+  }
+
+  @include vp-767 {
+    padding: 0 35px 0 26px;
+  }
+}
+
+.main-header__logo {
+padding-right: 15px;
+
+@include vp-767 {
+  padding-top: 5px;
+}
+}
+
+.main-header__contacts {
+  margin: 0 auto;
+
+  @include vp-1023 {
+    margin: 0 0 0 auto;
+  }
+}
+
+.main-header__button {
+  color: $color-main-white;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid #F2F5F7;
+  border-radius: 3px;
+  min-width: 160px;
+  max-width: 200px;
+  font-family: "Roboto Condensed", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 10px 15px 12px 15px;
+  margin-bottom: 2.5px;
+
+  @include vp-1023 {
+    display: none;
+  }
+}
+
+.main-header__button-description {
+  margin: 0;
+}
