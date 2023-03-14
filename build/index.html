@@ -151,61 +151,71 @@
   </main>
 
   <footer class="main-footer footer">
-    <div class="container">
-      <div class="footer__container social">
-        <img class="footer__logo">
-        <ul class="social-list">
+    <div class="footer__container container">
+      <div class="social">
+        <img src="img/logo.png" width="215px" height="55px">
+        <ul class="social__list">
           <li class="social__item">
-            <svg></svg>
+            <svg class="social__svg" width="30" height="30" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite.svg#ok-icon"></use>
+            </svg>
           </li>
           <li class="social__item">
-            <svg></svg>
+            <svg class="social__svg" width="30" height="30" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite.svg#vk-icon"></use>
+            </svg>
           </li>
           <li class="social__item">
-            <svg></svg>
+            <svg class="social__svg" width="30" height="30" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite.svg#pinterest-icon"></use>
+            </svg>
           </li>
         </ul>
       </div>
-      <div class="footer__chapters chapters">
-        <h2 class="chapters__title">Разделы сайта</h2>
-        <ul class="chapters__list">
-          <li class="chapters__item">О Компании</li>
-          <li class="chapters__item">Продукты</li>
-          <li class="chapters__item">Производство печатных плат</li>
-          <li class="chapters__item">Монтаж печатных плат</li>
-          <li class="chapters__item">Комплектующие</li>
-          <li class="chapters__item">Доставка</li>
-          <li class="chapters__item">Контакты</li>
-        </ul>
-      </div>
-      <div class="footer__contacts contacts">
-        <h2 class="contacts__title">Наш офис</h2>
-        <ul class="contacts__list">
-          <li class="contacts__item">
-            <address>г. Мытищи, Олимпийский проспект, д.10</address>
-          </li>
-          <li class="contacts__item">
-            <address>
-              <a href="tel:+74955894050">
-                +7&nbsp;(495)&nbsp;589-40-50
-              </a>
-            </address>
-          </li>
-          <li class="contacts__item">
-            <address>
-              <a href="tel:+74953895829">
-                +7&nbsp;(925)&nbsp;389-58-29
-              </a>
-            </address>
-          </li>
-          <li class="contacts__item">
-            <address>
-              <a href="tel:+74953647813">
-                +7&nbsp;(925)&nbsp;364-78-13
-              </a>
-            </address>
-          </li>
-        </ul>
+      <div class="footer__accordion" data-accordion="parent" data-destroy="(max-width: 767px)">
+        <div class="footer__chapters chapters" data-accordion="element">
+          <h2 class="chapters__title" data-accordion="button">Разделы сайта</h2>
+          <ul class="chapters__list" data-accordion="content">
+            <li class="chapters__item">О Компании</li>
+            <li class="chapters__item">Комплектующие</li>
+            <li class="chapters__item">Продукты</li>
+            <li class="chapters__item">Доставка</li>
+            <li class="chapters__item">Производство печатных плат</li>
+            <li class="chapters__item">Контакты</li>
+            <li class="chapters__item">Монтаж печатных плат</li>
+          </ul>
+        </div>
+        <div class="footer__contacts contacts-address" data-accordion="element">
+          <h2 class="contacts-address__title" data-accordion="button">Наш офис</h2>
+          <ul class="contacts-address__list" data-accordion="content">
+            <li class="contacts-address__item">
+              <address>
+                <a class="contacts-address__link">г. Мытищи, Олимпийский проспект, д.10</a>
+              </address>
+            </li>
+            <li class="contacts-address__item">
+              <address class="contact-address__phone">
+                <a class="contacts-address__link" href="tel:+74955894050">
+                  +7&nbsp;(495)&nbsp;589-40-50
+                </a>
+              </address>
+            </li>
+            <li class="contacts-address__item">
+              <address>
+                <a class="contacts-address__link" href="tel:+74953895829">
+                  +7&nbsp;(925)&nbsp;389-58-29
+                </a>
+              </address>
+            </li>
+            <li class="contacts-address__item">
+              <address>
+                <a class="contacts-address__link" href="tel:+74953647813">
+                  +7&nbsp;(925)&nbsp;364-78-13
+                </a>
+              </address>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </footer>
