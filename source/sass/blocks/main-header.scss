@@ -4,6 +4,7 @@
   position:fixed;
   top: 0;
   width: 100%;
+  z-index: 100;
 
   @include vp-1023 {
     padding: 20px 0 25px 0;

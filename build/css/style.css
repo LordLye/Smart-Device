@@ -1298,6 +1298,7 @@ button,
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 100;
 }
 
 .main-header__container {
@@ -1393,13 +1394,11 @@ button,
 
 .footer__container {
   margin: 0 auto;
-  max-width: 1230px;
+  max-width: 1228px;
   padding: 50px 4px 55px 4px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
 }
 
 .footer__contacts {
@@ -1407,7 +1406,8 @@ button,
 }
 
 .footer__chapters {
-  margin: 0 2.4590163934% 0 auto;
+  margin: 0 0 0 auto;
+  padding-right: 20px;
 }
 
 .footer__accordion {
@@ -1427,6 +1427,7 @@ button,
   flex-direction: column;
   gap: 30px;
   margin-right: 3px;
+  min-width: 215px;
 }
 
 .social__item {
@@ -1595,6 +1596,90 @@ button,
   overflow: hidden;
 }
 
+.intro {
+  min-height: 880px;
+  position: relative;
+}
+
+.intro__container {
+  max-width: 1000px;
+  padding: 305px 20px 30px 15px;
+  margin: 0 auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 40px;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  z-index: 0;
+}
+
+.intro__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -2;
+  display: block;
+  -o-object-fit: cover;
+  object-fit: cover;
+  margin: 0 auto;
+  min-height: 880px;
+}
+
+.intro__img-container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  min-height: 880px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0)));
+  background: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%);
+  background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%);
+  z-index: -1;
+}
+
+.intro__title {
+  color: #F2F5F6;
+  margin: 0;
+  font-family: "Roboto Condensed";
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 94px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  max-width: 1000px;
+}
+
+.intro__description {
+  color: #F2F5F6;
+  margin: 0;
+  font-family: "PT Mono";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 34px;
+  max-width: 1000px;
+}
+
+.intro__button {
+  padding: 15px 25px;
+  background: #00B2FF;
+  border-radius: 3px;
+  border: none;
+  color: #F2F5F6;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  max-width: 450px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -1635,20 +1720,6 @@ button,
     }
   }
 */
-
-@media (max-width: 1100px) {
-  .footer__contacts {
-    max-width: 335px;
-  }
-
-  .footer__chapters {
-    margin-right: 1px;
-  }
-
-  .chapters__list {
-    grid-column-gap: 4px;
-  }
-}
 
 @media (max-width: 1023px) {
   .container {
@@ -1691,6 +1762,10 @@ button,
   }
 
   .footer__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
     max-width: 690px;
     padding: 50px 5px 65px 10px;
   }
@@ -1743,6 +1818,34 @@ button,
 
   .contacts-address__title {
     font-weight: 400;
+  }
+
+  .intro {
+    position: static;
+    min-height: auto;
+    min-height: 540px;
+  }
+
+  .intro__container {
+    padding: 80px 50px 30px 50px;
+    gap: 20px;
+  }
+
+  .intro__img {
+    min-height: 640px;
+  }
+
+  .intro__img-container {
+    min-height: 640px;
+  }
+
+  .intro__title {
+    font-size: 64px;
+    line-height: 75px;
+  }
+
+  .intro__description {
+    margin-bottom: 30px;
   }
 }
 
@@ -1888,6 +1991,42 @@ button,
   .contacts-address__list {
     width: 270px;
     margin: 0 auto 0 auto;
+  }
+
+  .intro {
+    min-height: 490px;
+  }
+
+  .intro__container {
+    max-width: 84.375%;
+    padding: 80px 25px 20px 25px;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+  }
+
+  .intro__img {
+    min-height: 560px;
+  }
+
+  .intro__img-container {
+    min-height: 560px;
+  }
+
+  .intro__title {
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  .intro__description {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .intro__button {
+    font-size: 14px;
+    line-height: 16px;
+    padding: 10px 30px;
+    max-width: 270px;
   }
 }
 
