@@ -21,6 +21,7 @@
   display: flex;
   padding: 0 70px 0 10px;
   align-items: center;
+  flex-wrap: wrap;
 
   @include vp-1023 {
     padding: 0 70px 0 50px;
@@ -42,6 +43,7 @@ padding-right: 15px;
 
 .main-header__contacts {
   margin: 0 auto;
+  max-width: 480px;
 
   @include vp-1023 {
     margin: 0 0 0 auto;
@@ -55,8 +57,6 @@ padding-right: 15px;
   border-radius: 3px;
   min-width: 160px;
   max-width: 200px;
-  font-family: "Roboto Condensed", Arial, sans-serif;
-  font-weight: 700;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.05em;
@@ -71,4 +71,5 @@ padding-right: 15px;
 
 .main-header__button-description {
   margin: 0;
+  max-width: 128px;
 }

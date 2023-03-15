@@ -36,6 +36,7 @@
 
 .contacts__email-text,
 .contacts__phone-text {
+  max-width: 190px;
 
   @include vp-1023 {
     display: none;
