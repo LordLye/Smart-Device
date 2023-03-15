@@ -6,7 +6,7 @@
 .footer__container {
   margin: 0 auto;
   max-width: 1230px;
-  padding: 50px 5px 55px 5px;
+  padding: 50px 4px 55px 4px;
   display: flex;
   flex-wrap: wrap;
 
@@ -24,6 +24,10 @@
 .footer__contacts {
   max-width: 345px;
 
+  @include vp-1100 {
+    max-width: 335px;
+  }
+
   @include vp-1023 {
     padding-right: 5px;
     max-width: 325px;
@@ -33,6 +37,9 @@
     padding-right: 0;
     border: 1px solid rgba(248, 253, 255, 0.7);
 
+    &.is-active .contacts-address__title::before {
+      display: none;
+    }
   }
 }
 
@@ -51,7 +58,19 @@
   @include vp-767 {
     border: 1px solid rgba(248, 253, 255, 0.7);
     border-bottom: 1px;
+
+    &.is-active .chapters__title::before {
+      display: none;
+    }
   }
+
+  &.is-active .chapters__list {
+
+    @include vp-767 {
+      margin-bottom: 20px;
+    }
+  }
+
 }
 
 .footer__accordion {

@@ -1,4 +1,5 @@
 .contacts-address__title {
+  position: relative;
   color: $color-default-white;
   font-family: "Roboto Condensed", Arial, sans-serif;
   font-size: 400;
@@ -8,9 +9,34 @@
   text-transform: uppercase;
   margin: 0 0 20px 0;
 
+  @include vp-1023 {
+    font-weight: 400;
+  }
+
   @include vp-767 {
     margin: 0;
     padding: 20px 76px 20px 24px;
+
+    &::after {
+      position: absolute;
+      content: '';
+      width: 15px;
+      height: 1px;
+      background-color: #F8FDFF;
+      right: 26px;
+      top: 20px;
+    }
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 15px;
+      height: 1px;
+      background-color: #F8FDFF;
+      right: 26px;
+      top: 20px;
+      transform: rotate(90deg);
+    }
   }
 }
 
