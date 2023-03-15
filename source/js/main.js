@@ -2,12 +2,7 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {initAccordions} from './accordion/init-accordion';
-
-window.addEventListener('DOMContentLoaded', () => {
-  window.addEventListener('load', () => {
-    initAccordions();
-  });
-});
+import {bannerTextSwap} from './modules/main-banner';
 
 // ---------------------------------
 
@@ -15,9 +10,12 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // Utils
   // ---------------------------------
+  window.addEventListener('load', () => {
+    initAccordions();
+  });
 
   iosVhFix();
-
+  bannerTextSwap();
   // Modules
   // ---------------------------------
 
