@@ -35,8 +35,21 @@
     min-height: 340px;
   }
 
+  &:hover {
+    background-color: $color-deep-sky-blue;
+
+    & h2,
+    p {
+    color: $color-alice-blue;
+    }
+    & svg {
+      color: $color-alice-blue;
+    }
+  }
+
   & svg {
     margin-bottom: 20px;
+    color: $color-deep-sky-blue;
   }
 
   & h2 {
