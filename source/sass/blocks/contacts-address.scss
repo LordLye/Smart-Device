@@ -71,6 +71,7 @@
 
   & a {
     color: $color-footer-white-opacity;
+    line-height: 25px;
 
     @include vp-767 {
       font-size: 14px;
@@ -79,15 +80,13 @@
   }
 
   & span {
+
+    line-height: 22px;
+
     @include vp-767 {
       display: block;
       margin-bottom: 5px;
     }
   }
-}
 
-
-
-.contact-address__phone {
-  line-height: 25px;
 }
