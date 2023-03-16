@@ -1534,10 +1534,11 @@ button,
 
 .contacts-address a {
   color: rgba(255, 255, 255, 0.7);
+  line-height: 25px;
 }
 
-.contact-address__phone {
-  line-height: 25px;
+.contacts-address span {
+  line-height: 22px;
 }
 
 .button {
@@ -1599,41 +1600,8 @@ button,
 .intro {
   min-height: 880px;
   position: relative;
-}
-
-.intro img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: -2;
-  display: block;
-  -o-object-fit: cover;
-  object-fit: cover;
+  background-position: center;
   margin: 0 auto;
-  min-height: 880px;
-}
-
-.intro h1 {
-  color: #F2F5F6;
-  margin: 0;
-  font-family: "Roboto Condensed";
-  font-weight: 700;
-  font-size: 80px;
-  line-height: 94px;
-  letter-spacing: 0.07em;
-  text-transform: uppercase;
-  max-width: 1000px;
-}
-
-.intro p {
-  color: #F2F5F6;
-  margin: 0;
-  font-family: "PT Mono";
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 34px;
-  max-width: 685px;
 }
 
 .intro__container {
@@ -1655,15 +1623,30 @@ button,
   z-index: 0;
 }
 
-.intro__img-container {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  min-height: 880px;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0)));
-  background: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%);
-  background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%);
-  z-index: -1;
+.intro__text-container :not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.intro__text-container h1 {
+  color: #F2F5F6;
+  margin: 0;
+  font-family: "Roboto Condensed";
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 94px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  max-width: 1000px;
+}
+
+.intro__text-container p {
+  color: #F2F5F6;
+  margin: 0;
+  font-family: "PT Mono";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 34px;
+  max-width: 685px;
 }
 
 .intro__button {
@@ -1727,8 +1710,8 @@ button,
   }
 
   .main-header {
+    position: absolute;
     padding: 20px 0 25px 0;
-    position: relative;
   }
 
   .main-header__container {
@@ -1823,30 +1806,22 @@ button,
   .intro {
     position: static;
     min-height: auto;
-    min-height: 540px;
-  }
-
-  .intro img {
     min-height: 640px;
   }
 
-  .intro h1 {
-    font-size: 64px;
-    line-height: 75px;
-  }
-
-  .intro p {
-    margin-bottom: 30px;
-  }
-
   .intro__container {
-    padding: 80px 50px 30px 50px;
+    padding: 180px 50px 30px 50px;
     gap: 20px;
     max-width: 760px;
   }
 
-  .intro__img-container {
-    min-height: 640px;
+  .intro__text-container :last-child {
+    margin-bottom: 30px;
+  }
+
+  .intro__text-container h1 {
+    font-size: 64px;
+    line-height: 75px;
   }
 }
 
@@ -1888,7 +1863,8 @@ button,
 
   .footer__contacts {
     padding-right: 0;
-    border: 1px solid rgba(248, 253, 255, 0.7);
+    border-top: 1px solid rgba(248, 253, 255, 0.7);
+    border-bottom: 1px solid rgba(248, 253, 255, 0.7);
   }
 
   .footer__contacts.is-active .contacts-address__title::before {
@@ -1896,8 +1872,7 @@ button,
   }
 
   .footer__chapters {
-    border: 1px solid rgba(248, 253, 255, 0.7);
-    border-bottom: 1px;
+    border-top: 1px solid rgba(248, 253, 255, 0.7);
   }
 
   .footer__chapters.is-active .chapters__title::before {
@@ -2010,32 +1985,24 @@ button,
   }
 
   .intro {
-    min-height: 490px;
-  }
-
-  .intro img {
     min-height: 560px;
-  }
-
-  .intro h1 {
-    font-size: 36px;
-    line-height: 42px;
-  }
-
-  .intro p {
-    font-size: 14px;
-    line-height: 22px;
   }
 
   .intro__container {
     max-width: 84.375%;
-    padding: 80px 25px 20px 25px;
+    padding: 150px 25px 20px 25px;
     -webkit-box-sizing: content-box;
     box-sizing: content-box;
   }
 
-  .intro__img-container {
-    min-height: 560px;
+  .intro__text-container h1 {
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  .intro__text-container p {
+    font-size: 14px;
+    line-height: 22px;
   }
 
   .intro__button {
