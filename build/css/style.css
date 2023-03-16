@@ -1663,6 +1663,73 @@ button,
   line-height: 21px;
 }
 
+.advantages__list {
+  max-width: 1222px;
+  list-style: none;
+  padding: 120px 48px 60px 50px;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  gap: 30px;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+.advantages__item {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-width: 595px;
+  min-height: 200px;
+  padding: 40px 40px 35px 40px;
+  border: 1px solid #EBEBEB;
+}
+
+.advantages__item svg {
+  margin-bottom: 20px;
+}
+
+.advantages__item h2 {
+  margin: 0 0 15px 0;
+  font-family: "Roboto Condensed";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  color: #00B2FF;
+}
+
+.advantages__item p {
+  margin: 0;
+  min-height: 120px;
+  max-width: 505px;
+  font-family: "PT Mono";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #041827;
+}
+
+.advantages__item p:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.advantages__item::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 100%;
+  background: #00B2FF;
+  top: 0;
+  left: 0;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -1822,6 +1889,11 @@ button,
   .intro__text-container h1 {
     font-size: 64px;
     line-height: 75px;
+  }
+
+  .advantages__item {
+    padding: 40px 46px 35px 46px;
+    min-height: 360px;
   }
 }
 
@@ -2010,6 +2082,29 @@ button,
     line-height: 16px;
     padding: 10px 30px;
     max-width: 270px;
+  }
+
+  .advantages__list {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    padding: 50px 25px 25px 25px;
+    max-width: 595px;
+  }
+
+  .advantages__item {
+    min-width: 210px;
+    padding: 30px 30px 35px 30px;
+    min-height: 340px;
+  }
+
+  .advantages__item h2 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .advantages__item p {
+    font-size: 14px;
+    line-height: 19px;
   }
 }
 
