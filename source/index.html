@@ -131,33 +131,44 @@
         </div>
       </section>
       <section class="services">
-        <h2 class="services__title">Smart Device предлагает следующие товары и услуги</h2>
-        <ul class="services__list">
-          <li class="services__item card-service">
-            <a class="card-service__link">
-              <p class="card-service__description">Производство печатных плат</p>
-              <button class="card-service__button button">
-                <svg></svg>
-              </button>
-            </a>
-          </li>
-          <li class="services__item card-service">
-            <a class="card-service__link">
-              <p class="card-service__description">Монтаж печатных плат</p>
-              <button class="card-service__button button">
-                <svg></svg>
-              </button>
-            </a>
-          </li>
-          <li class="services__item card-service">
-            <a class="card-service__link">
-              <p class="card-service__description">Комплектующие для светотехники</p>
-              <button class="card-service__button button">
-                <svg></svg>
-              </button>
-            </a>
-          </li>
-        </ul>
+        <div class="services__container">
+          <h2 class="services__title">
+            <span class="services__long-title">Smart Device предлагает следующие товары и услуги</span>
+            <span class="services__short-title">Товары и услуги Smart Device</span>
+          </h2>
+          <ul class="services__list">
+            <li class="services__item card-service card-service--production" style="background-image:linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url('./img/board-background.jpg')">
+              <a class="card-service__link">
+                <p class="card-service__description">Производство печатных плат</p>
+                <button class="card-service__button button">
+                  <svg width="4" height="8" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="img/sprite.svg#arrow-right"></use>
+                  </svg>
+                </button>
+              </a>
+            </li>
+            <li class="services__item card-service card-service--assembly" style="background-image:linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url('./img/board-background.jpg')">
+              <a class="card-service__link">
+                <p class="card-service__description">Монтаж печатных плат</p>
+                <button class="card-service__button button">
+                  <svg width="4" height="8" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="img/sprite.svg#arrow-right"></use>
+                  </svg>
+                </button>
+              </a>
+            </li>
+            <li class="services__item card-service card-service--accessories" style="background-image:linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url('./img/board-background.jpg')">
+              <a class="card-service__link">
+                <p class="card-service__description">Комплектующие для светотехники</p>
+                <button class="card-service__button button">
+                  <svg width="4" height="8" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="img/sprite.svg#arrow-right"></use>
+                  </svg>
+                </button>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="question">
         <img class="question__image">

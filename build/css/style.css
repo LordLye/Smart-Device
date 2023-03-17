@@ -1604,6 +1604,7 @@ button,
   margin: 0 auto;
   background-size: 1920px 880px;
   background-position-y: 0px;
+  background-repeat: no-repeat;
 }
 
 .intro__container {
@@ -1830,6 +1831,96 @@ button,
   margin: 0;
 }
 
+.services {
+  background: #041827;
+}
+
+.services__container {
+  padding: 70px 50px 140px 50px;
+  max-width: 1220px;
+  margin: 0 auto;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+.services__title {
+  color: #ffffff;
+  font-family: "Roboto Condensed";
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.services__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  min-height: 650px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 85px;
+}
+
+.services__item {
+  max-width: 350px;
+  position: relative;
+}
+
+.services__short-title {
+  display: none;
+}
+
+.card-service__button {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 3px 0px 0px 0px;
+  background: #00B2FF;
+  border: none;
+  padding: 0;
+}
+
+.card-service__description {
+  color: #ffffff;
+  max-width: 173px;
+  margin: 0;
+  font-family: "Roboto Condensed";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.card-service {
+  margin: 0;
+  padding: 50px 70px 70px 40px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.card-service--production {
+  background-repeat: no-repeat;
+  background-position: -188px -114px;
+  background-size: 1493px 817px;
+}
+
+.card-service--assembly {
+  background-repeat: no-repeat;
+  background-position: -534px -118px;
+  background-size: 1493px 817px;
+}
+
+.card-service--accessories {
+  background-repeat: no-repeat;
+  background-position: -894px -107px;
+  background-size: 1493px 817px;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -2003,6 +2094,43 @@ button,
     padding: 40px 50px 80px 46px;
     max-width: 674px;
     gap: 29px;
+  }
+
+  .services__container {
+    padding: 60px 50px 75px 50px;
+  }
+
+  .services__list {
+    padding: 60px 50px 75px 50px;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 0;
+  }
+
+  .services__item {
+    max-width: none;
+    min-height: 250px;
+  }
+
+  .card-service__description {
+    max-width: 150px;
+  }
+
+  .card-service {
+    padding: 40px 70px 70px 45px;
+  }
+
+  .card-service--production {
+    background-position: -243px -548px;
+  }
+
+  .card-service--assembly {
+    background-position: -628px -315px;
+  }
+
+  .card-service--accessories {
+    background-position: -147px -359px;
   }
 }
 
@@ -2258,6 +2386,48 @@ button,
   .about__accordion-container p {
     font-size: 14px;
     line-height: 19px;
+  }
+
+  .services__container {
+    padding: 50px 25px 86px 25px;
+  }
+
+  .services__title {
+    margin-bottom: 40px;
+  }
+
+  .services__short-title {
+    display: block;
+  }
+
+  .services__long-title {
+    display: none;
+  }
+
+  .card-service__button {
+    width: 40px;
+    height: 40px;
+  }
+
+  .card-service__description {
+    font-size: 18px;
+    max-width: 135px;
+  }
+
+  .card-service {
+    padding: 30px 50px 50px 30px;
+  }
+
+  .card-service--production {
+    background-position: -376px -298px;
+  }
+
+  .card-service--assembly {
+    background-position: -365px -538px;
+  }
+
+  .card-service--accessories {
+    background-position: -885px -393px;
   }
 }
 
