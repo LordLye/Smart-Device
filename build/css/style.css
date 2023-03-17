@@ -1746,6 +1746,90 @@ button,
   left: 0;
 }
 
+.about {
+  padding: 60px 50px 100px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 100px;
+  margin: 0 auto;
+  max-width: 1220px;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+.about__img-container {
+  min-width: 150px;
+}
+
+.about__text-container {
+  min-height: 230px;
+  margin-bottom: 10px;
+}
+
+.about__text-container span {
+  color: #041827;
+  font-family: "PT Mono";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.about__text-container h2 {
+  margin: 0 0 15px 0;
+  color: #041827;
+  font-family: "Roboto Condensed";
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+}
+
+.about__text-container p {
+  margin: 0;
+  color: #041827;
+  font-family: "PT Mono";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.about__text-container p:not(:last-of-type) {
+  margin-bottom: 20px;
+}
+
+.about__button {
+  font-family: "Roboto Condensed";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #00B2FF;
+  padding: 11px 50px;
+  max-width: 180px;
+  border: 1px solid #00B2FF;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0);
+  margin-top: 10px;
+}
+
+.about__accordion-container :nth-child(n) {
+  margin-bottom: 10px;
+}
+
+.about__accordion-container span {
+  display: none;
+}
+
+.about__accordion-container p {
+  font-family: "PT Mono";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #041827;
+  margin: 0;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -1913,6 +1997,12 @@ button,
   .advantages__item {
     padding: 40px 46px 35px 46px;
     min-height: 360px;
+  }
+
+  .about {
+    padding: 40px 50px 80px 46px;
+    max-width: 674px;
+    gap: 29px;
   }
 }
 
@@ -2125,6 +2215,47 @@ button,
   }
 
   .advantages__item p {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .about {
+    padding: 25px 25px 80px 25px;
+    max-width: 550px;
+  }
+
+  .about__img-container {
+    display: none;
+  }
+
+  .about__text-container {
+    min-height: 150px;
+  }
+
+  .about__text-container span {
+    display: none;
+  }
+
+  .about__text-container h2 {
+    font-size: 28px;
+    line-height: 39px;
+  }
+
+  .about__text-container p {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .about__accordion-container span {
+    display: block;
+    font-family: "PT Mono";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #041827;
+  }
+
+  .about__accordion-container p {
     font-size: 14px;
     line-height: 19px;
   }

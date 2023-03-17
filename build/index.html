@@ -48,11 +48,12 @@
   </header>
   <main>
     <div class="container">
-      <div class="intro" style="background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url('./img/background.png'); background-repeat: no-repeat;">
+      <div class="intro"
+        style="background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url('./img/background.png'); background-repeat: no-repeat;">
         <div class="intro__container">
           <div class="intro__text-container">
-          <h1>Печатные платы</h1>
-          <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
+            <h1>Печатные платы</h1>
+            <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
           </div>
           <button class="intro__button button" type="button">Получить бесплатную консультацию</button>
         </div>
@@ -96,18 +97,38 @@
         </ul>
       </section>
       <section class="about">
-        <img class="about__year">
-        <div class="about__text">
-          <h2>О компании</h2>
-          <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с
-            1997
-            года. Выполняем срочные заказы и пилотные образцы до 10 дней.<br>
-            Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные
-            платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД),
-            РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители
-            светотехники России.</p>
+        <div class="about__img-container">
+          <img src="img/2022.png" width="150" height="320">
         </div>
-        <button class="about__button button" type="button"></button>
+        <div data-accordion="parent">
+          <div class="about__container" data-accordion="element">
+            <div class="about__text-container">
+              <h2>О компании</h2>
+              <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с
+                1997
+                года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
+              <p>Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND.</p>
+              <span>Печатные
+                платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД),
+                РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители
+                светотехники России.</span>
+            </div>
+            <div class="about__accordion-container" data-accordion="content">
+              <span>Печатные
+                платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД),
+                РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители
+                светотехники России.</span>
+              <p>Smart Device - это команда профессионалов. Через нас прошло более 1 000 000 клиентов, 70% из которых
+                продолжают сотрудничество по сей день. На данный момент насчитывается более 14 офисов по всей стране и
+                20
+                городов присутствия.</p>
+              <p>Мы стремимся к постоянному развитию и повышению уровня качества продукции, производимой внутри
+                компании.
+                Использование инновационных технологий помогает экономить деньги и время наших клиентов</p>
+            </div>
+            <button class="about__button button" type="button" data-accordion="button">Подробнее</button>
+          </div>
+        </div>
       </section>
       <section class="services">
         <h2 class="services__title">Smart Device предлагает следующие товары и услуги</h2>
@@ -216,7 +237,7 @@
           <ul data-accordion="content">
             <li>
               <address>
-                  <span>г. Мытищи, Олимпийский проспект, д.10</span>
+                <span>г. Мытищи, Олимпийский проспект, д.10</span>
               </address>
             </li>
             <li>
