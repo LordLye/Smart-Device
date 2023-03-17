@@ -1,0 +1,129 @@
+.about {
+  padding: 60px 50px 100px 50px;
+  display: flex;
+  gap: 100px;
+  margin: 0 auto;
+  max-width: 1220px;
+  box-sizing: content-box;
+
+  @include vp-1023 {
+    padding: 40px 50px 80px 46px;
+    max-width: 674px;
+    gap: 29px;
+  }
+
+  @include vp-767 {
+    padding: 25px 25px 80px 25px;
+    max-width: 550px;
+  }
+}
+
+.about__img-container {
+  min-width: 150px;
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.about__text-container {
+  min-height: 230px;
+  margin-bottom: 10px;
+
+  @include vp-767 {
+    min-height: 150px;
+  }
+
+  & span {
+    color: $color-black-pearl;
+    font-family: 'PT Mono';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+
+    @include vp-767 {
+      display: none;
+    }
+  }
+
+  & h2 {
+    margin: 0 0 15px 0;
+    color: $color-black-pearl;
+    font-family: 'Roboto Condensed';
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 51px;
+
+    @include vp-767 {
+      font-size: 28px;
+      line-height: 39px;
+    }
+  }
+
+  & p {
+    margin: 0;
+    color: $color-black-pearl;
+    font-family: 'PT Mono';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+
+    &:not(:last-of-type) {
+      margin-bottom: 20px;
+    }
+
+    @include vp-767 {
+      font-size: 14px;
+      line-height: 19px;
+    }
+  }
+}
+
+.about__button {
+  font-family: 'Roboto Condensed';
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $color-deep-sky-blue;
+  padding: 11px 50px;
+  max-width: 180px;
+  border: 1px solid $color-deep-sky-blue;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0);
+  margin-top: 10px;
+}
+
+.about__accordion-container {
+  & :nth-child(n) {
+    margin-bottom: 10px;
+  }
+
+  & span {
+    display: none;
+
+    @include vp-767 {
+      display: block;
+      font-family: 'PT Mono';
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 19px;
+      color: $color-black-pearl;
+    }
+  }
+
+  & p {
+    font-family: 'PT Mono';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: $color-black-pearl;
+    margin: 0;
+
+    @include vp-767 {
+      font-size: 14px;
+      line-height: 19px;
+    }
+  }
+}

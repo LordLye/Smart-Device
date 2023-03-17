@@ -3,6 +3,7 @@ import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {initAccordions} from './accordion/init-accordion';
 import {bannerTextSwap} from './modules/main-banner';
+import {textSwitch} from './modules/about-button';
 
 // ---------------------------------
 
@@ -16,6 +17,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
   iosVhFix();
   bannerTextSwap();
+  textSwitch();
+
   // Modules
   // ---------------------------------
 

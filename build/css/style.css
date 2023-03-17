@@ -1602,6 +1602,8 @@ button,
   position: relative;
   background-position: center;
   margin: 0 auto;
+  background-size: 1920px 880px;
+  background-position-y: 0px;
 }
 
 .intro__container {
@@ -1623,13 +1625,13 @@ button,
   z-index: 0;
 }
 
-.intro__text-container :not(:last-child) {
+.intro__text-container p:not(:last-child) {
   margin-bottom: 10px;
 }
 
 .intro__text-container h1 {
   color: #F2F5F6;
-  margin: 0;
+  margin: 0 0 40px 0;
   font-family: "Roboto Condensed";
   font-weight: 700;
   font-size: 80px;
@@ -1661,6 +1663,171 @@ button,
   font-weight: 700;
   font-size: 18px;
   line-height: 21px;
+}
+
+.advantages__list {
+  max-width: 1222px;
+  list-style: none;
+  padding: 120px 48px 60px 50px;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  gap: 30px;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+.advantages__item {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-width: 595px;
+  min-height: 200px;
+  padding: 40px 40px 35px 40px;
+  border: 1px solid #EBEBEB;
+}
+
+.advantages__item:hover {
+  background-color: #00B2FF;
+}
+
+.advantages__item:hover h2,
+.advantages__item:hover p {
+  color: #F2F5F6;
+}
+
+.advantages__item:hover svg {
+  color: #F2F5F6;
+}
+
+.advantages__item svg {
+  margin-bottom: 20px;
+  color: #00B2FF;
+}
+
+.advantages__item h2 {
+  margin: 0 0 15px 0;
+  font-family: "Roboto Condensed";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  color: #00B2FF;
+}
+
+.advantages__item p {
+  margin: 0;
+  min-height: 120px;
+  max-width: 505px;
+  font-family: "PT Mono";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #041827;
+}
+
+.advantages__item p:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.advantages__item::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 100%;
+  background: #00B2FF;
+  top: 0;
+  left: 0;
+}
+
+.about {
+  padding: 60px 50px 100px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 100px;
+  margin: 0 auto;
+  max-width: 1220px;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+.about__img-container {
+  min-width: 150px;
+}
+
+.about__text-container {
+  min-height: 230px;
+  margin-bottom: 10px;
+}
+
+.about__text-container span {
+  color: #041827;
+  font-family: "PT Mono";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.about__text-container h2 {
+  margin: 0 0 15px 0;
+  color: #041827;
+  font-family: "Roboto Condensed";
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+}
+
+.about__text-container p {
+  margin: 0;
+  color: #041827;
+  font-family: "PT Mono";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.about__text-container p:not(:last-of-type) {
+  margin-bottom: 20px;
+}
+
+.about__button {
+  font-family: "Roboto Condensed";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #00B2FF;
+  padding: 11px 50px;
+  max-width: 180px;
+  border: 1px solid #00B2FF;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0);
+  margin-top: 10px;
+}
+
+.about__accordion-container :nth-child(n) {
+  margin-bottom: 10px;
+}
+
+.about__accordion-container span {
+  display: none;
+}
+
+.about__accordion-container p {
+  font-family: "PT Mono";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #041827;
+  margin: 0;
 }
 
 /* @mixin hover-focus {
@@ -1807,6 +1974,8 @@ button,
     position: static;
     min-height: auto;
     min-height: 640px;
+    background-position: -173px 10px;
+    background-size: 1519px 640px;
   }
 
   .intro__container {
@@ -1822,6 +1991,18 @@ button,
   .intro__text-container h1 {
     font-size: 64px;
     line-height: 75px;
+    margin-bottom: 20px;
+  }
+
+  .advantages__item {
+    padding: 40px 46px 35px 46px;
+    min-height: 360px;
+  }
+
+  .about {
+    padding: 40px 50px 80px 46px;
+    max-width: 674px;
+    gap: 29px;
   }
 }
 
@@ -1986,6 +2167,8 @@ button,
 
   .intro {
     min-height: 560px;
+    background-position: -30px 0px;
+    background-size: 1220px 560px;
   }
 
   .intro__container {
@@ -2010,6 +2193,71 @@ button,
     line-height: 16px;
     padding: 10px 30px;
     max-width: 270px;
+    min-height: 40px;
+  }
+
+  .advantages__list {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    padding: 50px 25px 25px 25px;
+    max-width: 595px;
+  }
+
+  .advantages__item {
+    min-width: 210px;
+    padding: 30px 30px 35px 30px;
+    min-height: 340px;
+  }
+
+  .advantages__item h2 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .advantages__item p {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .about {
+    padding: 25px 25px 80px 25px;
+    max-width: 550px;
+  }
+
+  .about__img-container {
+    display: none;
+  }
+
+  .about__text-container {
+    min-height: 150px;
+  }
+
+  .about__text-container span {
+    display: none;
+  }
+
+  .about__text-container h2 {
+    font-size: 28px;
+    line-height: 39px;
+  }
+
+  .about__text-container p {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .about__accordion-container span {
+    display: block;
+    font-family: "PT Mono";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #041827;
+  }
+
+  .about__accordion-container p {
+    font-size: 14px;
+    line-height: 19px;
   }
 }
 
