@@ -5,6 +5,7 @@
   margin: 0 auto;
   background-size: 1920px 880px;
   background-position-y: 0px;
+  background-repeat: no-repeat;
 
   @include vp-1023 {
     position: static;
