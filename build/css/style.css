@@ -728,15 +728,15 @@ button,
 
 .modal__content {
   position: relative;
-  width: 600px;
+  background-color: #00B3FF;
+  max-width: 500px;
   padding: 40px;
-  background-color: #ffffff;
 }
 
 .modal__close-btn {
   position: absolute;
-  top: 22px;
-  right: 22px;
+  top: 15px;
+  right: 15px;
   z-index: 1;
   width: 40px;
   height: 40px;
@@ -2190,6 +2190,240 @@ button,
   display: none;
 }
 
+.modal-form {
+  margin-bottom: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.modal-form__container {
+  margin-bottom: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 420px;
+}
+
+.modal-form__container h2 {
+  color: #ffffff;
+  font-family: "Roboto Condensed";
+  font-weight: 400;
+  margin: 0;
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.modal-form__container p {
+  color: #ffffff;
+  font-family: "PT Mono";
+  font-weight: 400;
+  margin: 0 0 25px 0;
+  font-size: 16px;
+  line-height: 22px;
+  max-width: 402px;
+  margin-right: 18px;
+}
+
+.modal-form__container label {
+  max-width: 420px;
+  margin-bottom: 0;
+}
+
+.modal-form__container input {
+  width: 100%;
+  min-height: 50px;
+  padding: 15px;
+  background: rgba(4, 20, 39, 0.15);
+  border-radius: 3px;
+  border: none;
+}
+
+.modal-form__container input::-webkit-input-placeholder {
+  color: #ffffff;
+  font-family: "PT Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.modal-form__container input::-moz-placeholder {
+  color: #ffffff;
+  font-family: "PT Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.modal-form__container input:-ms-input-placeholder {
+  color: #ffffff;
+  font-family: "PT Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.modal-form__container input::-ms-input-placeholder {
+  color: #ffffff;
+  font-family: "PT Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.modal-form__container input::placeholder {
+  color: #ffffff;
+  font-family: "PT Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.modal-form__container textarea {
+  -ms-grid-column-span: 2;
+  grid-column: span 2;
+  background: rgba(4, 20, 39, 0.15);
+  border-radius: 3px;
+  border: none;
+  min-height: 155px;
+  margin-bottom: 5px;
+  padding: 25px 15px;
+  max-width: 420px;
+}
+
+.modal-form__container textarea::-webkit-input-placeholder {
+  color: #ffffff;
+  font-family: "PT Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.modal-form__container textarea::-moz-placeholder {
+  color: #ffffff;
+  font-family: "PT Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.modal-form__container textarea:-ms-input-placeholder {
+  color: #ffffff;
+  font-family: "PT Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.modal-form__container textarea::-ms-input-placeholder {
+  color: #ffffff;
+  font-family: "PT Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.modal-form__container textarea::placeholder {
+  color: #ffffff;
+  font-family: "PT Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.modal-form__button {
+  background: #041827;
+  border-radius: 3px;
+  border: none;
+  color: #ffffff;
+  font-family: "Roboto Condensed";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 13px 60px;
+  max-width: 420px;
+}
+
+.modal-form__checkbox {
+  margin-top: auto;
+}
+
+.modal-form__checkbox input {
+  display: none;
+}
+
+.modal-form__checkbox input:checked ~ svg {
+  display: block;
+}
+
+.modal-form__checkbox label {
+  padding-left: 9px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 420px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+
+.modal-form__checkbox label::before {
+  content: "";
+  display: block;
+  border: 1px solid #FFFFFF;
+  border-radius: 2px;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+.modal-form__checkbox span {
+  font-family: "PT Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+  opacity: 0.8;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  display: block;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 0 0 26px;
+}
+
+.modal-form__checkbox svg {
+  position: absolute;
+  left: 12px;
+  display: none;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -2459,15 +2693,6 @@ button,
   .container {
     max-width: 767px;
     min-width: 320px;
-  }
-
-  .modal__wrapper {
-    padding: 60px 16px;
-  }
-
-  .modal__content {
-    width: 100%;
-    padding: 20px;
   }
 
   .modal--fit-content .modal__content {

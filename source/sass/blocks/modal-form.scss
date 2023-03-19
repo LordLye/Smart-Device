@@ -1,0 +1,144 @@
+.modal-form {
+  margin-bottom: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.modal-form__container {
+  margin-bottom: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 420px;
+
+  & h2 {
+    color: $color-default-white;
+    font-family: 'Roboto Condensed';
+    font-weight: 400;
+    margin: 0;
+    font-size: 30px;
+    line-height: 42px
+  }
+
+  & p {
+    color: $color-default-white;
+    font-family: 'PT Mono';
+    font-weight: 400;
+    margin: 0 0 25px 0;
+    font-size: 16px;
+    line-height: 22px;
+    max-width: 402px;
+    margin-right: 18px;
+  }
+
+  & label {
+    max-width: 420px;
+    margin-bottom: 0;
+  }
+
+  & input {
+    width: 100%;
+    min-height: 50px;
+    padding: 15px;
+    background: rgba(4, 20, 39, 0.15);
+    border-radius: 3px;
+    border: none;
+
+    &::placeholder {
+      color: $color-default-white;
+      font-family: 'PT Mono';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+
+  & textarea {
+    grid-column: span 2;
+    background: rgba(4, 20, 39, 0.15);
+    border-radius: 3px;
+    border: none;
+    min-height: 155px;
+
+    &::placeholder {
+      color: $color-default-white;
+      font-family: 'PT Mono';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+    }
+
+    margin-bottom: 5px;
+    padding: 25px 15px;
+    max-width: 420px;
+  }
+}
+
+.modal-form__button {
+  background: $color-black-pearl;
+  border-radius: 3px;
+  border: none;
+  color: $color-default-white;
+  font-family: 'Roboto Condensed';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 13px 60px;
+  max-width: 420px;
+}
+
+.modal-form__checkbox {
+  margin-top: auto;
+
+  & input {
+    display: none;
+
+    &:checked~svg {
+      display: block;
+    }
+  }
+
+  & label {
+    padding-left: 9px;
+    display: flex;
+    max-width: 420px;
+    align-items: center;
+    position: relative;
+
+    &::before {
+      content: '';
+      display: block;
+      border: 1px solid #FFFFFF;
+      border-radius: 2px;
+      width: 15px;
+      height: 15px;
+      position: absolute;
+      box-sizing: content-box;
+    }
+  }
+
+  & span {
+    font-family: 'PT Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    opacity: 0.8;
+    box-sizing: content-box;
+    display: block;
+    box-sizing: border-box;
+    padding: 0 0 0 26px;
+  }
+
+  & svg {
+    position: absolute;
+    left: 12px;
+    display: none;
+  }
+}
