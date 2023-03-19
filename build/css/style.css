@@ -1922,8 +1922,12 @@ button,
 }
 
 .question {
-  background-position-y: -575px;
-  background-repeat: no-repeat;
+  background: url("/img/form-background.jpg") no-repeat, #00b3ff;
+  margin: 0 auto;
+  max-width: 1920px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  background-position: center top;
 }
 
 .question__container {
@@ -2396,6 +2400,10 @@ button,
 
   .card-service--accessories {
     background-position: -147px -359px;
+  }
+
+  .question {
+    background: #00b3ff;
   }
 
   .question__container {
