@@ -1,0 +1,39 @@
+.question {
+  background-position-y: -575px;
+  background-repeat: no-repeat;
+}
+
+.question__container {
+  display: flex;
+  padding: 170px 20px 250px 10px;
+  margin: 0 auto;
+  max-width: 1210px;
+  justify-content: space-between;
+  box-sizing: content-box;
+
+  @include vp-1023 {
+    padding: 50px 10px 125px 10px;
+    max-width: 800px;
+    justify-content: center;
+  }
+
+  @include vp-767 {
+    max-width: 500px;
+    padding: 50px 25px 90px 25px;
+   }
+}
+
+.question__image {
+padding-top: 76px;
+min-width: 300px;
+margin-right: 10px;
+
+@include vp-1023 {
+  display: none;
+}
+
+}
+
+.question__form {
+  max-width: 585px;
+}
