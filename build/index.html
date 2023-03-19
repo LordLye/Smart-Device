@@ -137,7 +137,8 @@
             <span class="services__short-title">Товары и услуги Smart Device</span>
           </h2>
           <ul class="services__list">
-            <li class="services__item card-service card-service--production" style="background-image:linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url('./img/board-background.jpg')">
+            <li class="services__item card-service card-service--production"
+              style="background-image:linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url('./img/board-background.jpg')">
               <a class="card-service__link">
                 <p class="card-service__description">Производство печатных плат</p>
                 <button class="card-service__button button">
@@ -147,7 +148,8 @@
                 </button>
               </a>
             </li>
-            <li class="services__item card-service card-service--assembly" style="background-image:linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url('./img/board-background.jpg')">
+            <li class="services__item card-service card-service--assembly"
+              style="background-image:linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url('./img/board-background.jpg')">
               <a class="card-service__link">
                 <p class="card-service__description">Монтаж печатных плат</p>
                 <button class="card-service__button button">
@@ -157,7 +159,8 @@
                 </button>
               </a>
             </li>
-            <li class="services__item card-service card-service--accessories" style="background-image:linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url('./img/board-background.jpg')">
+            <li class="services__item card-service card-service--accessories"
+              style="background-image:linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url('./img/board-background.jpg')">
               <a class="card-service__link">
                 <p class="card-service__description">Комплектующие для светотехники</p>
                 <button class="card-service__button button">
@@ -170,26 +173,35 @@
           </ul>
         </div>
       </section>
-      <section class="question">
-        <img class="question__image">
-        <form class="question__form form">
-          <h2 class="form__title">Остались вопросы? Задайте их нам!</h2>
-          <p class="form__description">Мы проконсультируем Вас бесплатно</p>
-          <div class="form__field">
-            <input type="text">
+      <section class="question" style="background-image: url('./img/form-background.jpg');">
+        <div class="question__container">
+          <div class="question__image">
+            <img src="img/paper-airplane.png" width="510" height="285" alt="Бумажный самолетик.">
           </div>
-          <div class="form__field">
-            <input type="tel">
-          </div>
-          <div class="form__textarea">
-            <textarea></textarea>
-          </div>
-          <button class="form__button button">Задать вопрос</button>
-          <div class="form__checkbox">
-            <input type="checkbox">
-            <span>Я согласен на обработку персональных данных</span>
-          </div>
-        </form>
+          <form class="question__form question-form">
+            <div class="question-form__container">
+              <h2>Остались вопросы? Задайте их нам!</h2>
+              <p>Мы проконсультируем Вас бесплатно</p>
+              <label>
+                <input type="text" placeholder="Имя" name="name">
+              </label>
+              <label>
+                <input type="tel" placeholder="Телефон" name="phone">
+              </label>
+              <textarea placeholder="Ваш вопрос" name="question"></textarea>
+            </div>
+            <button class="question-form__button button">Задать вопрос</button>
+            <div class="question-form__checkbox">
+              <label>
+                <input type="checkbox">
+                <svg width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/sprite.svg#check-mark"></use>
+                  </svg>
+                <span>Я согласен на обработку персональных данных</span>
+              </label>
+            </div>
+          </form>
+        </div>
       </section>
     </div>
   </main>
