@@ -1,19 +1,18 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Описание проекта">
-  <title>ProjectName</title>
+  <title>Smart Device</title>
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="fonts/ptmono.woff2" type="font/woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body>
-
-  <header class="main-header">
+  <header class="main-header" data-fix-block>
     <div class="main-header__container container">
       <a class="main-header__logo">
         <picture>
@@ -41,7 +40,7 @@
           <span class="visually-hidden">Номер телефона для связи</span>
         </address>
       </div>
-      <button class="main-header__button button" type="button">
+      <button class="main-header__button button" type="button" data-open-modal="feedback">
         <p class="main-header__button-description">Заказать звонок</p>
       </button>
     </div>
@@ -55,7 +54,7 @@
             <h1>Печатные платы</h1>
             <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
           </div>
-          <button class="intro__button button" type="button">Получить бесплатную консультацию</button>
+          <a class="intro__button button" href="#feedback">Получить бесплатную консультацию</a>
         </div>
       </div>
       <section class="advantages">
@@ -173,34 +172,45 @@
           </ul>
         </div>
       </section>
-      <section class="question" >
+      <section class="question" id="feedback">
         <div class="question__container">
           <div class="question__image">
             <img src="img/paper-airplane.png" width="510" height="285" alt="Бумажный самолетик.">
           </div>
-          <form class="question__form question-form">
-            <div class="question-form__container">
-              <h2>Остались вопросы? Задайте их нам!</h2>
-              <p>Мы проконсультируем Вас бесплатно</p>
-              <label>
-                <input type="text" placeholder="Имя" name="name">
-              </label>
-              <label>
-                <input type="tel" placeholder="Телефон" name="phone">
-              </label>
-              <textarea placeholder="Ваш вопрос" name="question"></textarea>
-            </div>
-            <button class="question-form__button button">Задать вопрос</button>
-            <div class="question-form__checkbox">
-              <label>
-                <input type="checkbox">
-                <svg width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <use xlink:href="img/sprite.svg#check-mark"></use>
-                  </svg>
-                <span>Я согласен на обработку персональных данных</span>
-              </label>
-            </div>
-          </form>
+          <div data-form-validate data-callback="callback">
+            <form class="question__form question-form" method="post" action="https://echo.htmlacademy.ru/">
+              <div class="question-form__container">
+                <h2>Остались вопросы? Задайте их нам!</h2>
+                <p>Мы проконсультируем Вас бесплатно</p>
+                <label>
+                  <div data-on-input-validate data-validate-type="text" data-limitation="letters"
+                    data-message-base="Поле обязательно к заполнению" data-required>
+                    <input type="text" placeholder="Имя" name="name">
+                  </div>
+                </label>
+                <label>
+                  <div data-on-input-validate data-validate-type="phone"
+                    data-message-base="Поле обязательно к заполнению" data-required>
+                    <input type="tel" placeholder="Телефон" name="phone">
+                  </div>
+                </label>
+                <textarea placeholder="Ваш вопрос" name="question"></textarea>
+              </div>
+              <button class="question-form__button button" type="submit">Задать вопрос</button>
+              <div class="question-form__checkbox">
+                <div data-on-input-validate data-validate-type="checkbox" ,
+                  data-message-base="Поле обязательно к заполнению" data-required>
+                  <label>
+                    <input type="checkbox" checked required>
+                    <svg width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="img/sprite.svg#check-mark"></use>
+                    </svg>
+                    <span>Я согласен на обработку персональных данных</span>
+                  </label>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
       </section>
     </div>
@@ -292,33 +302,44 @@
 
 
   <!-- Модалки -->
-  <div class="modal modal--preload is-active" data-modal="feedback">
+  <div class="modal modal--preload" data-modal="feedback">
     <div class="modal__wrapper">
       <div class="modal__overlay" data-close-modal></div>
       <div class="modal__content">
-        <form class="modal__form modal-form">
-          <div class="modal-form__container">
-            <h2>Закажите звонок</h2>
-            <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
-            <label>
-              <input type="text" placeholder="Имя" name="name">
-            </label>
-            <label>
-              <input type="tel" placeholder="Телефон" name="phone">
-            </label>
-            <textarea placeholder="Ваш вопрос" name="question"></textarea>
-          </div>
-          <button class="modal-form__button button">Отправить</button>
-          <div class="modal-form__checkbox">
-            <label>
-              <input type="checkbox">
-              <svg width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="img/sprite.svg#check-mark"></use>
-                </svg>
-              <span>Я согласен на обработку персональных данных</span>
-            </label>
-          </div>
-        </form>
+        <div data-form-validate>
+          <form class="modal__form modal-form">
+            <div class="modal-form__container">
+              <h2>Закажите звонок</h2>
+              <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+              <label>
+                <div data-on-input-validate data-validate-type="text" data-limitation="letters"
+                  data-message-base="Поле обязательно к заполнению" data-required>
+                  <input type="text" placeholder="Имя" name="name" data-focus>
+                </div>
+              </label>
+              <label>
+                <div data-on-input-validate data-validate-type="phone" data-message-base="Поле обязательно к заполнению"
+                  data-required>
+                  <input type="tel" placeholder="Телефон" name="phone">
+                </div>
+              </label>
+              <textarea placeholder="Ваш вопрос" name="question"></textarea>
+            </div>
+            <button class="modal-form__button button">Отправить</button>
+            <div class="modal-form__checkbox">
+              <div data-on-input-validate data-validate-type="checkbox" ,
+                data-message-base="Поле обязательно к заполнению" data-required>
+                <label>
+                  <input type="checkbox" checked required>
+                  <svg width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="img/sprite.svg#check-mark"></use>
+                  </svg>
+                  <span>Я согласен на обработку персональных данных</span>
+                </label>
+              </div>
+            </div>
+          </form>
+        </div>
         <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
           <svg width="20" height="20">
             <use xlink:href="img/sprite.svg#icon-close"></use>

@@ -76,6 +76,7 @@ line-height: 19px;
   & label {
     max-width: 275px;
     margin-bottom: 20px;
+    position: relative;
 
     @include vp-1023 {
       max-width: 320px;
@@ -133,6 +134,15 @@ line-height: 19px;
      }
   }
 
+  & .input-message {
+    position: absolute;
+    left: 0;
+    top: 50px;
+    font-family: 'PT Mono';
+    font-size: 14px;
+    color: $color-torch-red;
+  }
+
   @include vp-1023 {
     grid-template-columns: minmax(100px,335px) minmax(100px,335px);
   }
@@ -151,10 +161,12 @@ line-height: 19px;
   text-transform: uppercase;
   padding: 13px 25px;
   max-width: 265px;
+  margin-bottom: auto;
 }
 
 .question-form__checkbox {
   margin-top: auto;
+  position: relative;
 
   & input {
     display: none;
@@ -162,6 +174,16 @@ line-height: 19px;
     &:checked~svg {
       display: block;
     }
+  }
+
+  & .input-message {
+    position: absolute;
+    left: 0;
+    top: 35px;
+    font-family: 'PT Mono';
+    font-size: 14px;
+    color: $color-torch-red;
+    padding: 0;
   }
 
   & label {
