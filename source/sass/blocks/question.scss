@@ -1,6 +1,13 @@
 .question {
-  background-position-y: -575px;
-  background-repeat: no-repeat;
+  background: url('/img/form-background.jpg') no-repeat, #00b3ff;
+  margin: 0 auto;
+  max-width: 1920px;
+  object-fit:cover;
+  background-position: center top;
+
+  @include vp-1023 {
+    background: #00b3ff;
+  }
 }
 
 .question__container {
