@@ -13,18 +13,18 @@
   max-width: 420px;
 
   & div {
-      max-width: 420px;
-      margin-bottom: 0;
-      position: relative;
+    max-width: 420px;
+    margin-bottom: 0;
+    position: relative;
 
-      & .input-message {
-        position: absolute;
-        left: 0;
-        top: 45px;
-        font-family: $ff-PT-Mono;
-        font-size: 12px;
-        color: $color-torch-red;
-      }
+    & .input-message {
+      position: absolute;
+      left: 0;
+      top: 45px;
+      font-family: $ff-PT-Mono;
+      font-size: 12px;
+      color: $color-torch-red;
+    }
   }
 
   & h2 {
@@ -33,7 +33,7 @@
     font-weight: 400;
     margin: 0;
     font-size: 30px;
-    line-height: 42px
+    line-height: 42px;
   }
 
   & p {
@@ -124,7 +124,7 @@
   & input {
     display: none;
 
-    &:checked~svg {
+    &:checked ~ svg {
       display: block;
     }
   }
@@ -137,7 +137,7 @@
     position: relative;
 
     &::before {
-      content: '';
+      content: "";
       display: block;
       border: 1px solid $color-default-white;
       border-radius: 2px;
@@ -156,7 +156,6 @@
     line-height: 16px;
     color: $color-default-white;
     opacity: 0.8;
-    box-sizing: content-box;
     display: block;
     box-sizing: border-box;
     padding: 0 0 0 26px;

@@ -3,7 +3,7 @@
     position: relative;
     color: $color-default-white;
     font-family: $ff-roboto-condensed;
-    font-size: 400;
+    font-weight: 400;
     font-size: 15px;
     line-height: 16px;
     letter-spacing: 0.05em;
@@ -20,7 +20,7 @@
 
       &::after {
         position: absolute;
-        content: '';
+        content: "";
         width: 15px;
         height: 1px;
         background-color: $color-alice-bright-blue;
@@ -30,7 +30,7 @@
 
       &::before {
         position: absolute;
-        content: '';
+        content: "";
         width: 15px;
         height: 1px;
         background-color: $color-alice-bright-blue;
@@ -88,5 +88,4 @@
       margin-bottom: 5px;
     }
   }
-
 }

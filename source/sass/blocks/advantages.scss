@@ -22,7 +22,7 @@
   max-width: 595px;
   min-height: 200px;
   padding: 40px 40px 35px 40px;
-  border: 1px solid #EBEBEB;
+  border: 1px solid #ebebeb;
 
   @include vp-1023 {
     padding: 40px 46px 35px 46px;
@@ -40,8 +40,9 @@
 
     & h2,
     p {
-    color: $color-alice-blue;
+      color: $color-alice-blue;
     }
+
     & svg {
       color: $color-alice-blue;
     }
@@ -87,7 +88,7 @@
   }
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 5px;
     height: 100%;
