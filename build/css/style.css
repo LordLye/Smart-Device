@@ -433,6 +433,7 @@ html {
   line-height: 24px;
   font-family: "Placeholder", "Arial", sans-serif;
   color: #000000;
+  scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -730,7 +731,7 @@ button,
   position: relative;
   background-color: #00B3FF;
   max-width: 500px;
-  padding: 40px;
+  padding: 40px 40px 20px 40px;
 }
 
 .modal__close-btn {
@@ -1922,7 +1923,7 @@ button,
 }
 
 .question {
-  background: url("/img/form-background.jpg") no-repeat, #00b3ff;
+  background: url("/img/form-background.jpg") no-repeat, #00B2FF;
   margin: 0 auto;
   max-width: 1920px;
   -o-object-fit: cover;
@@ -1934,7 +1935,7 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 170px 20px 250px 10px;
+  padding: 170px 20px 235px 10px;
   margin: 0 auto;
   max-width: 1210px;
   -webkit-box-pack: justify;
@@ -1952,6 +1953,7 @@ button,
 
 .question__form {
   max-width: 585px;
+  padding-bottom: 15px;
 }
 
 .question-form {
@@ -2005,6 +2007,7 @@ button,
 .question-form__container label {
   max-width: 275px;
   margin-bottom: 20px;
+  position: relative;
 }
 
 .question-form__container input {
@@ -2117,6 +2120,15 @@ button,
   line-height: 22px;
 }
 
+.question-form__container .input-message {
+  position: absolute;
+  left: 0;
+  top: 50px;
+  font-family: "PT Mono";
+  font-size: 14px;
+  color: #ff1553;
+}
+
 .question-form__button {
   background: #041827;
   border-radius: 3px;
@@ -2130,10 +2142,16 @@ button,
   text-transform: uppercase;
   padding: 13px 25px;
   max-width: 265px;
+  margin-bottom: auto;
+}
+
+.question-form__button:active {
+  opacity: 0.8;
 }
 
 .question-form__checkbox {
   margin-top: auto;
+  position: relative;
 }
 
 .question-form__checkbox input {
@@ -2142,6 +2160,16 @@ button,
 
 .question-form__checkbox input:checked ~ svg {
   display: block;
+}
+
+.question-form__checkbox .input-message {
+  position: absolute;
+  left: 0;
+  top: 35px;
+  font-family: "PT Mono";
+  font-size: 14px;
+  color: #ff1553;
+  padding: 0;
 }
 
 .question-form__checkbox label {
@@ -2238,6 +2266,16 @@ button,
 .modal-form__container label {
   max-width: 420px;
   margin-bottom: 0;
+  position: relative;
+}
+
+.modal-form__container label .input-message {
+  position: absolute;
+  left: 0;
+  top: 45px;
+  font-family: "PT Mono";
+  font-size: 12px;
+  color: #ff1553;
 }
 
 .modal-form__container input {
@@ -2368,6 +2406,17 @@ button,
 
 .modal-form__checkbox {
   margin-top: auto;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.modal-form__checkbox .input-message {
+  position: absolute;
+  left: 10px;
+  top: 20px;
+  font-family: "PT Mono";
+  font-size: 14px;
+  color: #ff1553;
 }
 
 .modal-form__checkbox input {
@@ -2637,7 +2686,7 @@ button,
   }
 
   .question {
-    background: #00b3ff;
+    background: #00B2FF;
   }
 
   .question__container {
@@ -2693,6 +2742,14 @@ button,
   .container {
     max-width: 767px;
     min-width: 320px;
+  }
+
+  .modal__wrapper {
+    padding: 60px 10px;
+  }
+
+  .modal__content {
+    padding: 40px 20px 20px 20px;
   }
 
   .modal--fit-content .modal__content {
@@ -3023,6 +3080,10 @@ button,
     margin-bottom: 5px;
     padding: 25px 15px;
     max-width: 320px;
+  }
+
+  .modal-form__checkbox .input-message {
+    top: 35px;
   }
 }
 

@@ -1,18 +1,18 @@
 .question {
-  background: url('/img/form-background.jpg') no-repeat, #00b3ff;
+  background: url('/img/form-background.jpg') no-repeat, $color-deep-sky-blue;
   margin: 0 auto;
   max-width: 1920px;
   object-fit:cover;
   background-position: center top;
 
   @include vp-1023 {
-    background: #00b3ff;
+    background: $color-deep-sky-blue;
   }
 }
 
 .question__container {
   display: flex;
-  padding: 170px 20px 250px 10px;
+  padding: 170px 20px 235px 10px;
   margin: 0 auto;
   max-width: 1210px;
   justify-content: space-between;
@@ -43,4 +43,5 @@ margin-right: 10px;
 
 .question__form {
   max-width: 585px;
+  padding-bottom: 15px;
 }
