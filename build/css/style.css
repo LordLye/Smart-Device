@@ -729,7 +729,7 @@ button,
 
 .modal__content {
   position: relative;
-  background-color: #00B3FF;
+  background-color: #00b3ff;
   max-width: 500px;
   padding: 40px 40px 20px 40px;
 }
@@ -1316,9 +1316,9 @@ button,
 }
 
 .main-header__button {
-  color: #F2F5F6;
+  color: #f2f5f6;
   background-color: rgba(255, 255, 255, 0);
-  border: 1px solid #F2F5F6;
+  border: 1px solid #f2f5f6;
   border-radius: 3px;
   min-width: 160px;
   max-width: 200px;
@@ -1359,7 +1359,7 @@ button,
 }
 
 .contacts__link {
-  color: #F2F5F6;
+  color: #f2f5f6;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1444,7 +1444,7 @@ button,
   position: relative;
   color: #ffffff;
   font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-size: 400;
+  font-weight: 400;
   font-size: 15px;
   line-height: 16px;
   letter-spacing: 0.05em;
@@ -1487,7 +1487,7 @@ button,
   position: relative;
   color: #ffffff;
   font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-size: 400;
+  font-weight: 400;
   font-size: 15px;
   line-height: 16px;
   letter-spacing: 0.05em;
@@ -1591,10 +1591,10 @@ button,
 .intro {
   min-height: 880px;
   position: relative;
-  background-position: center;
+  background-position-x: center;
   margin: 0 auto;
   background-size: 1920px 880px;
-  background-position-y: 0px;
+  background-position-y: 0;
   background-repeat: no-repeat;
 }
 
@@ -1622,7 +1622,7 @@ button,
 }
 
 .intro__text-container h1 {
-  color: #F2F5F6;
+  color: #f2f5f6;
   margin: 0 0 40px 0;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
@@ -1634,7 +1634,7 @@ button,
 }
 
 .intro__text-container p {
-  color: #F2F5F6;
+  color: #f2f5f6;
   margin: 0;
   font-family: "PT Mono", "Arial", sans-serif;
   font-weight: 400;
@@ -1645,10 +1645,10 @@ button,
 
 .intro__button {
   padding: 15px 25px;
-  background: #00B2FF;
+  background: #00b2ff;
   border-radius: 3px;
   border: none;
-  color: #F2F5F6;
+  color: #f2f5f6;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   max-width: 450px;
@@ -1683,25 +1683,25 @@ button,
   max-width: 595px;
   min-height: 200px;
   padding: 40px 40px 35px 40px;
-  border: 1px solid #EBEBEB;
+  border: 1px solid #ebebeb;
 }
 
 .advantages__item:hover {
-  background-color: #00B2FF;
+  background-color: #00b2ff;
 }
 
 .advantages__item:hover h2,
 .advantages__item:hover p {
-  color: #F2F5F6;
+  color: #f2f5f6;
 }
 
 .advantages__item:hover svg {
-  color: #F2F5F6;
+  color: #f2f5f6;
 }
 
 .advantages__item svg {
   margin-bottom: 20px;
-  color: #00B2FF;
+  color: #00b2ff;
 }
 
 .advantages__item h2 {
@@ -1710,7 +1710,7 @@ button,
   font-weight: 400;
   font-size: 24px;
   line-height: 34px;
-  color: #00B2FF;
+  color: #00b2ff;
 }
 
 .advantages__item p {
@@ -1733,7 +1733,7 @@ button,
   position: absolute;
   width: 5px;
   height: 100%;
-  background: #00B2FF;
+  background: #00b2ff;
   top: 0;
   left: 0;
 }
@@ -1796,10 +1796,10 @@ button,
   line-height: 16px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #00B2FF;
+  color: #00b2ff;
   padding: 11px 50px;
   max-width: 180px;
-  border: 1px solid #00B2FF;
+  border: 1px solid #00b2ff;
   border-radius: 3px;
   background-color: rgba(255, 255, 255, 0);
   margin-top: 10px;
@@ -1871,8 +1871,8 @@ button,
   bottom: 0;
   width: 60px;
   height: 60px;
-  border-radius: 3px 0px 0px 0px;
-  background: #00B2FF;
+  border-radius: 3px 0 0 0;
+  background: #00b2ff;
   border: none;
   padding: 0;
 }
@@ -1889,8 +1889,8 @@ button,
 
 .card-service {
   margin: 0;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .card-service--production {
@@ -1919,7 +1919,7 @@ button,
 }
 
 .question {
-  background: url("/img/form-background.jpg") no-repeat, #00B2FF;
+  background: url("/img/form-background.jpg") no-repeat, #00b2ff;
   margin: 0 auto;
   max-width: 1920px;
   -o-object-fit: cover;
@@ -1975,7 +1975,6 @@ button,
   grid-template-rows: auto auto;
   margin-bottom: auto;
   gap: 0 30px;
-  margin-bottom: auto;
 }
 
 .question-form__container div {
@@ -2200,8 +2199,6 @@ button,
   line-height: 16px;
   color: #ffffff;
   opacity: 0.8;
-  -webkit-box-sizing: content-box;
-  box-sizing: content-box;
   display: block;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -2456,8 +2453,6 @@ button,
   line-height: 16px;
   color: #ffffff;
   opacity: 0.8;
-  -webkit-box-sizing: content-box;
-  box-sizing: content-box;
   display: block;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -2612,7 +2607,6 @@ button,
 
   .intro {
     position: static;
-    min-height: auto;
     min-height: 640px;
     background-position: -173px 10px;
     background-size: 1519px 640px;
@@ -2650,7 +2644,6 @@ button,
   }
 
   .services__list {
-    padding: 60px 50px 75px 50px;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     gap: 30px;
@@ -2683,7 +2676,7 @@ button,
   }
 
   .question {
-    background: #00B2FF;
+    background: #00b2ff;
   }
 
   .question__container {
@@ -2763,7 +2756,7 @@ button,
 
   .footer__container {
     max-width: 270px;
-    padding: 35px 0px 35px 0px;
+    padding: 35px 0 35px 0;
   }
 
   .footer__contacts {
@@ -2891,12 +2884,12 @@ button,
 
   .intro {
     min-height: 560px;
-    background-position: -30px 0px;
+    background-position: -30px 0;
     background-size: 1220px 560px;
   }
 
   .intro__container {
-    max-width: 84.375%;
+    max-width: 540px;
     padding: 150px 25px 20px 25px;
     -webkit-box-sizing: content-box;
     box-sizing: content-box;

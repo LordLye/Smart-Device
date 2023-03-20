@@ -41,10 +41,9 @@
   gap: 85px;
 
   @include vp-1023 {
-    padding: 60px 50px 75px 50px;
     grid-template-columns: 1fr;
-  gap: 30px;
-  padding: 0;
+    gap: 30px;
+    padding: 0;
   }
 }
 
@@ -54,7 +53,7 @@
 
   @include vp-1023 {
     max-width: none;
-    min-height: 250px ;
+    min-height: 250px;
   }
 }
 
