@@ -61,7 +61,7 @@
   & h1 {
     color: $color-alice-blue;
     margin: 0 0 40px 0;
-    font-family: 'Roboto Condensed';
+    font-family: $ff-roboto-condensed;
     font-weight: 700;
     font-size: 80px;
     line-height: 94px;
@@ -84,7 +84,7 @@
   & p {
     color: $color-alice-blue;
     margin: 0;
-    font-family: 'PT Mono';
+    font-family: $ff-PT-Mono;
     font-weight: 400;
     font-size: 22px;
     line-height: 34px;
@@ -99,7 +99,7 @@
 
 .intro__button {
   padding: 15px 25px;
-  background: #00B2FF;
+  background: $color-deep-sky-blue;
   border-radius: 3px;
   border: none;
   color: $color-alice-blue;

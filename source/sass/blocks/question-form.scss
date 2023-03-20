@@ -47,7 +47,7 @@
     color: $color-default-white;
     margin: 0 0 9px 0;
     grid-column: span 2;
-    font-family: 'Roboto Condensed';
+    font-family: $ff-roboto-condensed;
     font-weight: 400;
     font-size: 36px;
     line-height: 51px;
@@ -67,7 +67,7 @@
     color: $color-default-white;
     margin: 0 0 33px 0;
     grid-column: span 2;
-    font-family: 'PT Mono';
+    font-family: $ff-PT-Mono;
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
@@ -93,7 +93,7 @@
 
     &::placeholder {
       color: $color-default-white;
-      font-family: 'PT Mono';
+      font-family: $ff-PT-Mono;
       font-style: normal;
       font-weight: 400;
       font-size: 16px;
@@ -112,7 +112,7 @@
 
     &::placeholder {
       color: $color-default-white;
-      font-family: 'PT Mono';
+      font-family: $ff-PT-Mono;
       font-style: normal;
       font-weight: 400;
       font-size: 16px;
@@ -134,7 +134,7 @@
     position: absolute;
     left: 0;
     top: 50px;
-    font-family: 'PT Mono';
+    font-family: $ff-PT-Mono;
     font-size: 14px;
     color: $color-torch-red;
   }
@@ -149,7 +149,7 @@
   border-radius: 3px;
   border: none;
   color: $color-default-white;
-  font-family: 'Roboto Condensed';
+  font-family: $ff-roboto-condensed;
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
@@ -180,7 +180,7 @@
     position: absolute;
     left: 0;
     top: 35px;
-    font-family: 'PT Mono';
+    font-family: $ff-PT-Mono;
     font-size: 14px;
     color: $color-torch-red;
     padding: 0;
@@ -197,7 +197,7 @@
     &::before {
       content: '';
       display: block;
-      border: 1px solid #FFFFFF;
+      border: 1px solid $color-default-white;
       border-radius: 2px;
       width: 15px;
       height: 15px;
@@ -216,12 +216,12 @@
   }
 
   & span {
-    font-family: 'PT Mono';
+    font-family: $ff-PT-Mono;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
-    color: #FFFFFF;
+    color: $color-default-white;
     opacity: 0.8;
     box-sizing: content-box;
     display: block;

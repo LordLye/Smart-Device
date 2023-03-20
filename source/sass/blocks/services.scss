@@ -1,5 +1,5 @@
 .services {
-  background: #041827;
+  background: $color-black-pearl;
 }
 
 .services__container {
@@ -19,7 +19,7 @@
 
 .services__title {
   color: $color-default-white;
-  font-family: 'Roboto Condensed';
+  font-family: $ff-roboto-condensed;
   font-weight: 400;
   font-size: 36px;
   line-height: 51px;

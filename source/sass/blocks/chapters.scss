@@ -4,7 +4,7 @@
   & h2 {
     position: relative;
     color: $color-default-white;
-    font-family: "Roboto Condensed", Arial, sans-serif;
+    font-family: $ff-roboto-condensed;
     font-size: 400;
     font-size: 15px;
     line-height: 16px;
@@ -25,7 +25,7 @@
         content: '';
         width: 15px;
         height: 1px;
-        background-color: #F8FDFF;
+        background-color: $color-alice-bright-blue;
         right: 26px;
         top: 20px;
       }
@@ -35,7 +35,7 @@
         content: '';
         width: 15px;
         height: 1px;
-        background-color: #F8FDFF;
+        background-color: $color-alice-bright-blue;
         right: 26px;
         top: 20px;
         transform: rotate(90deg);
@@ -65,7 +65,7 @@
   & li {
     color: $color-footer-white-opacity;
     list-style-type: none;
-    font-family: 'PT Mono';
+    font-family: $ff-PT-Mono;
     font-size: 16px;
     line-height: 135%;
 

@@ -881,12 +881,12 @@ button,
 
 .custom-input .input-message.is-invalid,
 .custom-textarea .input-message.is-invalid {
-  color: #ff0000;
+  color: #ff1553;
 }
 
 .custom-input .input-message.is-valid,
 .custom-textarea .input-message.is-valid {
-  color: #15ab07;
+  color: #22b259;
 }
 
 .custom-toggle {
@@ -1001,11 +1001,11 @@ button,
 }
 
 .custom-toggle .input-message.is-invalid {
-  color: #ff0000;
+  color: #ff1553;
 }
 
 .custom-toggle .input-message.is-valid {
-  color: #15ab07;
+  color: #22b259;
 }
 
 .custom-select {
@@ -1013,16 +1013,6 @@ button,
   width: 300px;
   padding: 14px 0 28px;
   margin: 0 0 44px 0;
-  /* &.is-valid {
-    .custom-select__button {
-      border: 2px solid $color-eucalyptus;
-
-      &:focus,
-      &:hover {
-        border: 2px solid rgba($color-eucalyptus, 0.5);
-      }
-    }
-  } */
 }
 
 .custom-select__label {
@@ -1284,11 +1274,11 @@ button,
 }
 
 .custom-select .input-message.is-invalid {
-  color: #ff0000;
+  color: #ff1553;
 }
 
 .custom-select .input-message.is-valid {
-  color: #15ab07;
+  color: #22b259;
 }
 
 .main-header {
@@ -1328,7 +1318,7 @@ button,
 .main-header__button {
   color: #F2F5F6;
   background-color: rgba(255, 255, 255, 0);
-  border: 1px solid #F2F5F7;
+  border: 1px solid #F2F5F6;
   border-radius: 3px;
   min-width: 160px;
   max-width: 200px;
@@ -1361,7 +1351,7 @@ button,
   flex-direction: row;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  font-family: "PT Mono", Arial, sans-serif;
+  font-family: "PT Mono", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 17.92px;
@@ -1453,7 +1443,7 @@ button,
 .chapters h2 {
   position: relative;
   color: #ffffff;
-  font-family: "Roboto Condensed", Arial, sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 400;
   font-size: 15px;
   line-height: 16px;
@@ -1478,7 +1468,7 @@ button,
 .chapters li {
   color: rgba(255, 255, 255, 0.7);
   list-style-type: none;
-  font-family: "PT Mono";
+  font-family: "PT Mono", "Arial", sans-serif;
   font-size: 16px;
   line-height: 135%;
 }
@@ -1496,7 +1486,7 @@ button,
 .contacts-address h2 {
   position: relative;
   color: #ffffff;
-  font-family: "Roboto Condensed", Arial, sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 400;
   font-size: 15px;
   line-height: 16px;
@@ -1522,7 +1512,7 @@ button,
   color: rgba(255, 255, 255, 0.7);
   font-style: normal;
   list-style-type: none;
-  font-family: "PT Mono";
+  font-family: "PT Mono", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
@@ -1543,7 +1533,7 @@ button,
 }
 
 .button {
-  font-family: "Roboto Condensed", Arial, sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
 }
 
@@ -1634,7 +1624,7 @@ button,
 .intro__text-container h1 {
   color: #F2F5F6;
   margin: 0 0 40px 0;
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   font-size: 80px;
   line-height: 94px;
@@ -1646,7 +1636,7 @@ button,
 .intro__text-container p {
   color: #F2F5F6;
   margin: 0;
-  font-family: "PT Mono";
+  font-family: "PT Mono", "Arial", sans-serif;
   font-weight: 400;
   font-size: 22px;
   line-height: 34px;
@@ -1716,7 +1706,7 @@ button,
 
 .advantages__item h2 {
   margin: 0 0 15px 0;
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 34px;
@@ -1727,7 +1717,7 @@ button,
   margin: 0;
   min-height: 120px;
   max-width: 505px;
-  font-family: "PT Mono";
+  font-family: "PT Mono", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
@@ -1771,7 +1761,7 @@ button,
 
 .about__text-container span {
   color: #041827;
-  font-family: "PT Mono";
+  font-family: "PT Mono", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
@@ -1780,7 +1770,7 @@ button,
 .about__text-container h2 {
   margin: 0 0 15px 0;
   color: #041827;
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 51px;
@@ -1789,7 +1779,7 @@ button,
 .about__text-container p {
   margin: 0;
   color: #041827;
-  font-family: "PT Mono";
+  font-family: "PT Mono", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
@@ -1800,7 +1790,7 @@ button,
 }
 
 .about__button {
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -1824,7 +1814,7 @@ button,
 }
 
 .about__accordion-container p {
-  font-family: "PT Mono";
+  font-family: "PT Mono", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
@@ -1846,7 +1836,7 @@ button,
 
 .services__title {
   color: #ffffff;
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 51px;
@@ -1891,7 +1881,7 @@ button,
   color: #ffffff;
   max-width: 173px;
   margin: 0;
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
@@ -1998,7 +1988,7 @@ button,
   margin: 0 0 9px 0;
   -ms-grid-column-span: 2;
   grid-column: span 2;
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 51px;
@@ -2009,7 +1999,7 @@ button,
   margin: 0 0 33px 0;
   -ms-grid-column-span: 2;
   grid-column: span 2;
-  font-family: "PT Mono";
+  font-family: "PT Mono", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
@@ -2026,7 +2016,7 @@ button,
 
 .question-form__container input::-webkit-input-placeholder {
   color: #ffffff;
-  font-family: "PT Mono";
+  font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -2035,7 +2025,7 @@ button,
 
 .question-form__container input::-moz-placeholder {
   color: #ffffff;
-  font-family: "PT Mono";
+  font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -2044,7 +2034,7 @@ button,
 
 .question-form__container input:-ms-input-placeholder {
   color: #ffffff;
-  font-family: "PT Mono";
+  font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -2053,7 +2043,7 @@ button,
 
 .question-form__container input::-ms-input-placeholder {
   color: #ffffff;
-  font-family: "PT Mono";
+  font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -2062,7 +2052,7 @@ button,
 
 .question-form__container input::placeholder {
   color: #ffffff;
-  font-family: "PT Mono";
+  font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -2082,7 +2072,7 @@ button,
 
 .question-form__container textarea::-webkit-input-placeholder {
   color: #ffffff;
-  font-family: "PT Mono";
+  font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -2091,7 +2081,7 @@ button,
 
 .question-form__container textarea::-moz-placeholder {
   color: #ffffff;
-  font-family: "PT Mono";
+  font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -2100,7 +2090,7 @@ button,
 
 .question-form__container textarea:-ms-input-placeholder {
   color: #ffffff;
-  font-family: "PT Mono";
+  font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -2109,7 +2099,7 @@ button,
 
 .question-form__container textarea::-ms-input-placeholder {
   color: #ffffff;
-  font-family: "PT Mono";
+  font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -2118,7 +2108,7 @@ button,
 
 .question-form__container textarea::placeholder {
   color: #ffffff;
-  font-family: "PT Mono";
+  font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -2129,7 +2119,7 @@ button,
   position: absolute;
   left: 0;
   top: 50px;
-  font-family: "PT Mono";
+  font-family: "PT Mono", "Arial", sans-serif;
   font-size: 14px;
   color: #ff1553;
 }
@@ -2139,7 +2129,7 @@ button,
   border-radius: 3px;
   border: none;
   color: #ffffff;
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
@@ -2171,7 +2161,7 @@ button,
   position: absolute;
   left: 0;
   top: 35px;
-  font-family: "PT Mono";
+  font-family: "PT Mono", "Arial", sans-serif;
   font-size: 14px;
   color: #ff1553;
   padding: 0;
@@ -2193,7 +2183,7 @@ button,
 .question-form__checkbox label::before {
   content: "";
   display: block;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   border-radius: 2px;
   width: 15px;
   height: 15px;
@@ -2203,12 +2193,12 @@ button,
 }
 
 .question-form__checkbox span {
-  font-family: "PT Mono";
+  font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 0.8;
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
@@ -2259,14 +2249,14 @@ button,
   position: absolute;
   left: 0;
   top: 45px;
-  font-family: "PT Mono";
+  font-family: "PT Mono", "Arial", sans-serif;
   font-size: 12px;
   color: #ff1553;
 }
 
 .modal-form__container h2 {
   color: #ffffff;
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   margin: 0;
   font-size: 30px;
@@ -2275,7 +2265,7 @@ button,
 
 .modal-form__container p {
   color: #ffffff;
-  font-family: "PT Mono";
+  font-family: "PT Mono", "Arial", sans-serif;
   font-weight: 400;
   margin: 0 0 25px 0;
   font-size: 16px;
@@ -2295,7 +2285,7 @@ button,
 
 .modal-form__container input::-webkit-input-placeholder {
   color: #ffffff;
-  font-family: "PT Mono";
+  font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -2304,7 +2294,7 @@ button,
 
 .modal-form__container input::-moz-placeholder {
   color: #ffffff;
-  font-family: "PT Mono";
+  font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -2313,7 +2303,7 @@ button,
 
 .modal-form__container input:-ms-input-placeholder {
   color: #ffffff;
-  font-family: "PT Mono";
+  font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -2322,7 +2312,7 @@ button,
 
 .modal-form__container input::-ms-input-placeholder {
   color: #ffffff;
-  font-family: "PT Mono";
+  font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -2331,7 +2321,7 @@ button,
 
 .modal-form__container input::placeholder {
   color: #ffffff;
-  font-family: "PT Mono";
+  font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -2352,7 +2342,7 @@ button,
 
 .modal-form__container textarea::-webkit-input-placeholder {
   color: #ffffff;
-  font-family: "PT Mono";
+  font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -2361,7 +2351,7 @@ button,
 
 .modal-form__container textarea::-moz-placeholder {
   color: #ffffff;
-  font-family: "PT Mono";
+  font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -2370,7 +2360,7 @@ button,
 
 .modal-form__container textarea:-ms-input-placeholder {
   color: #ffffff;
-  font-family: "PT Mono";
+  font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -2379,7 +2369,7 @@ button,
 
 .modal-form__container textarea::-ms-input-placeholder {
   color: #ffffff;
-  font-family: "PT Mono";
+  font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -2388,7 +2378,7 @@ button,
 
 .modal-form__container textarea::placeholder {
   color: #ffffff;
-  font-family: "PT Mono";
+  font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -2400,7 +2390,7 @@ button,
   border-radius: 3px;
   border: none;
   color: #ffffff;
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
@@ -2420,7 +2410,7 @@ button,
   position: absolute;
   left: 10px;
   top: 20px;
-  font-family: "PT Mono";
+  font-family: "PT Mono", "Arial", sans-serif;
   font-size: 14px;
   color: #ff1553;
   opacity: 1;
@@ -2449,7 +2439,7 @@ button,
 .modal-form__checkbox label::before {
   content: "";
   display: block;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   border-radius: 2px;
   width: 15px;
   height: 15px;
@@ -2459,12 +2449,12 @@ button,
 }
 
 .modal-form__checkbox span {
-  font-family: "PT Mono";
+  font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 0.8;
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
@@ -2828,7 +2818,7 @@ button,
     content: "";
     width: 15px;
     height: 1px;
-    background-color: #F8FDFF;
+    background-color: #f8fdff;
     right: 26px;
     top: 20px;
   }
@@ -2838,7 +2828,7 @@ button,
     content: "";
     width: 15px;
     height: 1px;
-    background-color: #F8FDFF;
+    background-color: #f8fdff;
     right: 26px;
     top: 20px;
     -webkit-transform: rotate(90deg);
@@ -2866,7 +2856,7 @@ button,
     content: "";
     width: 15px;
     height: 1px;
-    background-color: #F8FDFF;
+    background-color: #f8fdff;
     right: 26px;
     top: 20px;
   }
@@ -2876,7 +2866,7 @@ button,
     content: "";
     width: 15px;
     height: 1px;
-    background-color: #F8FDFF;
+    background-color: #f8fdff;
     right: 26px;
     top: 20px;
     -webkit-transform: rotate(90deg);
@@ -2982,7 +2972,7 @@ button,
 
   .about__accordion-container span {
     display: block;
-    font-family: "PT Mono";
+    font-family: "PT Mono", "Arial", sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 19px;
