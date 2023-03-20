@@ -2782,7 +2782,7 @@ button,
     border-bottom: 1px solid rgba(248, 253, 255, 0.7);
   }
 
-  .footer__contacts.is-active .contacts-address__title::before {
+  .footer__contacts.is-active [data-accordion=button]::before {
     display: none;
   }
 
@@ -2790,7 +2790,7 @@ button,
     border-top: 1px solid rgba(248, 253, 255, 0.7);
   }
 
-  .footer__chapters.is-active .chapters__title::before {
+  .footer__chapters.is-active [data-accordion=button]::before {
     display: none;
   }
 

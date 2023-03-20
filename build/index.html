@@ -40,7 +40,7 @@
           <span class="visually-hidden">Номер телефона для связи</span>
         </address>
       </div>
-      <button class="main-header__button button" type="button" data-open-modal="feedback">
+      <button class="main-header__button button" type="button" aria-label="Открыть форму заказа обратного звонка" data-open-modal="feedback">
         <span class="main-header__button-description">Заказать звонок</span>
       </button>
     </div>
@@ -58,6 +58,7 @@
         </div>
       </div>
       <section class="advantages">
+        <h2 class="visually-hidden">Преимущества.</h2>
         <ul class="advantages__list">
           <li class="advantages__item">
             <svg width="35" height="35" xmlns="http://www.w3.org/2000/svg">
@@ -145,6 +146,7 @@
                 <svg width="4" height="8" xmlns="http://www.w3.org/2000/svg">
                   <use xlink:href="img/sprite.svg#arrow-right"></use>
                 </svg>
+                <span class="visually-hidden">Перейти на страницу производства печатных плат.</span>
               </button>
             </li>
             <li class="services__item card-service card-service--assembly"
@@ -156,6 +158,7 @@
                 <svg width="4" height="8" xmlns="http://www.w3.org/2000/svg">
                   <use xlink:href="img/sprite.svg#arrow-right"></use>
                 </svg>
+                <span class="visually-hidden">Перейти на страницу монтаж печатных плат.</span>
               </button>
             </li>
             <li class="services__item card-service card-service--accessories"
@@ -167,6 +170,7 @@
                 <svg width="4" height="8" xmlns="http://www.w3.org/2000/svg">
                   <use xlink:href="img/sprite.svg#arrow-right"></use>
                 </svg>
+                <span class="visually-hidden">Перейти на страницу комплектующих для светотехники.</span>
               </button>
             </li>
           </ul>
@@ -182,18 +186,14 @@
               <div class="question-form__container">
                 <h2>Остались вопросы? Задайте их нам!</h2>
                 <p>Мы проконсультируем Вас бесплатно</p>
-
-                  <div data-on-input-validate data-validate-type="text" data-limitation="letters"
-                    data-message-base="Поле обязательно к заполнению" data-required>
-                    <input type="text" placeholder="Имя" name="name">
-                  </div>
-
-
-                  <div data-on-input-validate data-validate-type="phone"
-                    data-message-base="Поле обязательно к заполнению" data-required>
-                    <input type="tel" placeholder="Телефон" name="phone">
-                  </div>
-
+                <div data-on-input-validate data-validate-type="text" data-limitation="letters"
+                  data-message-base="Поле обязательно к заполнению" data-required>
+                  <input type="text" placeholder="Имя" name="name" aria-label="Имя">
+                </div>
+                <div data-on-input-validate data-validate-type="phone" data-message-base="Поле обязательно к заполнению"
+                  data-required>
+                  <input type="tel" placeholder="Телефон" name="phone" aria-label="Номер телефона">
+                </div>
                 <textarea placeholder="Ваш вопрос" name="question"></textarea>
               </div>
               <button class="question-form__button button" type="submit">Задать вопрос</button>
@@ -221,20 +221,24 @@
       <div class="social">
         <img src="img/logo.png" width="215" height="55" alt="Логотип Smart Device умные технологии">
         <ul class="social__list">
+          <span class="visually-hidden">Социальные сети.</span>
           <li class="social__item">
             <svg class="social__svg" width="30" height="30" xmlns="http://www.w3.org/2000/svg">
               <use xlink:href="img/sprite.svg#ok-icon"></use>
             </svg>
+            <span class="visually-hidden">Одноклассники.</span>
           </li>
           <li class="social__item">
             <svg class="social__svg" width="30" height="30" xmlns="http://www.w3.org/2000/svg">
               <use xlink:href="img/sprite.svg#vk-icon"></use>
             </svg>
+            <span class="visually-hidden">Вконтакте.</span>
           </li>
           <li class="social__item">
             <svg class="social__svg" width="30" height="30" xmlns="http://www.w3.org/2000/svg">
               <use xlink:href="img/sprite.svg#pinterest-icon"></use>
             </svg>
+            <span class="visually-hidden">Pinterest.</span>
           </li>
         </ul>
       </div>
@@ -311,18 +315,14 @@
             <div class="modal-form__container">
               <h2>Закажите звонок</h2>
               <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
-
-                <div data-on-input-validate data-validate-type="text" data-limitation="letters"
-                  data-message-base="Поле обязательно к заполнению" data-required>
-                  <input type="text" placeholder="Имя" name="name" data-focus>
-                </div>
-
-
-                <div data-on-input-validate data-validate-type="phone" data-message-base="Поле обязательно к заполнению"
-                  data-required>
-                  <input type="tel" placeholder="Телефон" name="phone">
-                </div>
-
+              <div data-on-input-validate data-validate-type="text" data-limitation="letters"
+                data-message-base="Поле обязательно к заполнению" data-required>
+                <input type="text" placeholder="Имя" name="name" aria-label="Имя" data-focus>
+              </div>
+              <div data-on-input-validate data-validate-type="phone" data-message-base="Поле обязательно к заполнению"
+                data-required>
+                <input type="tel" placeholder="Телефон" name="phone" aria-label="Номер телефона">
+              </div>
               <textarea placeholder="Ваш вопрос" name="question"></textarea>
             </div>
             <button class="modal-form__button button">Отправить</button>
@@ -340,7 +340,7 @@
             </div>
           </form>
         </div>
-        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть модальное окно" data-close-modal>
           <svg width="20" height="20">
             <use xlink:href="img/sprite.svg#icon-close"></use>
           </svg>
