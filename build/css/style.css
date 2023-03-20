@@ -2145,6 +2145,10 @@ button,
   margin-bottom: auto;
 }
 
+.question-form__button:active {
+  opacity: 0.8;
+}
+
 .question-form__checkbox {
   margin-top: auto;
   position: relative;

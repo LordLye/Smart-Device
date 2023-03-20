@@ -162,6 +162,10 @@ line-height: 19px;
   padding: 13px 25px;
   max-width: 265px;
   margin-bottom: auto;
+
+  &:active {
+    opacity: 0.8;
+  }
 }
 
 .question-form__checkbox {
