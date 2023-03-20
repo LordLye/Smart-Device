@@ -2,9 +2,9 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Описание проекта">
   <title>Smart Device</title>
   <link rel="stylesheet" href="css/style.min.css">
@@ -17,12 +17,12 @@
       <a class="main-header__logo">
         <picture>
           <source media="(max-width: 767px)" srcset="img/logo-small.svg" width="35" height="35">
-          <img src="img/logo.png" width="215px" height="55px">
+          <img src="img/logo.png" srcset="img/logo@2x.png 2x" width="215" height="55" alt="Логотип Smart Device умные технологии">
         </picture>
       </a>
       <div class="main-header__contacts contacts">
         <address class="contacts__email">
-          <a class="contacts__link" href="mailto: info@sd.ru">
+          <a class="contacts__link" href="mailto:info@sd.ru">
             <svg class="contacts__svg" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
               <use xlink:href="img/sprite.svg#message-icon"></use>
             </svg>
@@ -40,8 +40,8 @@
           <span class="visually-hidden">Номер телефона для связи</span>
         </address>
       </div>
-      <button class="main-header__button button" type="button" data-open-modal="feedback">
-        <p class="main-header__button-description">Заказать звонок</p>
+      <button class="main-header__button button" type="button" aria-label="Открыть форму заказа обратного звонка" data-open-modal="feedback">
+        <span class="main-header__button-description">Заказать звонок</span>
       </button>
     </div>
   </header>
@@ -58,6 +58,7 @@
         </div>
       </div>
       <section class="advantages">
+        <h2 class="visually-hidden">Преимущества.</h2>
         <ul class="advantages__list">
           <li class="advantages__item">
             <svg width="35" height="35" xmlns="http://www.w3.org/2000/svg">
@@ -97,7 +98,7 @@
       </section>
       <section class="about">
         <div class="about__img-container">
-          <img src="img/2022.png" width="150" height="320">
+          <img src="img/2022.png" srcset="img/2022@2x.png 2x" width="150" height="320" alt="2022">
         </div>
         <div data-accordion="parent">
           <div class="about__container" data-accordion="element">
@@ -138,36 +139,39 @@
           <ul class="services__list">
             <li class="services__item card-service card-service--production"
               style="background-image:linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url('./img/board-background.jpg')">
-              <a class="card-service__link">
+              <a class="card-service__link" href="#">
                 <p class="card-service__description">Производство печатных плат</p>
-                <button class="card-service__button button">
-                  <svg width="4" height="8" xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="img/sprite.svg#arrow-right"></use>
-                  </svg>
-                </button>
               </a>
+              <button class="card-service__button button" type="button">
+                <svg width="4" height="8" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/sprite.svg#arrow-right"></use>
+                </svg>
+                <span class="visually-hidden">Перейти на страницу производства печатных плат.</span>
+              </button>
             </li>
             <li class="services__item card-service card-service--assembly"
               style="background-image:linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url('./img/board-background.jpg')">
               <a class="card-service__link">
                 <p class="card-service__description">Монтаж печатных плат</p>
-                <button class="card-service__button button">
-                  <svg width="4" height="8" xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="img/sprite.svg#arrow-right"></use>
-                  </svg>
-                </button>
               </a>
+              <button class="card-service__button button" type="button">
+                <svg width="4" height="8" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/sprite.svg#arrow-right"></use>
+                </svg>
+                <span class="visually-hidden">Перейти на страницу монтаж печатных плат.</span>
+              </button>
             </li>
             <li class="services__item card-service card-service--accessories"
               style="background-image:linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url('./img/board-background.jpg')">
               <a class="card-service__link">
                 <p class="card-service__description">Комплектующие для светотехники</p>
-                <button class="card-service__button button">
-                  <svg width="4" height="8" xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="img/sprite.svg#arrow-right"></use>
-                  </svg>
-                </button>
               </a>
+              <button class="card-service__button button" type="button">
+                <svg width="4" height="8" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/sprite.svg#arrow-right"></use>
+                </svg>
+                <span class="visually-hidden">Перейти на страницу комплектующих для светотехники.</span>
+              </button>
             </li>
           </ul>
         </div>
@@ -175,33 +179,29 @@
       <section class="question" id="feedback">
         <div class="question__container">
           <div class="question__image">
-            <img src="img/paper-airplane.png" width="510" height="285" alt="Бумажный самолетик.">
+            <img src="img/paper-airplane.png" srcset="img/paper-airplane@2x.png 2x" width="510" height="285" alt="Бумажный самолетик.">
           </div>
           <div data-form-validate data-callback="base">
             <form class="question__form question-form" method="post" action="https://echo.htmlacademy.ru/">
               <div class="question-form__container">
                 <h2>Остались вопросы? Задайте их нам!</h2>
                 <p>Мы проконсультируем Вас бесплатно</p>
-                <label>
-                  <div data-on-input-validate data-validate-type="text" data-limitation="letters"
-                    data-message-base="Поле обязательно к заполнению" data-required>
-                    <input type="text" placeholder="Имя" name="name">
-                  </div>
-                </label>
-                <label>
-                  <div data-on-input-validate data-validate-type="phone"
-                    data-message-base="Поле обязательно к заполнению" data-required>
-                    <input type="tel" placeholder="Телефон" name="phone">
-                  </div>
-                </label>
+                <div data-on-input-validate data-validate-type="text" data-limitation="letters"
+                  data-message-base="Поле обязательно к заполнению" data-required>
+                  <input type="text" placeholder="Имя" name="name" aria-label="Имя">
+                </div>
+                <div data-on-input-validate data-validate-type="phone" data-message-base="Поле обязательно к заполнению"
+                  data-required>
+                  <input type="tel" placeholder="Телефон" name="phone" aria-label="Номер телефона">
+                </div>
                 <textarea placeholder="Ваш вопрос" name="question"></textarea>
               </div>
               <button class="question-form__button button" type="submit">Задать вопрос</button>
               <div class="question-form__checkbox">
-                <div data-on-input-validate data-validate-type="checkbox" ,
+                <div data-on-input-validate data-validate-type="checkbox"
                   data-message-base="Поле обязательно к заполнению" data-required>
                   <label>
-                    <input type="checkbox" checked required>
+                    <input type="checkbox" name="agreement" checked required>
                     <svg width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <use xlink:href="img/sprite.svg#check-mark"></use>
                     </svg>
@@ -219,22 +219,26 @@
   <footer class="main-footer footer">
     <div class="footer__container container">
       <div class="social">
-        <img src="img/logo.png" width="215px" height="55px">
+        <img src="img/logo.png" srcset="img/logo@2x.png 2x" width="215" height="55" alt="Логотип Smart Device умные технологии">
         <ul class="social__list">
+          <span class="visually-hidden">Социальные сети.</span>
           <li class="social__item">
             <svg class="social__svg" width="30" height="30" xmlns="http://www.w3.org/2000/svg">
               <use xlink:href="img/sprite.svg#ok-icon"></use>
             </svg>
+            <span class="visually-hidden">Одноклассники.</span>
           </li>
           <li class="social__item">
             <svg class="social__svg" width="30" height="30" xmlns="http://www.w3.org/2000/svg">
               <use xlink:href="img/sprite.svg#vk-icon"></use>
             </svg>
+            <span class="visually-hidden">Вконтакте.</span>
           </li>
           <li class="social__item">
             <svg class="social__svg" width="30" height="30" xmlns="http://www.w3.org/2000/svg">
               <use xlink:href="img/sprite.svg#pinterest-icon"></use>
             </svg>
+            <span class="visually-hidden">Pinterest.</span>
           </li>
         </ul>
       </div>
@@ -311,23 +315,19 @@
             <div class="modal-form__container">
               <h2>Закажите звонок</h2>
               <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
-              <label>
-                <div data-on-input-validate data-validate-type="text" data-limitation="letters"
-                  data-message-base="Поле обязательно к заполнению" data-required>
-                  <input type="text" placeholder="Имя" name="name" data-focus>
-                </div>
-              </label>
-              <label>
-                <div data-on-input-validate data-validate-type="phone" data-message-base="Поле обязательно к заполнению"
-                  data-required>
-                  <input type="tel" placeholder="Телефон" name="phone">
-                </div>
-              </label>
+              <div data-on-input-validate data-validate-type="text" data-limitation="letters"
+                data-message-base="Поле обязательно к заполнению" data-required>
+                <input type="text" placeholder="Имя" name="name" aria-label="Имя" data-focus>
+              </div>
+              <div data-on-input-validate data-validate-type="phone" data-message-base="Поле обязательно к заполнению"
+                data-required>
+                <input type="tel" placeholder="Телефон" name="phone" aria-label="Номер телефона">
+              </div>
               <textarea placeholder="Ваш вопрос" name="question"></textarea>
             </div>
             <button class="modal-form__button button">Отправить</button>
             <div class="modal-form__checkbox">
-              <div data-on-input-validate data-validate-type="checkbox" ,
+              <div data-on-input-validate data-validate-type="checkbox"
                 data-message-base="Поле обязательно к заполнению" data-required>
                 <label>
                   <input type="checkbox" checked required>
@@ -340,7 +340,7 @@
             </div>
           </form>
         </div>
-        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть модальное окно" data-close-modal>
           <svg width="20" height="20">
             <use xlink:href="img/sprite.svg#icon-close"></use>
           </svg>
@@ -348,20 +348,6 @@
       </div>
     </div>
   </div>
-
-  <!-- <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-    <div class="modal__wrapper">
-      <div class="modal__overlay" data-close-modal></div>
-      <div class="modal__content">
-        <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-          <svg width="15" height="15">
-            <use xlink:href="img/sprite.svg#icon-close"></use>
-          </svg>
-        </button>
-      </div>
-    </div>
-  </div> -->
 
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
