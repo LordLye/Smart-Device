@@ -12,6 +12,21 @@
   gap: 15px;
   max-width: 420px;
 
+  & div {
+      max-width: 420px;
+      margin-bottom: 0;
+      position: relative;
+
+      & .input-message {
+        position: absolute;
+        left: 0;
+        top: 45px;
+        font-family: 'PT Mono';
+        font-size: 12px;
+        color: $color-torch-red;
+      }
+  }
+
   & h2 {
     color: $color-default-white;
     font-family: 'Roboto Condensed';
@@ -30,21 +45,6 @@
     line-height: 22px;
     max-width: 402px;
     margin-right: 18px;
-  }
-
-  & label {
-    max-width: 420px;
-    margin-bottom: 0;
-    position: relative;
-
-    & .input-message {
-      position: absolute;
-      left: 0;
-      top: 45px;
-      font-family: 'PT Mono';
-      font-size: 12px;
-      color: $color-torch-red;
-    }
   }
 
   & input {

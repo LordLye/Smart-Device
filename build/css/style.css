@@ -1899,7 +1899,6 @@ button,
 
 .card-service {
   margin: 0;
-  padding: 50px 70px 70px 40px;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -1920,6 +1919,13 @@ button,
   background-repeat: no-repeat;
   background-position: -894px -107px;
   background-size: 1493px 817px;
+}
+
+.card-service__link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 50px 70px 70px 40px;
 }
 
 .question {
@@ -1982,6 +1988,11 @@ button,
   margin-bottom: auto;
 }
 
+.question-form__container div {
+  position: relative;
+  margin-bottom: 20px;
+}
+
 .question-form__container h2 {
   color: #ffffff;
   margin: 0 0 9px 0;
@@ -2002,12 +2013,6 @@ button,
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-}
-
-.question-form__container label {
-  max-width: 275px;
-  margin-bottom: 20px;
-  position: relative;
 }
 
 .question-form__container input {
@@ -2244,6 +2249,21 @@ button,
   max-width: 420px;
 }
 
+.modal-form__container div {
+  max-width: 420px;
+  margin-bottom: 0;
+  position: relative;
+}
+
+.modal-form__container div .input-message {
+  position: absolute;
+  left: 0;
+  top: 45px;
+  font-family: "PT Mono";
+  font-size: 12px;
+  color: #ff1553;
+}
+
 .modal-form__container h2 {
   color: #ffffff;
   font-family: "Roboto Condensed";
@@ -2262,21 +2282,6 @@ button,
   line-height: 22px;
   max-width: 402px;
   margin-right: 18px;
-}
-
-.modal-form__container label {
-  max-width: 420px;
-  margin-bottom: 0;
-  position: relative;
-}
-
-.modal-form__container label .input-message {
-  position: absolute;
-  left: 0;
-  top: 45px;
-  font-family: "PT Mono";
-  font-size: 12px;
-  color: #ff1553;
 }
 
 .modal-form__container input {
@@ -2671,10 +2676,6 @@ button,
     max-width: 150px;
   }
 
-  .card-service {
-    padding: 40px 70px 70px 45px;
-  }
-
   .card-service--production {
     background-position: -243px -548px;
   }
@@ -2685,6 +2686,10 @@ button,
 
   .card-service--accessories {
     background-position: -147px -359px;
+  }
+
+  .card-service__link {
+    padding: 40px 70px 70px 45px;
   }
 
   .question {
@@ -2715,10 +2720,6 @@ button,
 
   .question-form__container p {
     margin-bottom: 23px;
-  }
-
-  .question-form__container label {
-    max-width: 320px;
   }
 
   .question-form__container textarea {
@@ -3019,10 +3020,6 @@ button,
     max-width: 135px;
   }
 
-  .card-service {
-    padding: 30px 50px 50px 30px;
-  }
-
   .card-service--production {
     background-position: -376px -298px;
   }
@@ -3033,6 +3030,10 @@ button,
 
   .card-service--accessories {
     background-position: -885px -393px;
+  }
+
+  .card-service__link {
+    padding: 30px 50px 50px 30px;
   }
 
   .question__container {
@@ -3062,6 +3063,10 @@ button,
     gap: 20px;
   }
 
+  .question-form__container div {
+    margin-bottom: 0;
+  }
+
   .question-form__container h2 {
     margin-bottom: 0;
     font-size: 30px;
@@ -3072,11 +3077,6 @@ button,
     margin-bottom: 0;
     font-size: 14px;
     line-height: 19px;
-  }
-
-  .question-form__container label {
-    margin-bottom: 0;
-    max-width: 100%;
   }
 
   .question-form__container textarea {
