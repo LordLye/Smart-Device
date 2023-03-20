@@ -114,6 +114,7 @@
     font-family: 'PT Mono';
     font-size: 14px;
     color: $color-torch-red;
+    opacity: 1;
 
     @include vp-767 {
       top: 35px;

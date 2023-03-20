@@ -2170,6 +2170,7 @@ button,
   font-size: 14px;
   color: #ff1553;
   padding: 0;
+  opacity: 1;
 }
 
 .question-form__checkbox label {
@@ -2417,6 +2418,7 @@ button,
   font-family: "PT Mono";
   font-size: 14px;
   color: #ff1553;
+  opacity: 1;
 }
 
 .modal-form__checkbox input {
@@ -3074,12 +3076,17 @@ button,
 
   .question-form__container label {
     margin-bottom: 0;
+    max-width: 100%;
   }
 
   .question-form__container textarea {
     margin-bottom: 5px;
     padding: 25px 15px;
-    max-width: 320px;
+    max-width: 100%;
+  }
+
+  .question-form__checkbox label {
+    max-width: 100%;
   }
 
   .modal-form__checkbox .input-message {
