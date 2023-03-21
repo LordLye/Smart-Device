@@ -8,6 +8,11 @@
   @include vp-1023 {
     background: $color-deep-sky-blue;
   }
+
+  @media (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 2dppx) {
+    background: url("/img/form-background@2x.jpg") no-repeat, $color-deep-sky-blue;
+  }
 }
 
 .question__container {

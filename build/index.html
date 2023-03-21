@@ -40,15 +40,15 @@
           <span class="visually-hidden">Номер телефона для связи</span>
         </address>
       </div>
-      <button class="main-header__button button" type="button" aria-label="Открыть форму заказа обратного звонка" data-open-modal="feedback">
+      <button class="main-header__button button" type="button" aria-label="Открыть форму заказа обратного звонка"
+        data-open-modal="feedback">
         <span class="main-header__button-description">Заказать звонок</span>
       </button>
     </div>
   </header>
   <main>
     <div class="container">
-      <div class="intro"
-        style="background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url('./img/background.png');">
+      <div class="intro">
         <div class="intro__container">
           <div class="intro__text-container">
             <h1>Печатные платы</h1>
@@ -137,8 +137,7 @@
             <span class="services__short-title">Товары и услуги Smart Device</span>
           </h2>
           <ul class="services__list">
-            <li class="services__item card-service card-service--production"
-              style="background-image:linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url('./img/board-background.jpg')">
+            <li class="services__item card-service card-service--production">
               <a class="card-service__link" href="#">
                 <p class="card-service__description">Производство печатных плат</p>
               </a>
@@ -149,8 +148,7 @@
                 <span class="visually-hidden">Перейти на страницу производства печатных плат.</span>
               </button>
             </li>
-            <li class="services__item card-service card-service--assembly"
-              style="background-image:linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url('./img/board-background.jpg')">
+            <li class="services__item card-service card-service--assembly">
               <a class="card-service__link">
                 <p class="card-service__description">Монтаж печатных плат</p>
               </a>
@@ -161,8 +159,7 @@
                 <span class="visually-hidden">Перейти на страницу монтаж печатных плат.</span>
               </button>
             </li>
-            <li class="services__item card-service card-service--accessories"
-              style="background-image:linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url('./img/board-background.jpg')">
+            <li class="services__item card-service card-service--accessories">
               <a class="card-service__link">
                 <p class="card-service__description">Комплектующие для светотехники</p>
               </a>
@@ -179,7 +176,8 @@
       <section class="question" id="feedback">
         <div class="question__container">
           <div class="question__image">
-            <img src="img/paper-airplane.png" srcset="img/paper-airplane@2x.png 2x" width="510" height="285" alt="Бумажный самолетик.">
+            <img src="img/paper-airplane.png" srcset="img/paper-airplane@2x.png 2x" width="510" height="285"
+              alt="Бумажный самолетик.">
           </div>
           <div data-form-validate data-callback="base">
             <form class="question__form question-form" method="post" action="https://echo.htmlacademy.ru/">
@@ -219,28 +217,31 @@
   <footer class="main-footer footer">
     <div class="footer__container container">
       <div class="social">
-        <img src="img/logo.png" srcset="img/logo@2x.png 2x" width="215" height="55" alt="Логотип Smart Device умные технологии">
-        <ul class="social__list">
-          <span class="visually-hidden">Социальные сети.</span>
-          <li class="social__item">
-            <svg class="social__svg" width="30" height="30" xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="img/sprite.svg#ok-icon"></use>
-            </svg>
-            <span class="visually-hidden">Одноклассники.</span>
-          </li>
-          <li class="social__item">
-            <svg class="social__svg" width="30" height="30" xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="img/sprite.svg#vk-icon"></use>
-            </svg>
-            <span class="visually-hidden">Вконтакте.</span>
-          </li>
-          <li class="social__item">
-            <svg class="social__svg" width="30" height="30" xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="img/sprite.svg#pinterest-icon"></use>
-            </svg>
-            <span class="visually-hidden">Pinterest.</span>
-          </li>
-        </ul>
+        <img src="img/logo.png" srcset="img/logo@2x.png 2x" width="215" height="55"
+          alt="Логотип Smart Device умные технологии">
+        <div>
+          <h2 class="visually-hidden">Социальные сети.</h2>
+          <ul class="social__list">
+            <li class="social__item">
+              <svg class="social__svg" width="30" height="30" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/sprite.svg#ok-icon"></use>
+              </svg>
+              <span class="visually-hidden">Одноклассники.</span>
+            </li>
+            <li class="social__item">
+              <svg class="social__svg" width="30" height="30" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/sprite.svg#vk-icon"></use>
+              </svg>
+              <span class="visually-hidden">Вконтакте.</span>
+            </li>
+            <li class="social__item">
+              <svg class="social__svg" width="30" height="30" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/sprite.svg#pinterest-icon"></use>
+              </svg>
+              <span class="visually-hidden">Pinterest.</span>
+            </li>
+          </ul>
+        </div>
       </div>
       <div class="footer__accordion" data-accordion="parent" data-destroy="(max-width: 767px)" data-single>
         <div class="footer__chapters chapters" data-accordion="element">
