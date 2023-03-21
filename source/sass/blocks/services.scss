@@ -40,6 +40,10 @@
   grid-template-columns: 1fr 1fr 1fr;
   gap: 85px;
 
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
   @include vp-1023 {
     grid-template-columns: 1fr;
     gap: 30px;

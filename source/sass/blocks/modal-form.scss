@@ -136,6 +136,10 @@
     align-items: center;
     position: relative;
 
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+
     &::before {
       content: "";
       display: block;
