@@ -1,14 +1,15 @@
 .contacts {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  flex-direction: row;
   flex-wrap: wrap;
   font-family: $ff-PT-Mono;
   font-weight: 400;
   font-size: 16px;
   line-height: 17.92px;
   gap: 30px;
+  max-width: 480px;
 
   @include vp-1023 {
     gap: 20px;

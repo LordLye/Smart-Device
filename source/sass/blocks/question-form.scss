@@ -158,6 +158,10 @@
   max-width: 265px;
   margin-bottom: auto;
 
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
   &:active {
     opacity: 0.8;
   }
@@ -166,6 +170,10 @@
 .question-form__checkbox {
   margin-top: auto;
   position: relative;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
 
   & input {
     display: none;
