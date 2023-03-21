@@ -35,7 +35,7 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 47px;
   align-items: flex-start;
   z-index: 0;
 
@@ -65,7 +65,7 @@
 
   & h1 {
     color: $color-alice-blue;
-    margin: 0 0 40px 0;
+    margin: 0 0 31px 0;
     font-family: $ff-roboto-condensed;
     font-weight: 700;
     font-size: 80px;
@@ -114,6 +114,11 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 21px;
+  min-height: 55px;
+  min-width: 410px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   @include vp-767 {
     font-size: 14px;

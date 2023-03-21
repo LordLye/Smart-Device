@@ -1,7 +1,7 @@
 .advantages__list {
   max-width: 1222px;
   list-style: none;
-  padding: 120px 48px 60px 50px;
+  padding: 120px 48px 60px 48px;
   margin: 0 auto;
   display: grid;
   gap: 30px;
@@ -21,7 +21,7 @@
   flex-direction: column;
   max-width: 595px;
   min-height: 200px;
-  padding: 40px 40px 35px 40px;
+  padding: 40px 40px 35px 44px;
   border: 1px solid #ebebeb;
 
   @include vp-1023 {
@@ -54,7 +54,7 @@
   }
 
   & h2 {
-    margin: 0 0 15px 0;
+    margin: 0 0 13px 0;
     font-family: $ff-roboto-condensed;
     font-weight: 400;
     font-size: 24px;

@@ -44,7 +44,7 @@
 }
 
 .main-header__contacts {
-  margin: 0 auto;
+  margin: 0 auto 5px auto;
   max-width: 480px;
 
   @include vp-1023 {
@@ -64,7 +64,7 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   padding: 10px 15px 12px 15px;
-  margin-bottom: 2.5px;
+  margin-bottom: 5px;
 
   @include vp-1023 {
     display: none;

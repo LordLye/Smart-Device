@@ -1312,7 +1312,7 @@ button,
 }
 
 .main-header__contacts {
-  margin: 0 auto;
+  margin: 0 auto 5px auto;
   max-width: 480px;
 }
 
@@ -1328,7 +1328,7 @@ button,
   letter-spacing: 0.05em;
   text-transform: uppercase;
   padding: 10px 15px 12px 15px;
-  margin-bottom: 2.5px;
+  margin-bottom: 5px;
 }
 
 .main-header__button-description {
@@ -1356,7 +1356,7 @@ button,
   font-weight: 400;
   font-size: 16px;
   line-height: 17.92px;
-  gap: 30px;
+  gap: 27px;
   max-width: 480px;
 }
 
@@ -1368,7 +1368,7 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  gap: 15px;
+  gap: 14px;
 }
 
 .contacts__email,
@@ -1398,11 +1398,12 @@ button,
 
 .footer__contacts {
   max-width: 345px;
+  padding-top: 7px;
 }
 
 .footer__chapters {
   margin: 0 0 0 auto;
-  padding-right: 20px;
+  padding-right: 30px;
 }
 
 .footer__accordion {
@@ -1449,7 +1450,7 @@ button,
 }
 
 .chapters {
-  padding-top: 5px;
+  padding-top: 7px;
 }
 
 .chapters h2 {
@@ -1461,7 +1462,7 @@ button,
   line-height: 16px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  margin: 0 0 20px 0;
+  margin: 0 0 23px 0;
 }
 
 .chapters ul {
@@ -1474,7 +1475,7 @@ button,
   grid-column-gap: 30px;
   -ms-grid-rows: auto auto auto auto;
   grid-template-rows: auto auto auto auto;
-  grid-row-gap: 10px;
+  grid-row-gap: 8px;
 }
 
 .chapters ul:not(:last-child) {
@@ -1487,12 +1488,6 @@ button,
   font-family: "PT Mono", "Arial", sans-serif;
   font-size: 16px;
   line-height: 135%;
-}
-
-.chapters li:nth-child(2n+1) {
-  -webkit-box-ordinal-group: 0;
-  -ms-flex-order: -1;
-  order: -1;
 }
 
 .chapters a {
@@ -1508,7 +1503,7 @@ button,
   line-height: 16px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  margin: 0 0 20px 0;
+  margin: 0 0 22px 0;
 }
 
 .contacts-address ul {
@@ -1521,7 +1516,7 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  gap: 10px;
+  gap: 6px;
 }
 
 .contacts-address li {
@@ -1631,7 +1626,7 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  gap: 40px;
+  gap: 47px;
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
@@ -1644,7 +1639,7 @@ button,
 
 .intro__text-container h1 {
   color: #f2f5f6;
-  margin: 0 0 40px 0;
+  margin: 0 0 31px 0;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   font-size: 80px;
@@ -1676,12 +1671,23 @@ button,
   font-weight: 700;
   font-size: 18px;
   line-height: 21px;
+  min-height: 55px;
+  min-width: 410px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .advantages__list {
   max-width: 1222px;
   list-style: none;
-  padding: 120px 48px 60px 50px;
+  padding: 120px 48px 60px 48px;
   margin: 0 auto;
   display: -ms-grid;
   display: grid;
@@ -1703,7 +1709,7 @@ button,
   flex-direction: column;
   max-width: 595px;
   min-height: 200px;
-  padding: 40px 40px 35px 40px;
+  padding: 40px 40px 35px 44px;
   border: 1px solid #ebebeb;
 }
 
@@ -1726,7 +1732,7 @@ button,
 }
 
 .advantages__item h2 {
-  margin: 0 0 15px 0;
+  margin: 0 0 13px 0;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 24px;
@@ -1760,7 +1766,7 @@ button,
 }
 
 .about {
-  padding: 60px 50px 100px 50px;
+  padding: 62px 50px 100px 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1777,7 +1783,7 @@ button,
 
 .about__text-container {
   min-height: 230px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .about__text-container span {
@@ -1786,10 +1792,11 @@ button,
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
+  display: block;
 }
 
 .about__text-container h2 {
-  margin: 0 0 15px 0;
+  margin: 0 0 12px 0;
   color: #041827;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
@@ -1825,6 +1832,7 @@ button,
   background-color: rgba(255, 255, 255, 0);
   margin-top: 10px;
   margin-right: 10px;
+  min-height: 45px;
 }
 
 .about__accordion-container :nth-child(n) {
@@ -1849,7 +1857,7 @@ button,
 }
 
 .services__container {
-  padding: 70px 50px 140px 50px;
+  padding: 66px 50px 140px 48px;
   max-width: 1220px;
   margin: 0 auto;
   -webkit-box-sizing: content-box;
@@ -1863,7 +1871,7 @@ button,
   font-size: 36px;
   line-height: 51px;
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 53px;
 }
 
 .services__list {
@@ -1967,7 +1975,7 @@ button,
   display: block;
   width: 100%;
   height: 100%;
-  padding: 50px 70px 70px 40px;
+  padding: 47px 70px 70px 40px;
 }
 
 .question {
@@ -1983,7 +1991,7 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 170px 20px 235px 10px;
+  padding: 166px 15px 225px 5px;
   margin: 0 auto;
   max-width: 1210px;
   -webkit-box-pack: justify;
@@ -1994,9 +2002,10 @@ button,
 }
 
 .question__image {
-  padding-top: 76px;
+  padding-top: 80px;
   min-width: 300px;
   margin-right: 10px;
+  padding-left: 0px;
 }
 
 .question__form {
@@ -2005,7 +2014,6 @@ button,
 }
 
 .question-form {
-  padding-left: 5px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -2036,7 +2044,7 @@ button,
 
 .question-form__container h2 {
   color: #ffffff;
-  margin: 0 0 9px 0;
+  margin: 0 0 11px -5px;
   -ms-grid-column-span: 2;
   grid-column: span 2;
   font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -2047,7 +2055,7 @@ button,
 
 .question-form__container p {
   color: #ffffff;
-  margin: 0 0 33px 0;
+  margin: 0 0 35px 0;
   -ms-grid-column-span: 2;
   grid-column: span 2;
   font-family: "PT Mono", "Arial", sans-serif;
@@ -2186,7 +2194,7 @@ button,
   line-height: 19px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  padding: 13px 25px;
+  padding: 15px 25px 11px 25px;
   max-width: 265px;
   margin-bottom: auto;
 }
@@ -2202,6 +2210,7 @@ button,
 .question-form__checkbox {
   margin-top: auto;
   position: relative;
+  margin-bottom: 8px;
 }
 
 .question-form__checkbox:not(:last-child) {
@@ -2228,7 +2237,6 @@ button,
 }
 
 .question-form__checkbox label {
-  padding-left: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2267,7 +2275,7 @@ button,
 
 .question-form__checkbox svg {
   position: absolute;
-  left: 8px;
+  left: 3px;
   display: none;
 }
 
@@ -2663,6 +2671,12 @@ button,
   .chapters ul {
     -ms-grid-columns: 220px;
     grid-template-columns: 220px;
+  }
+
+  .chapters li:nth-child(2n+1) {
+    -webkit-box-ordinal-group: 0;
+    -ms-flex-order: -1;
+    order: -1;
   }
 
   .contacts-address h2 {
