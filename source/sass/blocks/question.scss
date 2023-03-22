@@ -9,8 +9,7 @@
     background: $color-deep-sky-blue;
   }
 
-  @media (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 2dppx) {
+  @media (min-resolution: 2dppx) {
     background: url("/img/form-background@2x.jpg") no-repeat, $color-deep-sky-blue;
   }
 }
@@ -39,7 +38,7 @@
   padding-top: 80px;
   min-width: 300px;
   margin-right: 10px;
-  padding-left: 0px;
+  padding-left: 0;
 
   @include vp-1023 {
     display: none;
