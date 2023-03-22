@@ -7,19 +7,23 @@
   box-sizing: content-box;
 
   @include vp-1023 {
-    padding: 40px 50px 80px 46px;
+    padding: 38px 50px 80px 46px;
     max-width: 674px;
     gap: 29px;
   }
 
   @include vp-767 {
-    padding: 25px 25px 80px 25px;
+    padding: 17px 25px 79px 25px;
     max-width: 550px;
   }
 }
 
 .about__img-container {
   min-width: 150px;
+
+  @include vp-1023 {
+    padding-top: 5px;
+  }
 
   @include vp-767 {
     display: none;
@@ -29,6 +33,10 @@
 .about__text-container {
   min-height: 230px;
   margin-bottom: 15px;
+
+  @include vp-1023 {
+    margin-bottom: 5px;
+  }
 
   @include vp-767 {
     min-height: 150px;
@@ -76,6 +84,10 @@
     @include vp-767 {
       font-size: 14px;
       line-height: 19px;
+
+      &:not(:last-of-type) {
+        margin-bottom: 18px;
+      }
     }
   }
 }
@@ -96,6 +108,11 @@
   margin-top: 10px;
   margin-right: 10px;
   min-height: 45px;
+
+  @include vp-767 {
+    min-height: 35px;
+    padding: 2px 40px 6px 40px;
+  }
 }
 
 .about__accordion-container {
