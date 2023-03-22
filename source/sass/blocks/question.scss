@@ -1,13 +1,19 @@
 .question {
+  background: linear-gradient(90deg, #016692 0 50%, #00b3fe 50% 100%);
+
+  & div.question__wrapper {
+    @include vp-1023 {
+      background: $color-deep-sky-blue;
+    }
+  }
+}
+
+.question__wrapper {
   background: url("/img/form-background.jpg") no-repeat, $color-deep-sky-blue;
   margin: 0 auto;
   max-width: 1920px;
   object-fit: cover;
   background-position: center top;
-
-  @include vp-1023 {
-    background: $color-deep-sky-blue;
-  }
 
   @media (min-resolution: 2dppx) {
     background: url("/img/form-background@2x.jpg") no-repeat, $color-deep-sky-blue;

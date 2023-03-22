@@ -21,6 +21,18 @@
   display: flex;
   align-items: center;
   gap: 14px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    background: rgba(25, 105, 202, 0.37);
+  }
 }
 
 .contacts__email,
