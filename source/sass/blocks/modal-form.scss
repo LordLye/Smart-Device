@@ -5,27 +5,27 @@
   gap: 20px;
 }
 
+.modal-form__input-wrapper {
+  max-width: 420px;
+  margin-bottom: 0;
+  position: relative;
+
+  & .input-message {
+    position: absolute;
+    left: 0;
+    top: 45px;
+    font-family: $ff-PT-Mono;
+    font-size: 12px;
+    color: $color-torch-red;
+  }
+}
+
 .modal-form__container {
   margin-bottom: auto;
   display: flex;
   flex-direction: column;
   gap: 5px;
   max-width: 420px;
-
-  & div {
-    max-width: 420px;
-    margin-bottom: 0;
-    position: relative;
-
-    & .input-message {
-      position: absolute;
-      left: 0;
-      top: 45px;
-      font-family: $ff-PT-Mono;
-      font-size: 12px;
-      color: $color-torch-red;
-    }
-  }
 
   & h2 {
     color: $color-default-white;
