@@ -83,6 +83,18 @@
   & a {
     color: $color-footer-white-opacity;
 
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
+
+    &:focus {
+      background: rgba(25, 105, 202, 0.37);
+    }
+
     @include vp-767 {
       font-size: 14px;
       line-height: 19px;

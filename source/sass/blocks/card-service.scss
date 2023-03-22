@@ -104,6 +104,18 @@
   height: 100%;
   padding: 47px 70px 70px 40px;
 
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
+  &:focus {
+    background: rgba(25, 105, 202, 0.37);
+  }
+
   @include vp-1023 {
     padding: 37px 70px 70px 45px;
   }

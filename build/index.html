@@ -8,6 +8,8 @@
   <meta name="description" content="Описание проекта">
   <title>Smart Device</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
   <link rel="preload" href="fonts/ptmono.woff2" type="font/woff2" as="font" crossorigin="anonymous">
 </head>
 
@@ -16,6 +18,8 @@
     <div class="main-header__container container">
       <a class="main-header__logo">
         <picture>
+          <source type="image/webp" srcset="img/logo.webp 1x, img/logo@2x.webp 2x"
+              width="215" height="55">
           <source media="(max-width: 767px)" srcset="img/logo-small.svg" width="35" height="35">
           <img src="img/logo.png" srcset="img/logo@2x.png 2x" width="215" height="55"
             alt="Логотип Smart Device умные технологии">
@@ -99,7 +103,11 @@
       </section>
       <section class="about">
         <div class="about__img-container">
+          <picture>
+            <source type="image/webp" srcset="img/2022.webp 1x, img/2022@2x.webp 2x"
+              width="150" height="320">
           <img src="img/2022.png" srcset="img/2022@2x.png 2x" width="150" height="320" alt="2022">
+          </picture>
         </div>
         <div data-accordion="parent">
           <div class="about__container" data-accordion="element">
@@ -107,7 +115,7 @@
               <h2>О компании</h2>
               <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с
                 1997
-                года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
+                года. Выполняем срочные заказы и пилотные образцы до 10&nbsp;дней.</p>
               <p>Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND.</p>
               <span>Печатные
                 платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД),
@@ -119,10 +127,9 @@
                 платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД),
                 РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители
                 светотехники России.</span>
-              <p>Smart Device - это команда профессионалов. Через нас прошло более 1 000 000 клиентов, 70% из которых
-                продолжают сотрудничество по сей день. На данный момент насчитывается более 14 офисов по всей стране и
-                20
-                городов присутствия.</p>
+              <p>Smart Device&nbsp;-&nbsp;это команда профессионалов. Через нас прошло более 1&nbsp;000&nbsp;000&nbsp;клиентов, 70% из которых
+                продолжают сотрудничество по сей день. На данный момент насчитывается более 14&nbsp;офисов по всей стране и
+                20&nbsp;городов присутствия.</p>
               <p>Мы стремимся к постоянному развитию и повышению уровня качества продукции, производимой внутри
                 компании.
                 Использование инновационных технологий помогает экономить деньги и время наших клиентов</p>
@@ -175,10 +182,15 @@
         </div>
       </section>
       <section class="question" id="feedback">
+        <div class="question__wrapper">
         <div class="question__container">
           <div class="question__image">
+            <picture>
+              <source type="image/webp" srcset="img/paper-airplane.webp 1x, img/paper-airplane@2x.webp 2x"
+              width="510" height="285">
             <img src="img/paper-airplane.png" srcset="img/paper-airplane@2x.png 2x" width="510" height="285"
               alt="Бумажный самолетик.">
+            </picture>
           </div>
           <div data-form-validate data-callback="base">
             <form class="question__form question-form" method="post" action="https://echo.htmlacademy.ru/">
@@ -211,6 +223,7 @@
             </form>
           </div>
         </div>
+        </div>
       </section>
     </div>
   </main>
@@ -218,28 +231,38 @@
   <footer class="main-footer footer">
     <div class="footer__container container">
       <div class="social">
+        <picture>
+          <source type="image/webp" srcset="img/logo.webp 1x, img/logo@2x.webp 2x"
+              width="215" height="55">
         <img src="img/logo.png" srcset="img/logo@2x.png 2x" width="215" height="55"
           alt="Логотип Smart Device умные технологии">
+        </picture>
         <div>
           <h2 class="visually-hidden">Социальные сети.</h2>
           <ul class="social__list">
             <li class="social__item">
+              <a class="social__link" href="#">
               <svg class="social__svg" width="30" height="30" xmlns="http://www.w3.org/2000/svg">
                 <use xlink:href="img/sprite.svg#ok-icon"></use>
               </svg>
               <span class="visually-hidden">Одноклассники.</span>
+              </a>
             </li>
             <li class="social__item">
+              <a class="social__link" href="#">
               <svg class="social__svg" width="30" height="30" xmlns="http://www.w3.org/2000/svg">
                 <use xlink:href="img/sprite.svg#vk-icon"></use>
               </svg>
               <span class="visually-hidden">Вконтакте.</span>
+              </a>
             </li>
             <li class="social__item">
+              <a class="social__link" href="#">
               <svg class="social__svg" width="30" height="30" xmlns="http://www.w3.org/2000/svg">
                 <use xlink:href="img/sprite.svg#pinterest-icon"></use>
               </svg>
               <span class="visually-hidden">Pinterest.</span>
+              </a>
             </li>
           </ul>
         </div>
@@ -276,7 +299,7 @@
           <ul data-accordion="content">
             <li>
               <address>
-                <span>г. Мытищи, Олимпийский проспект, д.10</span>
+                <span>г.&nbsp;Мытищи, Олимпийский проспект, д.10</span>
               </address>
             </li>
             <li>

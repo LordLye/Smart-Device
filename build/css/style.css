@@ -1331,6 +1331,18 @@ button,
   margin-bottom: 5px;
 }
 
+.main-header__button:hover {
+  opacity: 0.8;
+}
+
+.main-header__button:active {
+  opacity: 0.5;
+}
+
+.main-header__button:focus {
+  background: rgba(25, 105, 202, 0.37);
+}
+
 .main-header__button-description {
   margin: 0;
   max-width: 128px;
@@ -1369,6 +1381,18 @@ button,
   -ms-flex-align: center;
   align-items: center;
   gap: 14px;
+}
+
+.contacts__link:hover {
+  opacity: 0.8;
+}
+
+.contacts__link:active {
+  opacity: 0.6;
+}
+
+.contacts__link:focus {
+  background: rgba(25, 105, 202, 0.37);
 }
 
 .contacts__email,
@@ -1449,6 +1473,24 @@ button,
   margin-bottom: 10px;
 }
 
+.social__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.social__link:hover {
+  opacity: 0.8;
+}
+
+.social__link:active {
+  opacity: 0.5;
+}
+
+.social__link:focus {
+  background: rgba(25, 105, 202, 0.37);
+}
+
 .chapters {
   padding-top: 7px;
 }
@@ -1494,6 +1536,18 @@ button,
   color: rgba(255, 255, 255, 0.7);
 }
 
+.chapters a:hover {
+  opacity: 0.8;
+}
+
+.chapters a:active {
+  opacity: 0.5;
+}
+
+.chapters a:focus {
+  background: rgba(25, 105, 202, 0.37);
+}
+
 .contacts-address h2 {
   position: relative;
   color: #ffffff;
@@ -1537,6 +1591,18 @@ button,
 .contacts-address a {
   color: rgba(255, 255, 255, 0.7);
   line-height: 25px;
+}
+
+.contacts-address a:hover {
+  opacity: 0.8;
+}
+
+.contacts-address a:active {
+  opacity: 0.5;
+}
+
+.contacts-address a:focus {
+  background: rgba(25, 105, 202, 0.37);
 }
 
 .contacts-address span {
@@ -1683,6 +1749,18 @@ button,
   -ms-flex-align: center;
   align-items: center;
   margin-left: 0;
+}
+
+.intro__button:hover {
+  opacity: 0.8;
+}
+
+.intro__button:active {
+  opacity: 0.5;
+}
+
+.intro__button:focus {
+  background: rgba(25, 105, 202, 0.37);
 }
 
 .advantages__list {
@@ -1836,6 +1914,18 @@ button,
   min-height: 45px;
 }
 
+.about__button:hover {
+  opacity: 0.8;
+}
+
+.about__button:active {
+  opacity: 0.5;
+}
+
+.about__button:focus {
+  background: rgba(25, 105, 202, 0.37);
+}
+
 .about__accordion-container :nth-child(n) {
   margin-bottom: 10px;
 }
@@ -1979,7 +2069,25 @@ button,
   padding: 47px 70px 70px 40px;
 }
 
+.card-service__link:hover {
+  opacity: 0.8;
+}
+
+.card-service__link:active {
+  opacity: 0.5;
+}
+
+.card-service__link:focus {
+  background: rgba(25, 105, 202, 0.37);
+}
+
 .question {
+  background: -webkit-gradient(linear, left top, right top, color-stop(0, #016692), color-stop(50%, #00b3fe));
+  background: -o-linear-gradient(left, #016692 0 50%, #00b3fe 50% 100%);
+  background: linear-gradient(90deg, #016692 0 50%, #00b3fe 50% 100%);
+}
+
+.question__wrapper {
   background: url("/img/form-background.jpg") no-repeat, #00b2ff;
   margin: 0 auto;
   max-width: 1920px;
@@ -2006,7 +2114,7 @@ button,
   padding-top: 80px;
   min-width: 300px;
   margin-right: 10px;
-  padding-left: 0px;
+  padding-left: 0;
 }
 
 .question__form {
@@ -2074,6 +2182,18 @@ button,
   border: none;
 }
 
+.question-form__container input:hover {
+  opacity: 0.8;
+}
+
+.question-form__container input:active {
+  opacity: 0.5;
+}
+
+.question-form__container input:focus {
+  background: rgba(25, 105, 202, 0.37);
+}
+
 .question-form__container input::-webkit-input-placeholder {
   color: #ffffff;
   font-family: "PT Mono", "Arial", sans-serif;
@@ -2128,6 +2248,18 @@ button,
   min-height: 155px;
   padding: 25px 15px 25px 15px;
   margin-bottom: 35px;
+}
+
+.question-form__container textarea:hover {
+  opacity: 0.8;
+}
+
+.question-form__container textarea:active {
+  opacity: 0.5;
+}
+
+.question-form__container textarea:focus {
+  background: rgba(25, 105, 202, 0.37);
 }
 
 .question-form__container textarea::-webkit-input-placeholder {
@@ -2204,8 +2336,16 @@ button,
   margin-bottom: 10px;
 }
 
-.question-form__button:active {
+.question-form__button:hover {
   opacity: 0.8;
+}
+
+.question-form__button:active {
+  opacity: 0.5;
+}
+
+.question-form__button:focus {
+  background: rgba(25, 105, 202, 0.37);
 }
 
 .question-form__checkbox {
@@ -2224,6 +2364,18 @@ button,
 
 .question-form__checkbox input:checked ~ svg {
   display: block;
+}
+
+.question-form__checkbox input:hover {
+  opacity: 0.8;
+}
+
+.question-form__checkbox input:active {
+  opacity: 0.5;
+}
+
+.question-form__checkbox input:focus {
+  background: rgba(25, 105, 202, 0.37);
 }
 
 .question-form__checkbox .input-message {
@@ -2689,7 +2841,7 @@ button,
   .intro {
     position: static;
     min-height: 640px;
-    background-position: -123px 0px;
+    background-position: -123px 0;
     background-size: 1396px 640px;
   }
 
@@ -2812,7 +2964,7 @@ button,
     padding: 37px 70px 70px 45px;
   }
 
-  .question {
+  .question div.question__wrapper {
     background: #00b2ff;
   }
 
@@ -2835,7 +2987,6 @@ button,
   }
 
   .question-form__container h2 {
-    margin-bottom: 4px;
     margin-left: 0;
     margin-bottom: 7px;
   }
@@ -3379,7 +3530,7 @@ button,
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2dppx) {
-  .question {
+  .question__wrapper {
     background: url("/img/form-background@2x.jpg") no-repeat, #00b2ff;
   }
 }
