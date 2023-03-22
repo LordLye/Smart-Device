@@ -1774,6 +1774,19 @@ button,
   box-sizing: content-box;
 }
 
+.advantages__item:hover {
+  background-color: #00b2ff;
+}
+
+.advantages__item:hover h2,
+.advantages__item:hover p {
+  color: #f2f5f6;
+}
+
+.advantages__item:hover svg {
+  color: #f2f5f6;
+}
+
 .advantages__item {
   position: relative;
   display: -webkit-box;
@@ -1787,19 +1800,6 @@ button,
   min-height: 200px;
   padding: 40px 40px 35px 44px;
   border: 1px solid #ebebeb;
-}
-
-.advantages__item:hover {
-  background-color: #00b2ff;
-}
-
-.advantages__item:hover h2,
-.advantages__item:hover p {
-  color: #f2f5f6;
-}
-
-.advantages__item:hover svg {
-  color: #f2f5f6;
 }
 
 .advantages__item svg {
