@@ -3,17 +3,17 @@
 }
 
 .services__container {
-  padding: 70px 50px 140px 50px;
+  padding: 66px 50px 140px 48px;
   max-width: 1220px;
   margin: 0 auto;
   box-sizing: content-box;
 
   @include vp-1023 {
-    padding: 60px 50px 75px 50px;
+    padding: 55px 50px 75px 50px;
   }
 
   @include vp-767 {
-    padding: 50px 25px 86px 25px;
+    padding: 47px 25px 86px 25px;
   }
 }
 
@@ -24,10 +24,17 @@
   font-size: 36px;
   line-height: 51px;
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 53px;
+
+  @include vp-1023 {
+    margin-bottom: 38px;
+  }
 
   @include vp-767 {
-    margin-bottom: 40px;
+    font-size: 28px;
+    line-height: 39px;
+    margin-bottom: 29px;
+    max-width: 260px;
   }
 }
 

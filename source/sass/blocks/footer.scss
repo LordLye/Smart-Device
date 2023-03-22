@@ -23,10 +23,12 @@
 
 .footer__contacts {
   max-width: 345px;
+  padding-top: 7px;
 
   @include vp-1023 {
     padding-right: 5px;
     max-width: 325px;
+    padding-top: 0;
   }
 
   @include vp-767 {
@@ -42,7 +44,7 @@
 
 .footer__chapters {
   margin: 0 0 0 auto;
-  padding-right: 20px;
+  padding-right: 30px;
 
   @include vp-1023 {
     margin: 0;

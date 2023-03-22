@@ -4,10 +4,8 @@
   background-position-x: center;
   margin: 0 auto;
   background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%),
-  image-set(
-  url("../img/background.png") 1x,
-  url("../img/background@2x.png") 2x
-);
+    image-set(url("../img/background.png") 1x,
+      url("../img/background@2x.png") 2x);
 
   background-color: #091a20;
   background-size: 1920px 880px;
@@ -17,7 +15,7 @@
   @include vp-1023 {
     position: static;
     min-height: 640px;
-    background-position: -173px 10px;
+    background-position: -123px 0;
     background-size: 1396px 640px;
   }
 
@@ -35,13 +33,13 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 47px;
   align-items: flex-start;
   z-index: 0;
 
   @include vp-1023 {
-    padding: 180px 50px 30px 50px;
-    gap: 20px;
+    padding: 179px 50px 30px 45px;
+    gap: 26px;
     max-width: 760px;
   }
 
@@ -49,6 +47,7 @@
     max-width: 540px;
     padding: 150px 25px 20px 25px;
     box-sizing: content-box;
+    gap: 14px;
   }
 }
 
@@ -65,7 +64,7 @@
 
   & h1 {
     color: $color-alice-blue;
-    margin: 0 0 40px 0;
+    margin: 0 0 31px 0;
     font-family: $ff-roboto-condensed;
     font-weight: 700;
     font-size: 80px;
@@ -77,12 +76,13 @@
     @include vp-1023 {
       font-size: 64px;
       line-height: 75px;
-      margin-bottom: 20px;
+      margin-bottom: 2px;
     }
 
     @include vp-767 {
       font-size: 36px;
       line-height: 42px;
+      margin-bottom: 8px;
     }
   }
 
@@ -114,12 +114,24 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 21px;
+  min-height: 55px;
+  min-width: 410px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0;
+
+  @include vp-1023 {
+    margin-left: 45px;
+  }
 
   @include vp-767 {
     font-size: 14px;
     line-height: 16px;
-    padding: 10px 30px;
+    padding: 11px 32px 9px 32px;
     max-width: 270px;
     min-height: 40px;
+    min-width: 270px;
+    margin-left: 0;
   }
 }

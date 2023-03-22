@@ -715,7 +715,7 @@ button,
   align-items: center;
   width: 100%;
   min-height: 100%;
-  padding: 60px 40px;
+  padding: 30px 40px 60px 22px;
 }
 
 .modal__overlay {
@@ -731,7 +731,7 @@ button,
   position: relative;
   background-color: #00b3ff;
   max-width: 500px;
-  padding: 40px 40px 20px 40px;
+  padding: 38px 40px 23px 40px;
 }
 
 .modal__close-btn {
@@ -1312,7 +1312,7 @@ button,
 }
 
 .main-header__contacts {
-  margin: 0 auto;
+  margin: 0 auto 5px auto;
   max-width: 480px;
 }
 
@@ -1328,7 +1328,7 @@ button,
   letter-spacing: 0.05em;
   text-transform: uppercase;
   padding: 10px 15px 12px 15px;
-  margin-bottom: 2.5px;
+  margin-bottom: 5px;
 }
 
 .main-header__button-description {
@@ -1356,7 +1356,7 @@ button,
   font-weight: 400;
   font-size: 16px;
   line-height: 17.92px;
-  gap: 30px;
+  gap: 27px;
   max-width: 480px;
 }
 
@@ -1368,7 +1368,7 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  gap: 15px;
+  gap: 14px;
 }
 
 .contacts__email,
@@ -1398,11 +1398,12 @@ button,
 
 .footer__contacts {
   max-width: 345px;
+  padding-top: 7px;
 }
 
 .footer__chapters {
   margin: 0 0 0 auto;
-  padding-right: 20px;
+  padding-right: 30px;
 }
 
 .footer__accordion {
@@ -1449,7 +1450,7 @@ button,
 }
 
 .chapters {
-  padding-top: 5px;
+  padding-top: 7px;
 }
 
 .chapters h2 {
@@ -1461,7 +1462,7 @@ button,
   line-height: 16px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  margin: 0 0 20px 0;
+  margin: 0 0 23px 0;
 }
 
 .chapters ul {
@@ -1474,7 +1475,7 @@ button,
   grid-column-gap: 30px;
   -ms-grid-rows: auto auto auto auto;
   grid-template-rows: auto auto auto auto;
-  grid-row-gap: 10px;
+  grid-row-gap: 8px;
 }
 
 .chapters ul:not(:last-child) {
@@ -1487,12 +1488,6 @@ button,
   font-family: "PT Mono", "Arial", sans-serif;
   font-size: 16px;
   line-height: 135%;
-}
-
-.chapters li:nth-child(2n+1) {
-  -webkit-box-ordinal-group: 0;
-  -ms-flex-order: -1;
-  order: -1;
 }
 
 .chapters a {
@@ -1508,7 +1503,7 @@ button,
   line-height: 16px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  margin: 0 0 20px 0;
+  margin: 0 0 22px 0;
 }
 
 .contacts-address ul {
@@ -1521,7 +1516,7 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  gap: 10px;
+  gap: 6px;
 }
 
 .contacts-address li {
@@ -1631,7 +1626,7 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  gap: 40px;
+  gap: 47px;
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
@@ -1644,7 +1639,7 @@ button,
 
 .intro__text-container h1 {
   color: #f2f5f6;
-  margin: 0 0 40px 0;
+  margin: 0 0 31px 0;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   font-size: 80px;
@@ -1676,12 +1671,24 @@ button,
   font-weight: 700;
   font-size: 18px;
   line-height: 21px;
+  min-height: 55px;
+  min-width: 410px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: 0;
 }
 
 .advantages__list {
   max-width: 1222px;
   list-style: none;
-  padding: 120px 48px 60px 50px;
+  padding: 120px 48px 60px 48px;
   margin: 0 auto;
   display: -ms-grid;
   display: grid;
@@ -1703,7 +1710,7 @@ button,
   flex-direction: column;
   max-width: 595px;
   min-height: 200px;
-  padding: 40px 40px 35px 40px;
+  padding: 40px 40px 35px 44px;
   border: 1px solid #ebebeb;
 }
 
@@ -1726,7 +1733,7 @@ button,
 }
 
 .advantages__item h2 {
-  margin: 0 0 15px 0;
+  margin: 0 0 13px 0;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 24px;
@@ -1760,7 +1767,7 @@ button,
 }
 
 .about {
-  padding: 60px 50px 100px 50px;
+  padding: 62px 50px 100px 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1777,7 +1784,7 @@ button,
 
 .about__text-container {
   min-height: 230px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .about__text-container span {
@@ -1786,10 +1793,11 @@ button,
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
+  display: block;
 }
 
 .about__text-container h2 {
-  margin: 0 0 15px 0;
+  margin: 0 0 12px 0;
   color: #041827;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
@@ -1825,6 +1833,7 @@ button,
   background-color: rgba(255, 255, 255, 0);
   margin-top: 10px;
   margin-right: 10px;
+  min-height: 45px;
 }
 
 .about__accordion-container :nth-child(n) {
@@ -1849,7 +1858,7 @@ button,
 }
 
 .services__container {
-  padding: 70px 50px 140px 50px;
+  padding: 66px 50px 140px 48px;
   max-width: 1220px;
   margin: 0 auto;
   -webkit-box-sizing: content-box;
@@ -1863,7 +1872,7 @@ button,
   font-size: 36px;
   line-height: 51px;
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 53px;
 }
 
 .services__list {
@@ -1967,7 +1976,7 @@ button,
   display: block;
   width: 100%;
   height: 100%;
-  padding: 50px 70px 70px 40px;
+  padding: 47px 70px 70px 40px;
 }
 
 .question {
@@ -1983,7 +1992,7 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 170px 20px 235px 10px;
+  padding: 166px 15px 225px 5px;
   margin: 0 auto;
   max-width: 1210px;
   -webkit-box-pack: justify;
@@ -1994,9 +2003,10 @@ button,
 }
 
 .question__image {
-  padding-top: 76px;
+  padding-top: 80px;
   min-width: 300px;
   margin-right: 10px;
+  padding-left: 0px;
 }
 
 .question__form {
@@ -2005,7 +2015,6 @@ button,
 }
 
 .question-form {
-  padding-left: 5px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -2036,7 +2045,7 @@ button,
 
 .question-form__container h2 {
   color: #ffffff;
-  margin: 0 0 9px 0;
+  margin: 0 0 11px -5px;
   -ms-grid-column-span: 2;
   grid-column: span 2;
   font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -2047,7 +2056,7 @@ button,
 
 .question-form__container p {
   color: #ffffff;
-  margin: 0 0 33px 0;
+  margin: 0 0 35px 0;
   -ms-grid-column-span: 2;
   grid-column: span 2;
   font-family: "PT Mono", "Arial", sans-serif;
@@ -2186,7 +2195,7 @@ button,
   line-height: 19px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  padding: 13px 25px;
+  padding: 15px 25px 11px 25px;
   max-width: 265px;
   margin-bottom: auto;
 }
@@ -2202,6 +2211,7 @@ button,
 .question-form__checkbox {
   margin-top: auto;
   position: relative;
+  margin-bottom: 8px;
 }
 
 .question-form__checkbox:not(:last-child) {
@@ -2228,7 +2238,6 @@ button,
 }
 
 .question-form__checkbox label {
-  padding-left: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2267,7 +2276,7 @@ button,
 
 .question-form__checkbox svg {
   position: absolute;
-  left: 8px;
+  left: 3px;
   display: none;
 }
 
@@ -2292,7 +2301,7 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  gap: 15px;
+  gap: 5px;
   max-width: 420px;
 }
 
@@ -2324,7 +2333,7 @@ button,
   color: #ffffff;
   font-family: "PT Mono", "Arial", sans-serif;
   font-weight: 400;
-  margin: 0 0 25px 0;
+  margin: 0 0 32px 0;
   font-size: 16px;
   line-height: 22px;
   max-width: 402px;
@@ -2338,6 +2347,7 @@ button,
   background: rgba(4, 20, 39, 0.15);
   border-radius: 3px;
   border: none;
+  margin-bottom: 15px;
 }
 
 .modal-form__container input::-webkit-input-placeholder {
@@ -2622,6 +2632,7 @@ button,
   .footer__contacts {
     padding-right: 5px;
     max-width: 325px;
+    padding-top: 0;
   }
 
   .footer__chapters {
@@ -2649,7 +2660,7 @@ button,
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    margin-bottom: 35px;
+    margin-bottom: 37px;
   }
 
   .social__list {
@@ -2665,6 +2676,12 @@ button,
     grid-template-columns: 220px;
   }
 
+  .chapters li:nth-child(2n+1) {
+    -webkit-box-ordinal-group: 0;
+    -ms-flex-order: -1;
+    order: -1;
+  }
+
   .contacts-address h2 {
     font-weight: 400;
   }
@@ -2672,13 +2689,13 @@ button,
   .intro {
     position: static;
     min-height: 640px;
-    background-position: -173px 10px;
+    background-position: -123px 0px;
     background-size: 1396px 640px;
   }
 
   .intro__container {
-    padding: 180px 50px 30px 50px;
-    gap: 20px;
+    padding: 179px 50px 30px 45px;
+    gap: 26px;
     max-width: 760px;
   }
 
@@ -2689,22 +2706,78 @@ button,
   .intro__text-container h1 {
     font-size: 64px;
     line-height: 75px;
-    margin-bottom: 20px;
+    margin-bottom: 2px;
+  }
+
+  .intro__button {
+    margin-left: 45px;
+  }
+
+  .advantages__list {
+    padding: 79px 48px 40px 48px;
+    -webkit-column-gap: 25px;
+    -moz-column-gap: 25px;
+    column-gap: 25px;
+    row-gap: 28px;
   }
 
   .advantages__item {
-    padding: 40px 46px 35px 46px;
+    padding: 40px 43px 27px 46px;
     min-height: 360px;
   }
 
+  .advantages__item svg {
+    margin-bottom: 16px;
+  }
+
+  .advantages__item h2 {
+    margin-bottom: 8px;
+  }
+
+  .advantages__item:nth-child(3n) {
+    padding-top: 42px;
+  }
+
+  .advantages__item:nth-child(3n) h2 {
+    margin-bottom: 6px;
+  }
+
+  .advantages__item:nth-child(3n) svg {
+    margin-bottom: 14px;
+  }
+
+  .advantages__item:nth-child(4n) {
+    padding: 42px 43px 35px 47px;
+  }
+
+  .advantages__item:nth-child(4n) svg {
+    margin-bottom: 11px;
+  }
+
+  .advantages__item:nth-child(4n) h2 {
+    margin-bottom: 3px;
+  }
+
   .about {
-    padding: 40px 50px 80px 46px;
+    padding: 38px 50px 80px 46px;
     max-width: 674px;
     gap: 29px;
   }
 
+  .about__img-container {
+    padding-top: 5px;
+  }
+
+  .about__text-container {
+    margin-bottom: 5px;
+  }
+
   .services__container {
-    padding: 60px 50px 75px 50px;
+    padding: 55px 50px 75px 50px;
+  }
+
+  .services__title {
+    margin-bottom: 38px;
   }
 
   .services__list {
@@ -2736,7 +2809,7 @@ button,
   }
 
   .card-service__link {
-    padding: 40px 70px 70px 45px;
+    padding: 37px 70px 70px 45px;
   }
 
   .question {
@@ -2744,7 +2817,7 @@ button,
   }
 
   .question__container {
-    padding: 50px 10px 125px 10px;
+    padding: 45px 10px 100px 10px;
     max-width: 800px;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -2763,6 +2836,8 @@ button,
 
   .question-form__container h2 {
     margin-bottom: 4px;
+    margin-left: 0;
+    margin-bottom: 7px;
   }
 
   .question-form__container p {
@@ -2771,6 +2846,7 @@ button,
 
   .question-form__container textarea {
     padding: 32px 15px;
+    margin-bottom: 37px;
   }
 
   .question-form__container {
@@ -2858,16 +2934,23 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin-bottom: 25px;
+    margin-bottom: 24px;
+    padding: 0 5px 0 8px;
+  }
+
+  .social img {
+    padding-right: 9px;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
   }
 
   .chapters h2 {
     margin: 0;
-    padding: 20px 75px 20px 25px;
+    padding: 22px 75px 21px 25px;
   }
 
   .chapters h2::after {
@@ -2877,7 +2960,7 @@ button,
     height: 1px;
     background-color: #f8fdff;
     right: 26px;
-    top: 20px;
+    top: 27px;
   }
 
   .chapters h2::before {
@@ -2887,7 +2970,7 @@ button,
     height: 1px;
     background-color: #f8fdff;
     right: 26px;
-    top: 20px;
+    top: 27px;
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
@@ -2915,7 +2998,7 @@ button,
     height: 1px;
     background-color: #f8fdff;
     right: 26px;
-    top: 20px;
+    top: 27px;
   }
 
   .contacts-address h2::before {
@@ -2925,7 +3008,7 @@ button,
     height: 1px;
     background-color: #f8fdff;
     right: 26px;
-    top: 20px;
+    top: 27px;
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
@@ -2957,11 +3040,13 @@ button,
     padding: 150px 25px 20px 25px;
     -webkit-box-sizing: content-box;
     box-sizing: content-box;
+    gap: 14px;
   }
 
   .intro__text-container h1 {
     font-size: 36px;
     line-height: 42px;
+    margin-bottom: 8px;
   }
 
   .intro__text-container p {
@@ -2972,27 +3057,37 @@ button,
   .intro__button {
     font-size: 14px;
     line-height: 16px;
-    padding: 10px 30px;
+    padding: 11px 32px 9px 32px;
     max-width: 270px;
     min-height: 40px;
+    min-width: 270px;
+    margin-left: 0;
   }
 
   .advantages__list {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-    padding: 50px 25px 25px 25px;
+    padding: 50px 25px 30px 24px;
     max-width: 595px;
+    row-gap: 30px;
   }
 
   .advantages__item {
     min-width: 210px;
-    padding: 30px 30px 35px 30px;
+    padding: 29px 30px 35px 30px;
     min-height: 340px;
+  }
+
+  .advantages__item svg {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 16px;
   }
 
   .advantages__item h2 {
     font-size: 20px;
     line-height: 28px;
+    margin-bottom: 9px;
   }
 
   .advantages__item p {
@@ -3000,8 +3095,34 @@ button,
     line-height: 19px;
   }
 
+  .advantages__item:nth-child(3n) {
+    padding-top: 29px;
+    min-height: 325px;
+  }
+
+  .advantages__item:nth-child(3n) h2 {
+    margin-bottom: 13px;
+  }
+
+  .advantages__item:nth-child(3n) svg {
+    margin-bottom: 19px;
+  }
+
+  .advantages__item:nth-child(4n) {
+    padding: 29px 43px 35px 30px;
+    min-height: 325px;
+  }
+
+  .advantages__item:nth-child(4n) svg {
+    margin-bottom: 19px;
+  }
+
+  .advantages__item:nth-child(4n) h2 {
+    margin-bottom: 13px;
+  }
+
   .about {
-    padding: 25px 25px 80px 25px;
+    padding: 17px 25px 79px 25px;
     max-width: 550px;
   }
 
@@ -3027,6 +3148,15 @@ button,
     line-height: 19px;
   }
 
+  .about__text-container p:not(:last-of-type) {
+    margin-bottom: 18px;
+  }
+
+  .about__button {
+    min-height: 35px;
+    padding: 2px 40px 6px 40px;
+  }
+
   .about__accordion-container span {
     display: block;
     font-family: "PT Mono", "Arial", sans-serif;
@@ -3042,11 +3172,14 @@ button,
   }
 
   .services__container {
-    padding: 50px 25px 86px 25px;
+    padding: 47px 25px 86px 25px;
   }
 
   .services__title {
-    margin-bottom: 40px;
+    font-size: 28px;
+    line-height: 39px;
+    margin-bottom: 29px;
+    max-width: 260px;
   }
 
   .services__short-title {
@@ -3080,12 +3213,12 @@ button,
   }
 
   .card-service__link {
-    padding: 30px 50px 50px 30px;
+    padding: 26px 50px 50px 30px;
   }
 
   .question__container {
     max-width: 500px;
-    padding: 50px 25px 90px 25px;
+    padding: 47px 25px 60px 25px;
   }
 
   .question-form {
@@ -3096,7 +3229,7 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    gap: 25px;
+    gap: 20px;
   }
 
   .question-form__container {
@@ -3107,7 +3240,7 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    gap: 20px;
+    gap: 7px;
   }
 
   .question-form__container div {
@@ -3121,19 +3254,46 @@ button,
   }
 
   .question-form__container p {
-    margin-bottom: 0;
+    margin-bottom: 27px;
     font-size: 14px;
     line-height: 19px;
   }
 
+  .question-form__container input {
+    margin-bottom: 13px;
+  }
+
   .question-form__container textarea {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     padding: 25px 15px;
     max-width: 100%;
+    min-height: 180px;
+  }
+
+  .question-form__button {
+    max-width: 270px;
+  }
+
+  .question-form__button:not(:last-child) {
+    margin-bottom: 5px;
   }
 
   .question-form__checkbox label {
     max-width: 100%;
+    padding-left: 5px;
+  }
+
+  .question-form__checkbox label::before {
+    width: 15px;
+    height: 14px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-top: -4px;
+  }
+
+  .question-form__checkbox svg {
+    left: 7px;
+    top: 10px;
   }
 
   .modal-form__checkbox .input-message {
