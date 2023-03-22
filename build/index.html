@@ -197,7 +197,7 @@
                 <div class="question-form__container">
                   <h2>Остались вопросы? Задайте их нам!</h2>
                   <p>Мы проконсультируем Вас бесплатно</p>
-                  <div class="question-form__input-wrapper" data-on-input-validate data-validate-type="text" data-limitation="letters"
+                  <div class="question-form__input-wrapper" data-on-input-validate data-validate-type="text" data-limitation="name"
                     data-message-base="Поле обязательно к заполнению" data-required>
                     <input type="text" placeholder="Имя" name="name" aria-label="Имя">
                   </div>
@@ -231,11 +231,13 @@
   <footer class="main-footer footer">
     <div class="footer__container container">
       <div class="social">
+        <a href="index.html">
         <picture>
           <source type="image/webp" srcset="img/logo.webp 1x, img/logo@2x.webp 2x" width="215" height="55">
           <img src="img/logo.png" srcset="img/logo@2x.png 2x" width="215" height="55"
             alt="Логотип Smart Device умные технологии">
         </picture>
+        </a>
         <div>
           <h2 class="visually-hidden">Социальные сети.</h2>
           <ul class="social__list">
@@ -268,7 +270,8 @@
       </div>
       <div class="footer__accordion" data-accordion="parent" data-destroy="(max-width: 767px)" data-single>
         <div class="footer__chapters chapters" data-accordion="element">
-          <h2 data-accordion="button">Разделы сайта</h2>
+          <h2>Разделы сайта</h2>
+          <button data-accordion="button" type="button" tabindex="0">Разделы сайта</button>
           <ul data-accordion="content">
             <li>
               <a href="#">О Компании</a>
@@ -294,7 +297,8 @@
           </ul>
         </div>
         <div class="footer__contacts contacts-address" data-accordion="element">
-          <h2 data-accordion="button">Наш офис</h2>
+          <h2>Наш офис</h2>
+          <button data-accordion="button" type="button" tabindex="0">Наш офис</button>
           <ul data-accordion="content">
             <li>
               <span>г.&nbsp;Мытищи, Олимпийский проспект, д.10</span>

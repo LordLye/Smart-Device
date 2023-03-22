@@ -64,6 +64,18 @@
       font-size: 16px;
       line-height: 22px;
     }
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
+
+    &:focus {
+      background: rgba(25, 105, 202, 0.37);
+    }
   }
 
   & textarea {
@@ -101,6 +113,18 @@
   text-transform: uppercase;
   padding: 13px 60px;
   max-width: 420px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
+  &:focus {
+    background: rgba(25, 105, 202, 0.37);
+  }
 }
 
 .modal-form__checkbox {
@@ -125,7 +149,7 @@
   & input {
     display: none;
 
-    &:checked ~ svg {
+    &:checked~svg {
       display: block;
     }
   }
@@ -136,6 +160,15 @@
     max-width: 420px;
     align-items: center;
     position: relative;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
 
     &:not(:last-child) {
       margin-bottom: 10px;
