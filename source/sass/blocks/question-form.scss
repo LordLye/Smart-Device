@@ -258,6 +258,7 @@
     max-width: 265px;
     align-items: center;
     position: relative;
+    cursor: pointer;
 
     &::before {
       content: "";
@@ -268,6 +269,18 @@
       height: 15px;
       position: absolute;
       box-sizing: content-box;
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
+
+    &:focus {
+      background: rgba(25, 105, 202, 0.37);
     }
 
     @include vp-1023 {

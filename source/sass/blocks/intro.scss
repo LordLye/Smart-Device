@@ -3,14 +3,14 @@
   position: relative;
   background-position-x: center;
   margin: 0 auto;
-  background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background.png") no-repeat;
+  background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background.jpg") no-repeat;
   background-color: #091a20;
   background-size: 1920px 880px;
   background-position-y: 0;
   background-repeat: no-repeat;
 
   @media (min-width: $vp-1024) and (min-resolution: $retina-dppx) {
-    background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background@2x.png") no-repeat;
+    background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background@2x.jpg") no-repeat;
     background-size: 1920px 880px;
   }
 
@@ -22,7 +22,7 @@
   }
 
   @media (max-width: ($vp-1024 - 1)) and (min-resolution: $retina-dppx) {
-    background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background@2x.png") no-repeat;
+    background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background@2x.jpg") no-repeat;
     background-size: cover;
     background-position: -123px 0;
   }
@@ -34,7 +34,7 @@
   }
 
   @media (max-width: ($vp-768 - 1)) and (min-resolution: $retina-dppx) {
-    background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background@2x.png") no-repeat;
+    background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background@2x.jpg") no-repeat;
     background-size: cover;
     background-position: 0;
   }

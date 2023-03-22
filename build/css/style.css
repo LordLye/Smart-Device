@@ -747,6 +747,18 @@ button,
   cursor: pointer;
 }
 
+.modal__close-btn:hover {
+  opacity: 0.8;
+}
+
+.modal__close-btn:active {
+  opacity: 0.5;
+}
+
+.modal__close-btn:focus {
+  background: rgba(25, 105, 202, 0.37);
+}
+
 .modal--responsive .modal__content {
   width: 100%;
 }
@@ -1493,6 +1505,22 @@ button,
   padding-top: 7px;
 }
 
+.chapters button {
+  position: relative;
+  display: none;
+  color: #ffffff;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin: 0 0 23px 0;
+  border: none;
+  background-color: rgba(0, 255, 255, 0);
+  width: 100%;
+}
+
 .chapters h2 {
   position: relative;
   color: #ffffff;
@@ -1544,6 +1572,22 @@ button,
 
 .chapters a:focus {
   background: rgba(25, 105, 202, 0.37);
+}
+
+.contacts-address button {
+  position: relative;
+  display: none;
+  color: #ffffff;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin: 0 0 23px 0;
+  border: none;
+  background-color: rgba(0, 255, 255, 0);
+  width: 100%;
 }
 
 .contacts-address h2 {
@@ -1610,6 +1654,7 @@ button,
 .button {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
+  cursor: pointer;
 }
 
 .accordion {
@@ -1668,9 +1713,9 @@ button,
   position: relative;
   background-position-x: center;
   margin: 0 auto;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../img/background.png") no-repeat;
-  background: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background.png") no-repeat;
-  background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background.png") no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../img/background.jpg") no-repeat;
+  background: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background.jpg") no-repeat;
+  background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background.jpg") no-repeat;
   background-color: #091a20;
   background-size: 1920px 880px;
   background-position-y: 0;
@@ -2392,6 +2437,7 @@ button,
   -ms-flex-align: center;
   align-items: center;
   position: relative;
+  cursor: pointer;
 }
 
 .question-form__checkbox label::before {
@@ -2404,6 +2450,18 @@ button,
   position: absolute;
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
+}
+
+.question-form__checkbox label:hover {
+  opacity: 0.8;
+}
+
+.question-form__checkbox label:active {
+  opacity: 0.5;
+}
+
+.question-form__checkbox label:focus {
+  background: rgba(25, 105, 202, 0.37);
 }
 
 .question-form__checkbox span {
@@ -2541,6 +2599,18 @@ button,
   line-height: 22px;
 }
 
+.modal-form__container input:hover {
+  opacity: 0.8;
+}
+
+.modal-form__container input:active {
+  opacity: 0.5;
+}
+
+.modal-form__container input:focus {
+  background: rgba(25, 105, 202, 0.37);
+}
+
 .modal-form__container textarea {
   -ms-grid-column-span: 2;
   grid-column: span 2;
@@ -2613,6 +2683,18 @@ button,
   max-width: 420px;
 }
 
+.modal-form__button:hover {
+  opacity: 0.8;
+}
+
+.modal-form__button:active {
+  opacity: 0.5;
+}
+
+.modal-form__button:focus {
+  background: rgba(25, 105, 202, 0.37);
+}
+
 .modal-form__checkbox {
   margin-top: auto;
   position: relative;
@@ -2647,6 +2729,15 @@ button,
   -ms-flex-align: center;
   align-items: center;
   position: relative;
+  cursor: pointer;
+}
+
+.modal-form__checkbox label:hover {
+  opacity: 0.8;
+}
+
+.modal-form__checkbox label:active {
+  opacity: 0.5;
 }
 
 .modal-form__checkbox label:not(:last-child) {
@@ -2728,9 +2819,9 @@ button,
 
 @media (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1024px) and (-o-min-device-pixel-ratio: 2/1), (min-width: 1024px) and (min-resolution: 2dppx) {
   .intro {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../img/background@2x.png") no-repeat;
-    background: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background@2x.png") no-repeat;
-    background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background@2x.png") no-repeat;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../img/background@2x.jpg") no-repeat;
+    background: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background@2x.jpg") no-repeat;
+    background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background@2x.jpg") no-repeat;
     background-size: 1920px 880px;
   }
 
@@ -3044,9 +3135,9 @@ button,
 
 @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1023px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 1023px) and (min-resolution: 2dppx) {
   .intro {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../img/background@2x.png") no-repeat;
-    background: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background@2x.png") no-repeat;
-    background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background@2x.png") no-repeat;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../img/background@2x.jpg") no-repeat;
+    background: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background@2x.jpg") no-repeat;
+    background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background@2x.jpg") no-repeat;
     background-size: cover;
     background-position: -123px 0;
   }
@@ -3160,12 +3251,15 @@ button,
     box-sizing: content-box;
   }
 
-  .chapters h2 {
+  .chapters button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     margin: 0;
     padding: 22px 75px 21px 25px;
   }
 
-  .chapters h2::after {
+  .chapters button::after {
     position: absolute;
     content: "";
     width: 15px;
@@ -3175,7 +3269,7 @@ button,
     top: 27px;
   }
 
-  .chapters h2::before {
+  .chapters button::before {
     position: absolute;
     content: "";
     width: 15px;
@@ -3186,6 +3280,22 @@ button,
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
+  }
+
+  .chapters button:hover {
+    opacity: 0.8;
+  }
+
+  .chapters button:active {
+    opacity: 0.5;
+  }
+
+  .chapters button:focus {
+    background: rgba(25, 105, 202, 0.37);
+  }
+
+  .chapters h2 {
+    display: none;
   }
 
   .chapters ul {
@@ -3198,12 +3308,15 @@ button,
     line-height: 19px;
   }
 
-  .contacts-address h2 {
+  .contacts-address button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     margin: 0;
-    padding: 20px 76px 20px 24px;
+    padding: 22px 75px 21px 25px;
   }
 
-  .contacts-address h2::after {
+  .contacts-address button::after {
     position: absolute;
     content: "";
     width: 15px;
@@ -3213,7 +3326,7 @@ button,
     top: 27px;
   }
 
-  .contacts-address h2::before {
+  .contacts-address button::before {
     position: absolute;
     content: "";
     width: 15px;
@@ -3224,6 +3337,22 @@ button,
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
+  }
+
+  .contacts-address button:hover {
+    opacity: 0.8;
+  }
+
+  .contacts-address button:active {
+    opacity: 0.5;
+  }
+
+  .contacts-address button:focus {
+    background: rgba(25, 105, 202, 0.37);
+  }
+
+  .contacts-address h2 {
+    display: none;
   }
 
   .contacts-address ul {
@@ -3578,9 +3707,9 @@ button,
 
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 767px) and (min-resolution: 2dppx) {
   .intro {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../img/background@2x.png") no-repeat;
-    background: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background@2x.png") no-repeat;
-    background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background@2x.png") no-repeat;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../img/background@2x.jpg") no-repeat;
+    background: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background@2x.jpg") no-repeat;
+    background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background@2x.jpg") no-repeat;
     background-size: cover;
     background-position: 0;
   }

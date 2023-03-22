@@ -81,6 +81,18 @@
     background: $color-transparent;
     border: none;
     cursor: pointer;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
+
+    &:focus {
+      background: rgba(25, 105, 202, 0.37);
+    }
   }
 
   &--responsive {
