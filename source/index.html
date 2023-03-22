@@ -16,10 +16,10 @@
 <body>
   <header class="main-header" data-fix-block>
     <div class="main-header__container container">
-      <a class="main-header__logo">
+      <a class="main-header__logo" href="index.html">
         <picture>
-          <source type="image/webp" srcset="img/logo.webp 1x, img/logo@2x.webp 2x" width="215" height="55">
           <source media="(max-width: 767px)" srcset="img/logo-small.svg" width="35" height="35">
+          <source type="image/webp" srcset="img/logo.webp 1x, img/logo@2x.webp 2x" width="215" height="55">
           <img src="img/logo.png" srcset="img/logo@2x.png 2x" width="215" height="55"
             alt="Логотип Smart Device умные технологии">
         </picture>
@@ -197,11 +197,11 @@
                 <div class="question-form__container">
                   <h2>Остались вопросы? Задайте их нам!</h2>
                   <p>Мы проконсультируем Вас бесплатно</p>
-                  <div data-on-input-validate data-validate-type="text" data-limitation="letters"
+                  <div class="question-form__input-wrapper" data-on-input-validate data-validate-type="text" data-limitation="letters"
                     data-message-base="Поле обязательно к заполнению" data-required>
                     <input type="text" placeholder="Имя" name="name" aria-label="Имя">
                   </div>
-                  <div data-on-input-validate data-validate-type="phone"
+                  <div class="question-form__input-wrapper" data-on-input-validate data-validate-type="phone"
                     data-message-base="Поле обязательно к заполнению" data-required>
                     <input type="tel" placeholder="Телефон" name="phone" aria-label="Номер телефона">
                   </div>
@@ -297,30 +297,22 @@
           <h2 data-accordion="button">Наш офис</h2>
           <ul data-accordion="content">
             <li>
-              <address>
-                <span>г.&nbsp;Мытищи, Олимпийский проспект, д.10</span>
-              </address>
+              <span>г.&nbsp;Мытищи, Олимпийский проспект, д.10</span>
             </li>
             <li>
-              <address>
-                <a href="tel:+74955894050">
-                  +7&nbsp;(495)&nbsp;589-40-50
-                </a>
-              </address>
+              <a href="tel:+74955894050">
+                +7&nbsp;(495)&nbsp;589-40-50
+              </a>
             </li>
             <li>
-              <address>
-                <a href="tel:+74953895829">
-                  +7&nbsp;(925)&nbsp;389-58-29
-                </a>
-              </address>
+              <a href="tel:+74953895829">
+                +7&nbsp;(925)&nbsp;389-58-29
+              </a>
             </li>
             <li>
-              <address>
-                <a href="tel:+74953647813">
-                  +7&nbsp;(925)&nbsp;364-78-13
-                </a>
-              </address>
+              <a href="tel:+74953647813">
+                +7&nbsp;(925)&nbsp;364-78-13
+              </a>
             </li>
           </ul>
         </div>
@@ -339,11 +331,11 @@
             <div class="modal-form__container">
               <h2>Закажите звонок</h2>
               <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
-              <div data-on-input-validate data-validate-type="text" data-limitation="letters"
+              <div class="modal-form__input-wrapper" data-on-input-validate data-validate-type="text" data-limitation="letters"
                 data-message-base="Поле обязательно к заполнению" data-required>
                 <input type="text" placeholder="Имя" name="name" aria-label="Имя" data-focus>
               </div>
-              <div data-on-input-validate data-validate-type="phone" data-message-base="Поле обязательно к заполнению"
+              <div class="modal-form__input-wrapper" data-on-input-validate data-validate-type="phone" data-message-base="Поле обязательно к заполнению"
                 data-required>
                 <input type="tel" placeholder="Телефон" name="phone" aria-label="Номер телефона">
               </div>

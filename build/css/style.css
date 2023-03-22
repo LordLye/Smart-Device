@@ -1416,8 +1416,6 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
 }
 
 .footer__contacts {
@@ -1670,10 +1668,9 @@ button,
   position: relative;
   background-position-x: center;
   margin: 0 auto;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), image-set(url("../img/background.png") 1x, url("../img/background@2x.png") 2x);
-  background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), image-set(url("../img/background.png") 1x, url("../img/background@2x.png") 2x);
-  background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), -webkit-image-set(url("../img/background.png") 1x, url("../img/background@2x.png") 2x);
-  background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), image-set(url("../img/background.png") 1x, url("../img/background@2x.png") 2x);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../img/background.png") no-repeat;
+  background: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background.png") no-repeat;
+  background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background.png") no-repeat;
   background-color: #091a20;
   background-size: 1920px 880px;
   background-position-y: 0;
@@ -1777,6 +1774,19 @@ button,
   box-sizing: content-box;
 }
 
+.advantages__item:hover {
+  background-color: #00b2ff;
+}
+
+.advantages__item:hover h2,
+.advantages__item:hover p {
+  color: #f2f5f6;
+}
+
+.advantages__item:hover svg {
+  color: #f2f5f6;
+}
+
 .advantages__item {
   position: relative;
   display: -webkit-box;
@@ -1790,19 +1800,6 @@ button,
   min-height: 200px;
   padding: 40px 40px 35px 44px;
   border: 1px solid #ebebeb;
-}
-
-.advantages__item:hover {
-  background-color: #00b2ff;
-}
-
-.advantages__item:hover h2,
-.advantages__item:hover p {
-  color: #f2f5f6;
-}
-
-.advantages__item:hover svg {
-  color: #f2f5f6;
 }
 
 .advantages__item svg {
@@ -2033,30 +2030,27 @@ button,
 }
 
 .card-service--production {
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(100%, rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), image-set(url("../img/board-background.jpg") 1x, url("../img/board-background@2x.jpg") 2x);
-  background-image: -o-linear-gradient(top, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), image-set(url("../img/board-background.jpg") 1x, url("../img/board-background@2x.jpg") 2x);
-  background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), -webkit-image-set(url("../img/board-background.jpg") 1x, url("../img/board-background@2x.jpg") 2x);
-  background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), image-set(url("../img/board-background.jpg") 1x, url("../img/board-background@2x.jpg") 2x);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(100%, rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/board-background.jpg") no-repeat;
+  background: -o-linear-gradient(top, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/board-background.jpg") no-repeat;
+  background: linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/board-background.jpg") no-repeat;
   background-repeat: no-repeat;
   background-position: -188px -114px;
   background-size: 1493px 817px;
 }
 
 .card-service--assembly {
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(100%, rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), image-set(url("../img/board-background.jpg") 1x, url("../img/board-background@2x.jpg") 2x);
-  background-image: -o-linear-gradient(top, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), image-set(url("../img/board-background.jpg") 1x, url("../img/board-background@2x.jpg") 2x);
-  background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), -webkit-image-set(url("../img/board-background.jpg") 1x, url("../img/board-background@2x.jpg") 2x);
-  background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), image-set(url("../img/board-background.jpg") 1x, url("../img/board-background@2x.jpg") 2x);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(100%, rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/board-background.jpg") no-repeat;
+  background: -o-linear-gradient(top, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/board-background.jpg") no-repeat;
+  background: linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/board-background.jpg") no-repeat;
   background-repeat: no-repeat;
   background-position: -534px -118px;
   background-size: 1493px 817px;
 }
 
 .card-service--accessories {
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(100%, rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), image-set(url("../img/board-background.jpg") 1x, url("../img/board-background@2x.jpg") 2x);
-  background-image: -o-linear-gradient(top, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), image-set(url("../img/board-background.jpg") 1x, url("../img/board-background@2x.jpg") 2x);
-  background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), -webkit-image-set(url("../img/board-background.jpg") 1x, url("../img/board-background@2x.jpg") 2x);
-  background-image: linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), image-set(url("../img/board-background.jpg") 1x, url("../img/board-background@2x.jpg") 2x);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(100%, rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/board-background.jpg") no-repeat;
+  background: -o-linear-gradient(top, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/board-background.jpg") no-repeat;
+  background: linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/board-background.jpg") no-repeat;
   background-repeat: no-repeat;
   background-position: -894px -107px;
   background-size: 1493px 817px;
@@ -2133,6 +2127,11 @@ button,
   gap: 0 50px;
 }
 
+.question-form__input-wrapper {
+  position: relative;
+  margin-bottom: 20px;
+}
+
 .question-form__container {
   -ms-grid-column-span: 2;
   grid-column: span 2;
@@ -2144,11 +2143,6 @@ button,
   grid-template-rows: auto auto;
   margin-bottom: auto;
   gap: 0 30px;
-}
-
-.question-form__container div {
-  position: relative;
-  margin-bottom: 20px;
 }
 
 .question-form__container h2 {
@@ -2444,6 +2438,21 @@ button,
   gap: 20px;
 }
 
+.modal-form__input-wrapper {
+  max-width: 420px;
+  margin-bottom: 0;
+  position: relative;
+}
+
+.modal-form__input-wrapper .input-message {
+  position: absolute;
+  left: 0;
+  top: 45px;
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-size: 12px;
+  color: #ff1553;
+}
+
 .modal-form__container {
   margin-bottom: auto;
   display: -webkit-box;
@@ -2455,21 +2464,6 @@ button,
   flex-direction: column;
   gap: 5px;
   max-width: 420px;
-}
-
-.modal-form__container div {
-  max-width: 420px;
-  margin-bottom: 0;
-  position: relative;
-}
-
-.modal-form__container div .input-message {
-  position: absolute;
-  left: 0;
-  top: 45px;
-  font-family: "PT Mono", "Arial", sans-serif;
-  font-size: 12px;
-  color: #ff1553;
 }
 
 .modal-form__container h2 {
@@ -2732,6 +2726,39 @@ button,
   }
 */
 
+@media (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1024px) and (-o-min-device-pixel-ratio: 2/1), (min-width: 1024px) and (min-resolution: 2dppx) {
+  .intro {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../img/background@2x.png") no-repeat;
+    background: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background@2x.png") no-repeat;
+    background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background@2x.png") no-repeat;
+    background-size: 1920px 880px;
+  }
+
+  .card-service--production {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(100%, rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/board-background@2x.jpg") no-repeat;
+    background: -o-linear-gradient(top, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/board-background@2x.jpg") no-repeat;
+    background: linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/board-background@2x.jpg") no-repeat;
+    background-size: 1493px 817px;
+    background-position: -188px -114px;
+  }
+
+  .card-service--assembly {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(100%, rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/board-background@2x.jpg") no-repeat;
+    background: -o-linear-gradient(top, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/board-background@2x.jpg") no-repeat;
+    background: linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/board-background@2x.jpg") no-repeat;
+    background-size: 1493px 817px;
+    background-position: -534px -118px;
+  }
+
+  .card-service--accessories {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(100%, rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/board-background@2x.jpg") no-repeat;
+    background: -o-linear-gradient(top, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/board-background@2x.jpg") no-repeat;
+    background: linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/board-background@2x.jpg") no-repeat;
+    background-size: 1493px 817px;
+    background-position: -894px -107px;
+  }
+}
+
 @media (max-width: 1023px) {
   .container {
     max-width: 1023px;
@@ -2964,7 +2991,7 @@ button,
     padding: 37px 70px 70px 45px;
   }
 
-  .question div.question__wrapper {
+  .question .question__wrapper {
     background: #00b2ff;
   }
 
@@ -3012,6 +3039,40 @@ button,
 
   .question-form__checkbox svg {
     left: 3px;
+  }
+}
+
+@media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1023px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 1023px) and (min-resolution: 2dppx) {
+  .intro {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../img/background@2x.png") no-repeat;
+    background: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background@2x.png") no-repeat;
+    background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background@2x.png") no-repeat;
+    background-size: cover;
+    background-position: -123px 0;
+  }
+
+  .card-service--production {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(100%, rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/board-background@2x.jpg") no-repeat;
+    background: -o-linear-gradient(top, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/board-background@2x.jpg") no-repeat;
+    background: linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/board-background@2x.jpg") no-repeat;
+    background-size: 1493px 817px;
+    background-position: -243px -548px;
+  }
+
+  .card-service--assembly {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(100%, rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/board-background@2x.jpg") no-repeat;
+    background: -o-linear-gradient(top, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/board-background@2x.jpg") no-repeat;
+    background: linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/board-background@2x.jpg") no-repeat;
+    background-size: 1493px 817px;
+    background-position: -628px -315px;
+  }
+
+  .card-service--accessories {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(100%, rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/board-background@2x.jpg") no-repeat;
+    background: -o-linear-gradient(top, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/board-background@2x.jpg") no-repeat;
+    background: linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/board-background@2x.jpg") no-repeat;
+    background-size: 1493px 817px;
+    background-position: -147px -359px;
   }
 }
 
@@ -3383,6 +3444,10 @@ button,
     gap: 20px;
   }
 
+  .question-form__input-wrapper {
+    margin-bottom: 0;
+  }
+
   .question-form__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3392,10 +3457,6 @@ button,
     -ms-flex-direction: column;
     flex-direction: column;
     gap: 7px;
-  }
-
-  .question-form__container div {
-    margin-bottom: 0;
   }
 
   .question-form__container h2 {
@@ -3512,6 +3573,40 @@ button,
     -webkit-transform: translateY(calc(-50% - 5px));
     -ms-transform: translateY(calc(-50% - 5px));
     transform: translateY(calc(-50% - 5px));
+  }
+}
+
+@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 767px) and (min-resolution: 2dppx) {
+  .intro {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../img/background@2x.png") no-repeat;
+    background: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background@2x.png") no-repeat;
+    background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background@2x.png") no-repeat;
+    background-size: cover;
+    background-position: 0;
+  }
+
+  .card-service--production {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(100%, rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/board-background@2x.jpg") no-repeat;
+    background: -o-linear-gradient(top, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/board-background@2x.jpg") no-repeat;
+    background: linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/board-background@2x.jpg") no-repeat;
+    background-size: 1493px 817px;
+    background-position: -376px -298px;
+  }
+
+  .card-service--assembly {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(100%, rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/board-background@2x.jpg") no-repeat;
+    background: -o-linear-gradient(top, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/board-background@2x.jpg") no-repeat;
+    background: linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/board-background@2x.jpg") no-repeat;
+    background-size: 1493px 817px;
+    background-position: -365px -538px;
+  }
+
+  .card-service--accessories {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(100%, rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/board-background@2x.jpg") no-repeat;
+    background: -o-linear-gradient(top, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/board-background@2x.jpg") no-repeat;
+    background: linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/board-background@2x.jpg") no-repeat;
+    background-size: 1493px 817px;
+    background-position: -885px -393px;
   }
 }
 

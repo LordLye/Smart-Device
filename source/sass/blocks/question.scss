@@ -1,7 +1,7 @@
 .question {
   background: linear-gradient(90deg, #016692 0 50%, #00b3fe 50% 100%);
 
-  & div.question__wrapper {
+  & .question__wrapper {
     @include vp-1023 {
       background: $color-deep-sky-blue;
     }

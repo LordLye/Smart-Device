@@ -18,6 +18,15 @@
   }
 }
 
+.question-form__input-wrapper {
+  position: relative;
+  margin-bottom: 20px;
+
+  @include vp-767 {
+    margin-bottom: 0;
+  }
+}
+
 .question-form__container {
   grid-column: span 2;
   display: grid;
@@ -30,15 +39,6 @@
     display: flex;
     flex-direction: column;
     gap: 7px;
-  }
-
-  & div {
-    position: relative;
-    margin-bottom: 20px;
-
-    @include vp-767 {
-      margin-bottom: 0;
-    }
   }
 
   & h2 {

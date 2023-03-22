@@ -3,14 +3,16 @@
   position: relative;
   background-position-x: center;
   margin: 0 auto;
-  background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%),
-    image-set(url("../img/background.png") 1x,
-      url("../img/background@2x.png") 2x);
-
+  background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background.png") no-repeat;
   background-color: #091a20;
   background-size: 1920px 880px;
   background-position-y: 0;
   background-repeat: no-repeat;
+
+  @media (min-width: $vp-1024) and (min-resolution: $retina-dppx) {
+    background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background@2x.png") no-repeat;
+    background-size: 1920px 880px;
+  }
 
   @include vp-1023 {
     position: static;
@@ -19,10 +21,22 @@
     background-size: 1396px 640px;
   }
 
+  @media (max-width: ($vp-1024 - 1)) and (min-resolution: $retina-dppx) {
+    background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background@2x.png") no-repeat;
+    background-size: cover;
+    background-position: -123px 0;
+  }
+
   @include vp-767 {
     min-height: 560px;
     background-position: -30px 0;
     background-size: 1220px 560px;
+  }
+
+  @media (max-width: ($vp-768 - 1)) and (min-resolution: $retina-dppx) {
+    background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background@2x.png") no-repeat;
+    background-size: cover;
+    background-position: 0;
   }
 }
 
