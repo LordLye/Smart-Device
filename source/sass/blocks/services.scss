@@ -3,7 +3,7 @@
 }
 
 .services__container {
-  padding: 66px 50px 140px 48px;
+  padding: 66px 65px 140px 63px;
   max-width: 1220px;
   margin: 0 auto;
   box-sizing: content-box;
@@ -45,7 +45,7 @@
   min-height: 650px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 85px;
+  gap: percentage(85 / 1220);
 
   &:not(:last-child) {
     margin-bottom: 20px;

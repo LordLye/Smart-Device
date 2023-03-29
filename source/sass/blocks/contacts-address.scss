@@ -101,6 +101,15 @@
     &:last-child {
       padding-bottom: 20px;
     }
+
+    @include vp-1023 {
+      max-width: 500px;
+    }
+
+    @include vp-767 {
+      font-size: 14px;
+      line-height: 19px;
+    }
   }
 
   & a {
