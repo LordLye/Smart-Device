@@ -1449,7 +1449,7 @@ button,
 
 .footer__chapters {
   margin: 0 0 0 auto;
-  padding-right: 30px;
+  padding: 0 30px;
 }
 
 .footer__accordion {
@@ -1550,8 +1550,10 @@ button,
   margin: 0;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 220px 220px;
-  grid-template-columns: 220px 220px;
+  -ms-grid-columns: minmax(-webkit-min-content, 220px) minmax(-webkit-min-content, 220px);
+  -ms-grid-columns: minmax(min-content, 220px) minmax(min-content, 220px);
+  grid-template-columns: minmax(-webkit-min-content, 220px) minmax(-webkit-min-content, 220px);
+  grid-template-columns: minmax(min-content, 220px) minmax(min-content, 220px);
   grid-column-gap: 30px;
   -ms-grid-rows: auto auto auto auto;
   grid-template-rows: auto auto auto auto;
@@ -2913,13 +2915,13 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    max-width: 690px;
-    padding: 50px 5px 65px 10px;
+    max-width: 1023px;
+    padding: 50px 45px 65px 50px;
   }
 
   .footer__contacts {
     padding-right: 5px;
-    max-width: 325px;
+    max-width: 500px;
     padding-top: 0;
   }
 
@@ -2930,10 +2932,10 @@ button,
 
   .footer__accordion {
     margin: 0;
+    gap: 130px;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    width: 675px;
   }
 
   .social {
@@ -2972,6 +2974,10 @@ button,
 
   .contacts-address h2 {
     font-weight: 400;
+  }
+
+  .contacts-address li {
+    max-width: 500px;
   }
 
   .intro {
@@ -3172,7 +3178,7 @@ button,
     background: -webkit-gradient(linear, left top, left bottom, color-stop(100%, rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/board-background@2x.jpg") no-repeat;
     background: -o-linear-gradient(top, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/board-background@2x.jpg") no-repeat;
     background: linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/board-background@2x.jpg") no-repeat;
-    background-size: 1493px 817px;
+    background-size: 1493px auto;
     background-position: -628px -315px;
   }
 
@@ -3250,6 +3256,7 @@ button,
     -ms-flex-direction: column;
     flex-direction: column;
     width: 100%;
+    gap: 0;
   }
 
   .social {
