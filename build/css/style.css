@@ -2127,7 +2127,7 @@ button,
 }
 
 .question__wrapper {
-  background: url("/img/form-background.jpg") no-repeat, #00b2ff;
+  background: url("../img/form-background.jpg") no-repeat, #00b2ff;
   margin: 0 auto;
   max-width: 1920px;
   -o-object-fit: cover;
@@ -3755,6 +3755,6 @@ button,
 
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2dppx) {
   .question__wrapper {
-    background: url("/img/form-background@2x.jpg") no-repeat, #00b2ff;
+    background: url("../img/form-background@2x.jpg") no-repeat, #00b2ff;
   }
 }
