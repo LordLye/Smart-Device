@@ -2004,7 +2004,7 @@ button,
 }
 
 .services__container {
-  padding: 66px 50px 140px 48px;
+  padding: 66px 65px 140px 63px;
   max-width: 1220px;
   margin: 0 auto;
   -webkit-box-sizing: content-box;
@@ -2030,7 +2030,7 @@ button,
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 85px;
+  gap: 6.9672131148%;
 }
 
 .services__list:not(:last-child) {
