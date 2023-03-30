@@ -49,7 +49,6 @@
   display: grid;
   grid-template-columns: minmax(720px, 1000px);
   gap: 47px;
-  align-items: flex-start;
   z-index: 0;
 
   @include vp-1023 {
