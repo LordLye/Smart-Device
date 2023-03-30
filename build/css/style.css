@@ -1304,7 +1304,7 @@ button,
   background: -webkit-gradient(linear, left top, left bottom, color-stop(84.9%, #041827), to(rgba(4, 24, 39, 0)));
   background: -o-linear-gradient(top, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
   background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
-  padding: 30px 0 35px 0;
+  padding: 30px 10px 35px 10px;
   position: fixed;
   top: 0;
   width: 100%;
@@ -1315,12 +1315,12 @@ button,
 }
 
 .main-header__container {
-  max-width: 1240px;
+  max-width: 1300px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0 107px 0 47px;
+  padding: 0 117px 0 24px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -1378,20 +1378,19 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   font-family: "PT Mono", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 17.92px;
+  padding-right: 20px;
   gap: 27px;
-  max-width: 480px;
+  width: 43.6363636364%;
 }
 
 .contacts__link {
@@ -1419,7 +1418,7 @@ button,
 
 .contacts__email,
 .contacts__phone {
-  width: 225px;
+  max-width: 225px;
 }
 
 .contacts__email-text,
@@ -1788,7 +1787,7 @@ button,
   color: #f2f5f6;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  max-width: 450px;
+  max-width: 400px;
   font-weight: 700;
   font-size: 18px;
   line-height: 21px;
@@ -2376,7 +2375,7 @@ button,
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 21px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   padding: 15px 25px 11px 25px;
@@ -2888,6 +2887,7 @@ button,
 
   .main-header__contacts {
     margin: 0 0 0 auto;
+    max-width: 220px;
   }
 
   .main-header__button {
@@ -2896,6 +2896,8 @@ button,
 
   .contacts {
     gap: 20px;
+    padding-right: 0;
+    max-width: 100px;
   }
 
   .contacts__email,
@@ -3008,6 +3010,7 @@ button,
 
   .intro__button {
     margin-left: 45px;
+    max-width: 400px;
   }
 
   .advantages__list {
@@ -3222,6 +3225,14 @@ button,
 
   .main-header__logo {
     padding-top: 5px;
+  }
+
+  .main-header__contacts {
+    max-width: 160px;
+  }
+
+  .contacts {
+    width: auto;
   }
 
   .footer__container {
