@@ -2152,7 +2152,7 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 166px 15px 225px 5px;
+  padding: 166px 35px 225px 25px;
   margin: 0 auto;
   max-width: 1210px;
   -webkit-box-pack: justify;
