@@ -1392,6 +1392,8 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   font-family: "PT Mono", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -2099,6 +2101,18 @@ button,
   min-height: 650px;
 }
 
+.card-service:hover {
+  opacity: 0.8;
+}
+
+.card-service:active {
+  opacity: 0.5;
+}
+
+.card-service:focus {
+  background: rgba(25, 105, 202, 0.37);
+}
+
 .card-service--production {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(100%, rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/board-background.jpg") no-repeat;
   background: -o-linear-gradient(top, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/board-background.jpg") no-repeat;
@@ -2131,18 +2145,6 @@ button,
   width: 100%;
   height: 100%;
   padding: 47px 70px 70px 40px;
-}
-
-.card-service__link:hover {
-  opacity: 0.8;
-}
-
-.card-service__link:active {
-  opacity: 0.5;
-}
-
-.card-service__link:focus {
-  background: rgba(25, 105, 202, 0.37);
 }
 
 .question {
