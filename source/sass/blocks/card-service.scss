@@ -53,10 +53,6 @@
   &:active {
     opacity: 0.5;
   }
-
-  &:focus {
-    background: rgba(25, 105, 202, 0.37);
-  }
 }
 
 .card-service--production {
@@ -173,5 +169,11 @@
 
   @include vp-767 {
     padding: 26px 50px 50px 30px;
+  }
+
+  &:focus {
+    background: rgba(25, 105, 202, 0.37);
+    outline: none;
+    box-shadow: 0 0 0 2px #ffffff;
   }
 }

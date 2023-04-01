@@ -75,6 +75,8 @@
 
     &:focus {
       background: rgba(25, 105, 202, 0.37);
+      outline: none;
+      box-shadow: inset 0 0 0 2px #ffffff;
     }
   }
 
@@ -97,6 +99,11 @@
     margin-bottom: 5px;
     padding: 25px 15px;
     max-width: 420px;
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 2px #ffffff;
+    }
   }
 }
 
@@ -124,6 +131,8 @@
 
   &:focus {
     background: rgba(25, 105, 202, 0.37);
+    outline: none;
+    box-shadow: inset 0 0 0 2px #ffffff;
   }
 }
 
