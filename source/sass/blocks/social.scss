@@ -65,3 +65,13 @@
     background: rgba(25, 105, 202, 0.37);
   }
 }
+
+.social__logo {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}

@@ -1333,6 +1333,14 @@ button,
   color: #ffffff;
 }
 
+.main-header__logo:hover {
+  opacity: 0.8;
+}
+
+.main-header__logo:active {
+  opacity: 0.5;
+}
+
 .main-header__contacts {
   margin: 0 auto 5px auto;
   max-width: 480px;
@@ -1510,6 +1518,14 @@ button,
 
 .social__link:focus {
   background: rgba(25, 105, 202, 0.37);
+}
+
+.social__logo:hover {
+  opacity: 0.8;
+}
+
+.social__logo:active {
+  opacity: 0.5;
 }
 
 .chapters {
