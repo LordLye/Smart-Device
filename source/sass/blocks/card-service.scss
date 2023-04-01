@@ -45,6 +45,7 @@
   margin: 0;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   min-height: 650px;
+  display: block;
 
   &:hover {
     opacity: 0.8;
@@ -101,15 +102,14 @@
   }
 
   @include vp-1023 {
-    background-position: -628px -315px;
-
+    background-position: right;
   }
 
 
   @media (max-width: ($vp-1024 - 1)) and (min-resolution: $retina-dppx) {
     background: linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/board-background@2x.jpg") no-repeat;
     background-size: 1493px auto;
-    background-position: -628px -315px;
+    background-position: right;
 
   }
 
@@ -127,17 +127,18 @@
 .card-service--accessories {
   background: linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/board-background.jpg") no-repeat;
   background-repeat: no-repeat;
-  background-position: -894px -107px;
-  background-size: 1493px 817px;
+  background-position: -894px 0;
+  background-size: 1493px 100%;
 
   @media (min-width: ($vp-1024)) and (min-resolution: $retina-dppx) {
     background: linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/board-background@2x.jpg") no-repeat;
-    background-size: 1493px 817px;
-    background-position: -894px -107px;
+    background-size: 1493px 100%;
+    background-position: -894px 0;
   }
 
   @include vp-1023 {
     background-position: -147px -359px;
+    background-size: 1493px 817px;
   }
 
   @media (max-width: ($vp-1024 - 1)) and (min-resolution: $retina-dppx) {
@@ -148,6 +149,7 @@
 
   @include vp-767 {
     background-position: -885px -393px;
+    background-size: 1493px 817px;
   }
 
   @media (max-width: ($vp-768 - 1)) and (min-resolution: $retina-dppx) {
@@ -174,6 +176,6 @@
   &:focus {
     background: rgba(25, 105, 202, 0.37);
     outline: none;
-    box-shadow: 0 0 0 2px #ffffff;
+    box-shadow: inset 0 0 0 2px #ffffff;
   }
 }

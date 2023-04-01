@@ -1770,6 +1770,7 @@ button,
 
 .intro {
   min-height: 880px;
+  display: block;
   position: relative;
   background-position-x: center;
   margin: 0 auto;
@@ -1777,7 +1778,7 @@ button,
   background: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background.jpg") no-repeat;
   background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background.jpg") no-repeat;
   background-color: #091a20;
-  background-size: 1920px 880px;
+  background-size: cover;
   background-position-y: 0;
   background-repeat: no-repeat;
 }
@@ -2134,6 +2135,7 @@ button,
   -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   min-height: 650px;
+  display: block;
 }
 
 .card-service:hover {
@@ -2167,8 +2169,8 @@ button,
   background: -o-linear-gradient(top, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/board-background.jpg") no-repeat;
   background: linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/board-background.jpg") no-repeat;
   background-repeat: no-repeat;
-  background-position: -894px -107px;
-  background-size: 1493px 817px;
+  background-position: -894px 0;
+  background-size: 1493px 100%;
 }
 
 .card-service__link {
@@ -2181,8 +2183,8 @@ button,
 .card-service__link:focus {
   background: rgba(25, 105, 202, 0.37);
   outline: none;
-  -webkit-box-shadow: 0 0 0 2px #ffffff;
-  box-shadow: 0 0 0 2px #ffffff;
+  -webkit-box-shadow: inset 0 0 0 2px #ffffff;
+  box-shadow: inset 0 0 0 2px #ffffff;
 }
 
 .question {
@@ -2924,7 +2926,7 @@ button,
     background: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../img/background@2x.jpg") no-repeat;
     background: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background@2x.jpg") no-repeat;
     background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background@2x.jpg") no-repeat;
-    background-size: 1920px 880px;
+    background-size: cover;
   }
 
   .card-service--production {
@@ -2947,8 +2949,8 @@ button,
     background: -webkit-gradient(linear, left top, left bottom, color-stop(100%, rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/board-background@2x.jpg") no-repeat;
     background: -o-linear-gradient(top, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/board-background@2x.jpg") no-repeat;
     background: linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/board-background@2x.jpg") no-repeat;
-    background-size: 1493px 817px;
-    background-position: -894px -107px;
+    background-size: 1493px 100%;
+    background-position: -894px 0;
   }
 }
 
@@ -3066,10 +3068,13 @@ button,
   }
 
   .intro {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../img/background.jpg") no-repeat;
+    background: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background.jpg") no-repeat;
+    background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background.jpg") no-repeat;
     position: static;
     min-height: 640px;
     background-position: -123px 0;
-    background-size: 1396px 640px;
+    background-size: cover;
   }
 
   .intro__container {
@@ -3185,11 +3190,12 @@ button,
   }
 
   .card-service--assembly {
-    background-position: -628px -315px;
+    background-position: right;
   }
 
   .card-service--accessories {
     background-position: -147px -359px;
+    background-size: 1493px 817px;
   }
 
   .card-service__link {
@@ -3269,7 +3275,7 @@ button,
     background: -o-linear-gradient(top, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/board-background@2x.jpg") no-repeat;
     background: linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/board-background@2x.jpg") no-repeat;
     background-size: 1493px auto;
-    background-position: -628px -315px;
+    background-position: right;
   }
 
   .card-service--accessories {
@@ -3512,9 +3518,12 @@ button,
   }
 
   .intro {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../img/background.jpg") no-repeat;
+    background: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background.jpg") no-repeat;
+    background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background.jpg") no-repeat;
     min-height: 560px;
-    background-position: -30px 0;
-    background-size: 1220px 560px;
+    background-position: 0;
+    background-size: cover;
   }
 
   .intro__container {
@@ -3697,6 +3706,7 @@ button,
 
   .card-service--accessories {
     background-position: -885px -393px;
+    background-size: 1493px 817px;
   }
 
   .card-service__link {
