@@ -16,7 +16,7 @@
 <body>
   <header class="main-header" data-fix-block>
     <div class="main-header__container container">
-      <a class="main-header__logo" href="index.html">
+      <a class="main-header__logo" href="index.html" tabindex="0">
         <picture>
           <source media="(max-width: 767px)" srcset="img/logo-small.svg" width="35" height="35">
           <source type="image/webp" srcset="img/logo.webp 1x, img/logo@2x.webp 2x" width="215" height="55">
@@ -210,7 +210,7 @@
                   <div data-on-input-validate data-validate-type="checkbox"
                     data-message-base="Поле обязательно к заполнению" data-required>
                     <label>
-                      <input type="checkbox" name="agreement" checked required>
+                      <input class="visually-hidden" type="checkbox" name="agreement" checked required>
                       <svg width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <use xlink:href="img/sprite.svg#check-mark"></use>
                       </svg>
@@ -348,7 +348,7 @@
               <div data-on-input-validate data-validate-type="checkbox"
                 data-message-base="Поле обязательно к заполнению" data-required>
                 <label>
-                  <input type="checkbox" checked required>
+                  <input  class="visually-hidden" type="checkbox" checked required>
                   <svg width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <use xlink:href="img/sprite.svg#check-mark"></use>
                   </svg>

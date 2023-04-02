@@ -2477,27 +2477,20 @@ button,
   margin-bottom: 10px;
 }
 
-.question-form__checkbox input {
-  display: none;
-}
-
 .question-form__checkbox input:checked ~ svg {
   display: block;
 }
 
-.question-form__checkbox input:hover {
+.question-form__checkbox input:hover ~ svg {
   opacity: 0.8;
 }
 
-.question-form__checkbox input:active {
+.question-form__checkbox input:active ~ svg {
   opacity: 0.5;
 }
 
-.question-form__checkbox input:focus {
-  background: rgba(25, 105, 202, 0.37);
-  outline: none;
-  -webkit-box-shadow: inset 0 0 0 2px #ffffff;
-  box-shadow: inset 0 0 0 2px #ffffff;
+.question-form__checkbox input:focus ~ span {
+  opacity: 0.5;
 }
 
 .question-form__checkbox .input-message {
@@ -2523,8 +2516,11 @@ button,
   cursor: pointer;
 }
 
-.question-form__checkbox label::before {
+.question-form__checkbox label > span::before {
   content: "";
+  position: absolute;
+  left: 0;
+  top: 6px;
   display: block;
   border: 1px solid #ffffff;
   border-radius: 2px;
@@ -2566,8 +2562,12 @@ button,
 
 .question-form__checkbox svg {
   position: absolute;
-  left: 3px;
+  left: -2px;
+  top: 7px;
   display: none;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  padding: 5px 7px 8px 5px;
 }
 
 .modal-form {
@@ -2809,12 +2809,20 @@ button,
   opacity: 1;
 }
 
-.modal-form__checkbox input {
-  display: none;
-}
-
 .modal-form__checkbox input:checked ~ svg {
   display: block;
+}
+
+.modal-form__checkbox input:focus ~ span {
+  opacity: 0.5;
+}
+
+.modal-form__checkbox input:hover ~ svg {
+  opacity: 0.8;
+}
+
+.modal-form__checkbox input:active ~ svg {
+  opacity: 0.5;
 }
 
 .modal-form__checkbox label {
@@ -3251,7 +3259,9 @@ button,
   }
 
   .question-form__checkbox svg {
-    left: 3px;
+    padding: 6px 7px 8px 6px;
+    left: -3px;
+    top: 6px;
   }
 }
 
@@ -3784,17 +3794,19 @@ button,
     padding-left: 5px;
   }
 
-  .question-form__checkbox label::before {
+  .question-form__checkbox label > span::before {
     width: 15px;
     height: 14px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    margin-top: -4px;
+    margin-top: 0;
+    left: 5px;
   }
 
   .question-form__checkbox svg {
-    left: 7px;
-    top: 10px;
+    padding: 5px 6px 7px 5px;
+    left: 2px;
+    top: 5px;
   }
 
   .modal-form__checkbox .input-message {
