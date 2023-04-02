@@ -156,10 +156,20 @@
   }
 
   & input {
-    display: none;
-
     &:checked~svg {
       display: block;
+    }
+
+    &:focus~span {
+      opacity: 0.5;
+    }
+
+    &:hover~svg {
+      opacity: 0.8;
+    }
+
+    &:active~svg {
+      opacity: 0.5;
     }
   }
 
