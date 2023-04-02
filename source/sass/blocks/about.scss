@@ -119,6 +119,8 @@
 
   &:focus {
     background: rgba(25, 105, 202, 0.37);
+    outline: none;
+    box-shadow: 0 0 0 2px #ffffff;
   }
 
   @include vp-767 {

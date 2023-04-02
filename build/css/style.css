@@ -687,7 +687,7 @@ button,
   flex-direction: column;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(3, 16, 27, 0.7);
   -webkit-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transform: scale(1.2);
@@ -764,6 +764,9 @@ button,
 
 .modal__close-btn:focus {
   background: rgba(25, 105, 202, 0.37);
+  outline: none;
+  -webkit-box-shadow: inset 0 0 0 2px #ffffff;
+  box-shadow: inset 0 0 0 2px #ffffff;
 }
 
 .modal--responsive .modal__content {
@@ -1304,7 +1307,7 @@ button,
   background: -webkit-gradient(linear, left top, left bottom, color-stop(84.9%, #041827), to(rgba(4, 24, 39, 0)));
   background: -o-linear-gradient(top, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
   background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
-  padding: 30px 0 35px 0;
+  padding: 30px 10px 35px 10px;
   position: fixed;
   top: 0;
   width: 100%;
@@ -1315,12 +1318,12 @@ button,
 }
 
 .main-header__container {
-  max-width: 1240px;
+  max-width: 1300px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0 107px 0 47px;
+  padding: 0 117px 0 24px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -1331,6 +1334,20 @@ button,
 .main-header__logo {
   padding-right: 15px;
   color: #ffffff;
+}
+
+.main-header__logo:hover {
+  opacity: 0.8;
+}
+
+.main-header__logo:active {
+  opacity: 0.5;
+}
+
+.main-header__logo:focus {
+  outline: none;
+  -webkit-box-shadow: 0 0 0 2px #ffffff;
+  box-shadow: 0 0 0 2px #ffffff;
 }
 
 .main-header__contacts {
@@ -1363,6 +1380,9 @@ button,
 
 .main-header__button:focus {
   background: rgba(25, 105, 202, 0.37);
+  outline: none;
+  -webkit-box-shadow: inset 0 0 0 2px #ffffff;
+  box-shadow: inset 0 0 0 2px #ffffff;
 }
 
 .main-header__button-description {
@@ -1378,20 +1398,21 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   font-family: "PT Mono", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 17.92px;
+  padding-right: 20px;
   gap: 27px;
-  max-width: 480px;
+  width: 43.6363636364%;
 }
 
 .contacts__link {
@@ -1415,11 +1436,14 @@ button,
 
 .contacts__link:focus {
   background: rgba(25, 105, 202, 0.37);
+  outline: none;
+  -webkit-box-shadow: inset 0 0 0 2px #ffffff;
+  box-shadow: inset 0 0 0 2px #ffffff;
 }
 
 .contacts__email,
 .contacts__phone {
-  width: 225px;
+  max-width: 225px;
 }
 
 .contacts__email-text,
@@ -1511,6 +1535,17 @@ button,
 
 .social__link:focus {
   background: rgba(25, 105, 202, 0.37);
+  outline: none;
+  -webkit-box-shadow: inset 0 0 0 2px #ffffff;
+  box-shadow: inset 0 0 0 2px #ffffff;
+}
+
+.social__logo:hover {
+  opacity: 0.8;
+}
+
+.social__logo:active {
+  opacity: 0.5;
 }
 
 .chapters {
@@ -1574,6 +1609,7 @@ button,
 
 .chapters a {
   color: rgba(255, 255, 255, 0.7);
+  display: block;
 }
 
 .chapters a:hover {
@@ -1586,6 +1622,9 @@ button,
 
 .chapters a:focus {
   background: rgba(25, 105, 202, 0.37);
+  outline: none;
+  -webkit-box-shadow: inset 0 0 0 2px #ffffff;
+  box-shadow: inset 0 0 0 2px #ffffff;
 }
 
 .contacts-address button {
@@ -1659,6 +1698,9 @@ button,
 
 .contacts-address a:focus {
   background: rgba(25, 105, 202, 0.37);
+  outline: none;
+  -webkit-box-shadow: inset 0 0 0 2px #ffffff;
+  box-shadow: inset 0 0 0 2px #ffffff;
 }
 
 .contacts-address span {
@@ -1669,6 +1711,10 @@ button,
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .accordion {
@@ -1724,6 +1770,7 @@ button,
 
 .intro {
   min-height: 880px;
+  display: block;
   position: relative;
   background-position-x: center;
   margin: 0 auto;
@@ -1731,7 +1778,7 @@ button,
   background: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background.jpg") no-repeat;
   background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background.jpg") no-repeat;
   background-color: #091a20;
-  background-size: 1920px 880px;
+  background-size: cover;
   background-position-y: 0;
   background-repeat: no-repeat;
 }
@@ -1748,9 +1795,6 @@ button,
   -ms-grid-columns: minmax(720px, 1000px);
   grid-template-columns: minmax(720px, 1000px);
   gap: 47px;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
   z-index: 0;
 }
 
@@ -1788,7 +1832,7 @@ button,
   color: #f2f5f6;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  max-width: 450px;
+  max-width: 400px;
   font-weight: 700;
   font-size: 18px;
   line-height: 21px;
@@ -1816,6 +1860,9 @@ button,
 
 .intro__button:focus {
   background: rgba(25, 105, 202, 0.37);
+  outline: none;
+  -webkit-box-shadow: inset 0 0 0 2px #ffffff;
+  box-shadow: inset 0 0 0 2px #ffffff;
 }
 
 .advantages__list {
@@ -1979,6 +2026,9 @@ button,
 
 .about__button:focus {
   background: rgba(25, 105, 202, 0.37);
+  outline: none;
+  -webkit-box-shadow: 0 0 0 2px #ffffff;
+  box-shadow: 0 0 0 2px #ffffff;
 }
 
 .about__accordion-container :nth-child(n) {
@@ -2085,6 +2135,15 @@ button,
   -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   min-height: 650px;
+  display: block;
+}
+
+.card-service:hover {
+  opacity: 0.8;
+}
+
+.card-service:active {
+  opacity: 0.5;
 }
 
 .card-service--production {
@@ -2092,8 +2151,8 @@ button,
   background: -o-linear-gradient(top, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/board-background.jpg") no-repeat;
   background: linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/board-background.jpg") no-repeat;
   background-repeat: no-repeat;
-  background-position: -188px -114px;
-  background-size: 1493px 817px;
+  background-position: -188px -20px;
+  background-size: 1493px 110%;
 }
 
 .card-service--assembly {
@@ -2101,8 +2160,8 @@ button,
   background: -o-linear-gradient(top, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/board-background.jpg") no-repeat;
   background: linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/board-background.jpg") no-repeat;
   background-repeat: no-repeat;
-  background-position: -534px -118px;
-  background-size: 1493px 817px;
+  background-position: -534px -100px;
+  background-size: 1493px 120%;
 }
 
 .card-service--accessories {
@@ -2110,8 +2169,8 @@ button,
   background: -o-linear-gradient(top, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/board-background.jpg") no-repeat;
   background: linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/board-background.jpg") no-repeat;
   background-repeat: no-repeat;
-  background-position: -894px -107px;
-  background-size: 1493px 817px;
+  background-position: -894px 0;
+  background-size: 1493px 100%;
 }
 
 .card-service__link {
@@ -2121,16 +2180,11 @@ button,
   padding: 47px 70px 70px 40px;
 }
 
-.card-service__link:hover {
-  opacity: 0.8;
-}
-
-.card-service__link:active {
-  opacity: 0.5;
-}
-
 .card-service__link:focus {
   background: rgba(25, 105, 202, 0.37);
+  outline: none;
+  -webkit-box-shadow: inset 0 0 0 2px #ffffff;
+  box-shadow: inset 0 0 0 2px #ffffff;
 }
 
 .question {
@@ -2152,7 +2206,7 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 166px 15px 225px 5px;
+  padding: 166px 35px 225px 25px;
   margin: 0 auto;
   max-width: 1210px;
   -webkit-box-pack: justify;
@@ -2244,6 +2298,9 @@ button,
 
 .question-form__container input:focus {
   background: rgba(25, 105, 202, 0.37);
+  outline: none;
+  -webkit-box-shadow: inset 0 0 0 2px #ffffff;
+  box-shadow: inset 0 0 0 2px #ffffff;
 }
 
 .question-form__container input::-webkit-input-placeholder {
@@ -2291,6 +2348,10 @@ button,
   line-height: 22px;
 }
 
+.question-form__container input::-webkit-autofill:focus {
+  background: rgba(4, 20, 39, 0.15);
+}
+
 .question-form__container textarea {
   -ms-grid-column-span: 2;
   grid-column: span 2;
@@ -2312,6 +2373,9 @@ button,
 
 .question-form__container textarea:focus {
   background: rgba(25, 105, 202, 0.37);
+  outline: none;
+  -webkit-box-shadow: inset 0 0 0 2px #ffffff;
+  box-shadow: inset 0 0 0 2px #ffffff;
 }
 
 .question-form__container textarea::-webkit-input-placeholder {
@@ -2376,7 +2440,7 @@ button,
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 21px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   padding: 15px 25px 11px 25px;
@@ -2398,6 +2462,9 @@ button,
 
 .question-form__button:focus {
   background: rgba(25, 105, 202, 0.37);
+  outline: none;
+  -webkit-box-shadow: inset 0 0 0 2px #ffffff;
+  box-shadow: inset 0 0 0 2px #ffffff;
 }
 
 .question-form__checkbox {
@@ -2428,6 +2495,9 @@ button,
 
 .question-form__checkbox input:focus {
   background: rgba(25, 105, 202, 0.37);
+  outline: none;
+  -webkit-box-shadow: inset 0 0 0 2px #ffffff;
+  box-shadow: inset 0 0 0 2px #ffffff;
 }
 
 .question-form__checkbox .input-message {
@@ -2475,6 +2545,9 @@ button,
 
 .question-form__checkbox label:focus {
   background: rgba(25, 105, 202, 0.37);
+  outline: none;
+  -webkit-box-shadow: inset 0 0 0 2px #ffffff;
+  box-shadow: inset 0 0 0 2px #ffffff;
 }
 
 .question-form__checkbox span {
@@ -2622,6 +2695,9 @@ button,
 
 .modal-form__container input:focus {
   background: rgba(25, 105, 202, 0.37);
+  outline: none;
+  -webkit-box-shadow: inset 0 0 0 2px #ffffff;
+  box-shadow: inset 0 0 0 2px #ffffff;
 }
 
 .modal-form__container textarea {
@@ -2681,6 +2757,12 @@ button,
   line-height: 22px;
 }
 
+.modal-form__container textarea:focus {
+  outline: none;
+  -webkit-box-shadow: 0 0 0 2px #ffffff;
+  box-shadow: 0 0 0 2px #ffffff;
+}
+
 .modal-form__button {
   background: #041827;
   border-radius: 3px;
@@ -2706,6 +2788,9 @@ button,
 
 .modal-form__button:focus {
   background: rgba(25, 105, 202, 0.37);
+  outline: none;
+  -webkit-box-shadow: inset 0 0 0 2px #ffffff;
+  box-shadow: inset 0 0 0 2px #ffffff;
 }
 
 .modal-form__checkbox {
@@ -2841,31 +2926,31 @@ button,
     background: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../img/background@2x.jpg") no-repeat;
     background: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background@2x.jpg") no-repeat;
     background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background@2x.jpg") no-repeat;
-    background-size: 1920px 880px;
+    background-size: cover;
   }
 
   .card-service--production {
     background: -webkit-gradient(linear, left top, left bottom, color-stop(100%, rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/board-background@2x.jpg") no-repeat;
     background: -o-linear-gradient(top, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/board-background@2x.jpg") no-repeat;
     background: linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/board-background@2x.jpg") no-repeat;
-    background-size: 1493px 817px;
-    background-position: -188px -114px;
+    background-position: -188px -20px;
+    background-size: 1493px 110%;
   }
 
   .card-service--assembly {
     background: -webkit-gradient(linear, left top, left bottom, color-stop(100%, rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/board-background@2x.jpg") no-repeat;
     background: -o-linear-gradient(top, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/board-background@2x.jpg") no-repeat;
     background: linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/board-background@2x.jpg") no-repeat;
-    background-size: 1493px 817px;
-    background-position: -534px -118px;
+    background-position: -534px -100px;
+    background-size: 1493px 120%;
   }
 
   .card-service--accessories {
     background: -webkit-gradient(linear, left top, left bottom, color-stop(100%, rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/board-background@2x.jpg") no-repeat;
     background: -o-linear-gradient(top, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/board-background@2x.jpg") no-repeat;
     background: linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/board-background@2x.jpg") no-repeat;
-    background-size: 1493px 817px;
-    background-position: -894px -107px;
+    background-position: -894px 0;
+    background-size: 1493px 100%;
   }
 }
 
@@ -2888,6 +2973,7 @@ button,
 
   .main-header__contacts {
     margin: 0 0 0 auto;
+    max-width: 220px;
   }
 
   .main-header__button {
@@ -2896,6 +2982,8 @@ button,
 
   .contacts {
     gap: 20px;
+    padding-right: 0;
+    max-width: 100px;
   }
 
   .contacts__email,
@@ -2980,10 +3068,13 @@ button,
   }
 
   .intro {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../img/background.jpg") no-repeat;
+    background: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background.jpg") no-repeat;
+    background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background.jpg") no-repeat;
     position: static;
     min-height: 640px;
     background-position: -123px 0;
-    background-size: 1396px 640px;
+    background-size: cover;
   }
 
   .intro__container {
@@ -3008,6 +3099,7 @@ button,
 
   .intro__button {
     margin-left: 45px;
+    max-width: 400px;
   }
 
   .advantages__list {
@@ -3094,15 +3186,18 @@ button,
   }
 
   .card-service--production {
-    background-position: -243px -548px;
+    background-position: -243px -540px;
+    background-size: 1493px 320%;
   }
 
   .card-service--assembly {
-    background-position: -628px -315px;
+    background-position: -650px -306px;
+    background-size: 230% 320%;
   }
 
   .card-service--accessories {
-    background-position: -147px -359px;
+    background-position: -147px -347px;
+    background-size: 1493px 320%;
   }
 
   .card-service__link {
@@ -3173,24 +3268,24 @@ button,
     background: -webkit-gradient(linear, left top, left bottom, color-stop(100%, rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/board-background@2x.jpg") no-repeat;
     background: -o-linear-gradient(top, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/board-background@2x.jpg") no-repeat;
     background: linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/board-background@2x.jpg") no-repeat;
-    background-size: 1493px 817px;
-    background-position: -243px -548px;
+    background-position: -243px -540px;
+    background-size: 1493px 320%;
   }
 
   .card-service--assembly {
     background: -webkit-gradient(linear, left top, left bottom, color-stop(100%, rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/board-background@2x.jpg") no-repeat;
     background: -o-linear-gradient(top, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/board-background@2x.jpg") no-repeat;
     background: linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/board-background@2x.jpg") no-repeat;
-    background-size: 1493px auto;
-    background-position: -628px -315px;
+    background-position: -650px -306px;
+    background-size: 230% 320%;
   }
 
   .card-service--accessories {
     background: -webkit-gradient(linear, left top, left bottom, color-stop(100%, rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/board-background@2x.jpg") no-repeat;
     background: -o-linear-gradient(top, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/board-background@2x.jpg") no-repeat;
     background: linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/board-background@2x.jpg") no-repeat;
-    background-size: 1493px 817px;
-    background-position: -147px -359px;
+    background-position: -147px -347px;
+    background-size: 1493px 320%;
   }
 }
 
@@ -3222,6 +3317,14 @@ button,
 
   .main-header__logo {
     padding-top: 5px;
+  }
+
+  .main-header__contacts {
+    max-width: 160px;
+  }
+
+  .contacts {
+    width: auto;
   }
 
   .footer__container {
@@ -3322,6 +3425,9 @@ button,
 
   .chapters button:focus {
     background: rgba(25, 105, 202, 0.37);
+    outline: none;
+    -webkit-box-shadow: inset 0 0 0 2px #ffffff;
+    box-shadow: inset 0 0 0 2px #ffffff;
   }
 
   .chapters h2 {
@@ -3384,6 +3490,9 @@ button,
 
   .contacts-address button:focus {
     background: rgba(25, 105, 202, 0.37);
+    outline: none;
+    -webkit-box-shadow: inset 0 0 0 2px #ffffff;
+    box-shadow: inset 0 0 0 2px #ffffff;
   }
 
   .contacts-address h2 {
@@ -3411,9 +3520,12 @@ button,
   }
 
   .intro {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../img/background.jpg") no-repeat;
+    background: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background.jpg") no-repeat;
+    background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background.jpg") no-repeat;
     min-height: 560px;
-    background-position: -30px 0;
-    background-size: 1220px 560px;
+    background-position: 0;
+    background-size: cover;
   }
 
   .intro__container {
@@ -3446,11 +3558,16 @@ button,
   }
 
   .advantages__list {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
     padding: 50px 25px 30px 24px;
     max-width: 595px;
-    row-gap: 30px;
+    gap: 30px;
   }
 
   .advantages__item {
@@ -3583,14 +3700,17 @@ button,
 
   .card-service--production {
     background-position: -376px -298px;
+    background-size: 1493px 320%;
   }
 
   .card-service--assembly {
-    background-position: -365px -538px;
+    background-position: -365px -525px;
+    background-size: 1493px 320%;
   }
 
   .card-service--accessories {
-    background-position: -885px -393px;
+    background-position: -875px -388px;
+    background-size: 550% 320%;
   }
 
   .card-service__link {
@@ -3758,7 +3878,7 @@ button,
     background: -webkit-gradient(linear, left top, left bottom, color-stop(100%, rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/board-background@2x.jpg") no-repeat;
     background: -o-linear-gradient(top, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/board-background@2x.jpg") no-repeat;
     background: linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/board-background@2x.jpg") no-repeat;
-    background-size: 1493px 817px;
+    background-size: 1493px 320%;
     background-position: -376px -298px;
   }
 
@@ -3766,16 +3886,16 @@ button,
     background: -webkit-gradient(linear, left top, left bottom, color-stop(100%, rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/board-background@2x.jpg") no-repeat;
     background: -o-linear-gradient(top, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/board-background@2x.jpg") no-repeat;
     background: linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/board-background@2x.jpg") no-repeat;
-    background-size: 1493px 817px;
-    background-position: -365px -538px;
+    background-size: 1493px 320%;
+    background-position: -365px -525px;
   }
 
   .card-service--accessories {
     background: -webkit-gradient(linear, left top, left bottom, color-stop(100%, rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/board-background@2x.jpg") no-repeat;
     background: -o-linear-gradient(top, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/board-background@2x.jpg") no-repeat;
     background: linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/board-background@2x.jpg") no-repeat;
-    background-size: 1493px 817px;
-    background-position: -885px -393px;
+    background-position: -875px -388px;
+    background-size: 550% 320%;
   }
 }
 
