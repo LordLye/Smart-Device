@@ -722,7 +722,7 @@ button,
   align-items: center;
   width: 100%;
   min-height: 100%;
-  padding: 30px 40px 60px 22px;
+  padding: 146px 40px 60px 23px;
 }
 
 .modal__overlay {
@@ -2648,7 +2648,7 @@ button,
 .modal-form__container input {
   width: 100%;
   min-height: 50px;
-  padding: 15px;
+  padding: 12px 15px 15px 15px;
   background: rgba(4, 20, 39, 0.15);
   border-radius: 3px;
   border: none;
@@ -2723,7 +2723,7 @@ button,
   border: none;
   min-height: 155px;
   margin-bottom: 5px;
-  padding: 25px 15px;
+  padding: 22px 15px 25px 15px;
   max-width: 420px;
 }
 
@@ -3363,6 +3363,7 @@ button,
 
   .main-header__logo {
     padding-top: 5px;
+    margin-left: 0;
   }
 
   .main-header__contacts {
@@ -3765,7 +3766,7 @@ button,
 
   .question__container {
     max-width: 500px;
-    padding: 47px 25px 60px 25px;
+    padding: 47px 25px 58px 25px;
   }
 
   .question-form {
@@ -3819,7 +3820,7 @@ button,
 
   .question-form__container textarea {
     margin-bottom: 10px;
-    padding: 25px 15px;
+    padding: 23px 15px 25px 15px;
     max-width: 100%;
     min-height: 180px;
   }
@@ -3853,6 +3854,10 @@ button,
     padding: 5px 6px 7px 5px;
     left: 2px;
     top: 5px;
+  }
+
+  .question-form__checkbox {
+    margin-top: 3px;
   }
 
   .modal-form__checkbox .input-message {
