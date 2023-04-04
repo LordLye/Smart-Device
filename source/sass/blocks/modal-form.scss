@@ -224,3 +224,9 @@
     display: none;
   }
 }
+
+.modal-form__footer {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 20px;
+}
