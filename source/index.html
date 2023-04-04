@@ -113,8 +113,16 @@
         <div class="about__img-container">
           <picture>
             <source type="image/webp" srcset="img/2022.webp 1x, img/2022@2x.webp 2x" width="150" height="320">
-            <img src="img/2022.png" srcset="img/2022@2x.png 2x" width="150" height="320" alt="2022">
+            <img class="lazyload"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII="
+              data-src="img/2022.png" srcset="img/2022@2x.png 2x" width="150" height="320" alt="2022">
           </picture>
+          <noscript>
+            <picture>
+              <source type="image/webp" srcset="img/2022.webp 1x, img/2022@2x.webp 2x" width="150" height="320">
+              <img src="img/2022.png" srcset="img/2022@2x.png 2x" width="150" height="320" alt="2022">
+            </picture>
+          </noscript>
         </div>
         <div data-accordion="parent">
           <div class="about__container" data-accordion="element">
@@ -238,9 +246,19 @@
               <picture>
                 <source type="image/webp" srcset="img/paper-airplane.webp 1x, img/paper-airplane@2x.webp 2x" width="510"
                   height="285">
-                <img src="img/paper-airplane.png" srcset="img/paper-airplane@2x.png 2x" width="510" height="285"
+                <img class="lazyload"
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII="
+                  data-src="img/paper-airplane.png" srcset="img/paper-airplane@2x.png 2x" width="510" height="285"
                   alt="Бумажный самолетик.">
               </picture>
+              <noscript>
+                <picture>
+                  <source type="image/webp" srcset="img/paper-airplane.webp 1x, img/paper-airplane@2x.webp 2x"
+                    width="510" height="285">
+                  <img src="img/paper-airplane.png" srcset="img/paper-airplane@2x.png 2x" width="510" height="285"
+                    alt="Бумажный самолетик.">
+                </picture>
+              </noscript>
             </div>
             <div data-form-validate data-callback="base">
               <form class="question__form question-form" method="post" action="https://echo.htmlacademy.ru/">
