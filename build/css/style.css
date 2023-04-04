@@ -1323,7 +1323,7 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0 117px 0 24px;
+  padding: 0 107px 0 14px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -1334,6 +1334,7 @@ button,
 .main-header__logo {
   padding-right: 15px;
   color: #ffffff;
+  margin-left: 26px;
 }
 
 .main-header__logo:hover {
@@ -1368,6 +1369,7 @@ button,
   text-transform: uppercase;
   padding: 10px 15px 12px 15px;
   margin-bottom: 5px;
+  margin-right: -7px;
 }
 
 .main-header__button:hover {
@@ -1785,7 +1787,7 @@ button,
 
 .intro__container {
   max-width: 1000px;
-  padding: 305px 90px 30px 90px;
+  padding: 305px 90px 30px 120px;
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
   margin: 0 auto;
@@ -2206,7 +2208,7 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 166px 35px 225px 25px;
+  padding: 166px 35px 223px 25px;
   margin: 0 auto;
   max-width: 1210px;
   -webkit-box-pack: justify;
@@ -2483,9 +2485,8 @@ button,
 }
 
 .question-form__checkbox {
-  margin-top: auto;
   position: relative;
-  margin-bottom: 8px;
+  margin: 15px 5px 8px 0;
 }
 
 .question-form__checkbox:not(:last-child) {
@@ -2541,7 +2542,6 @@ button,
   border-radius: 2px;
   width: 15px;
   height: 15px;
-  position: absolute;
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
 }

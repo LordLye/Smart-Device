@@ -241,32 +241,29 @@
 }
 
 .question-form__checkbox {
-  margin-top: auto;
   position: relative;
-  margin-bottom: 8px;
+  margin: 15px 5px 8px 0;
 
   &:not(:last-child) {
     margin-bottom: 10px;
   }
 
   & input {
-
-    &:checked~svg {
+    &:checked ~ svg {
       display: block;
     }
 
-    &:hover~svg {
+    &:hover ~ svg {
       opacity: 0.8;
     }
 
-    &:active~svg {
+    &:active ~ svg {
       opacity: 0.5;
     }
 
-    &:focus~span {
+    &:focus ~ span {
       opacity: 0.5;
     }
-
   }
 
   & .input-message {
@@ -287,7 +284,7 @@
     position: relative;
     cursor: pointer;
 
-    &>span::before {
+    & > span::before {
       content: "";
       position: absolute;
       left: 0;
@@ -297,7 +294,6 @@
       border-radius: 2px;
       width: 15px;
       height: 15px;
-      position: absolute;
       box-sizing: content-box;
     }
 
@@ -326,7 +322,7 @@
       padding-left: 5px;
       margin-right: 0;
 
-      &>span::before {
+      & > span::before {
         width: 15px;
         height: 14px;
         box-sizing: border-box;
