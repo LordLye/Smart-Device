@@ -22,21 +22,21 @@
 
 .question__container {
   display: flex;
-  padding: 166px 35px 225px 25px;
+  padding: 166px 35px 223px 25px;
   margin: 0 auto;
   max-width: 1210px;
   justify-content: space-between;
   box-sizing: content-box;
 
   @include vp-1023 {
-    padding: 45px 10px 100px 10px;
+    padding: 45px 10px 98px 10px;
     max-width: 800px;
     justify-content: center;
   }
 
   @include vp-767 {
     max-width: 500px;
-    padding: 47px 25px 60px 25px;
+    padding: 47px 25px 58px 25px;
   }
 }
 

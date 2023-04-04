@@ -1,7 +1,6 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
-import {initAccordions} from './accordion/init-accordion';
 import {bannerTextSwap} from './modules/main-banner';
 import {textSwitch} from './modules/about-button';
 import {disableFocus} from './modules/no-focus';
@@ -24,7 +23,6 @@ window.addEventListener('DOMContentLoaded', () => {
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
-    initAccordions();
     initModals();
     const form = new Form();
     window.form = form;

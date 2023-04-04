@@ -50,7 +50,7 @@
   & input {
     width: 100%;
     min-height: 50px;
-    padding: 15px;
+    padding: 12px 15px 15px 15px;
     background: rgba(4, 20, 39, 0.15);
     border-radius: 3px;
     border: none;
@@ -97,7 +97,7 @@
     }
 
     margin-bottom: 5px;
-    padding: 25px 15px;
+    padding: 22px 15px 25px 15px;
     max-width: 420px;
 
     &:focus {
@@ -156,19 +156,19 @@
   }
 
   & input {
-    &:checked~svg {
+    &:checked ~ svg {
       display: block;
     }
 
-    &:focus~span {
+    &:focus ~ span {
       opacity: 0.5;
     }
 
-    &:hover~svg {
+    &:hover ~ svg {
       opacity: 0.8;
     }
 
-    &:active~svg {
+    &:active ~ svg {
       opacity: 0.5;
     }
   }

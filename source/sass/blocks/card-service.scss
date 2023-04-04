@@ -108,12 +108,10 @@
     background-size: 230% 320%;
   }
 
-
   @media (max-width: ($vp-1024 - 1)) and (min-resolution: $retina-dppx) {
     background: linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/board-background@2x.jpg") no-repeat;
     background-position: -650px -306px;
     background-size: 230% 320%;
-
   }
 
   @include vp-767 {
