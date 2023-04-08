@@ -1403,9 +1403,9 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   font-family: "PT Mono", "Arial", sans-serif;
@@ -3007,7 +3007,7 @@ button,
 
   .main-header__contacts {
     margin: 0 0 0 auto;
-    max-width: 220px;
+    max-width: 1000px;
   }
 
   .main-header__button {
@@ -3017,7 +3017,8 @@ button,
   .contacts {
     gap: 20px;
     padding-right: 0;
-    max-width: 100px;
+    width: auto;
+    width: 62.02%;
   }
 
   .contacts__email,
@@ -3366,12 +3367,8 @@ button,
     margin-left: 0;
   }
 
-  .main-header__contacts {
-    max-width: 160px;
-  }
-
   .contacts {
-    width: auto;
+    width: 80.7%;
   }
 
   .footer__container {
