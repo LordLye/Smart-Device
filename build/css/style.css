@@ -1323,7 +1323,7 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0 107px 0 14px;
+  padding: 0 5.632% 0 14px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -1403,9 +1403,9 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   font-family: "PT Mono", "Arial", sans-serif;
@@ -1462,7 +1462,7 @@ button,
 .footer__container {
   margin: 0 auto;
   max-width: 1228px;
-  padding: 50px 4px 55px 4px;
+  padding: 50px 24px 55px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2506,7 +2506,9 @@ button,
 }
 
 .question-form__checkbox input:focus ~ span {
-  opacity: 0.5;
+  outline: none;
+  -webkit-box-shadow: 0 0 0 2px #ffffff;
+  box-shadow: 0 0 0 2px #ffffff;
 }
 
 .question-form__checkbox .input-message {
@@ -2552,13 +2554,6 @@ button,
 
 .question-form__checkbox label:active {
   opacity: 0.5;
-}
-
-.question-form__checkbox label:focus {
-  background: rgba(25, 105, 202, 0.37);
-  outline: none;
-  -webkit-box-shadow: inset 0 0 0 2px #ffffff;
-  box-shadow: inset 0 0 0 2px #ffffff;
 }
 
 .question-form__checkbox span {
@@ -2829,7 +2824,9 @@ button,
 }
 
 .modal-form__checkbox input:focus ~ span {
-  opacity: 0.5;
+  outline: none;
+  -webkit-box-shadow: 0 0 0 2px #ffffff;
+  box-shadow: 0 0 0 2px #ffffff;
 }
 
 .modal-form__checkbox input:hover ~ svg {
@@ -3007,7 +3004,7 @@ button,
 
   .main-header__contacts {
     margin: 0 0 0 auto;
-    max-width: 220px;
+    max-width: 1000px;
   }
 
   .main-header__button {
@@ -3017,7 +3014,8 @@ button,
   .contacts {
     gap: 20px;
     padding-right: 0;
-    max-width: 100px;
+    width: auto;
+    width: 62.02%;
   }
 
   .contacts__email,
@@ -3366,12 +3364,8 @@ button,
     margin-left: 0;
   }
 
-  .main-header__contacts {
-    max-width: 160px;
-  }
-
   .contacts {
-    width: auto;
+    width: 80.7%;
   }
 
   .footer__container {

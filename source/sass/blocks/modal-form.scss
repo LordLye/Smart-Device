@@ -161,7 +161,8 @@
     }
 
     &:focus ~ span {
-      opacity: 0.5;
+      outline: none;
+      box-shadow: 0 0 0 2px #ffffff;
     }
 
     &:hover ~ svg {
