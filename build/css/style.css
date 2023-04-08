@@ -2506,7 +2506,9 @@ button,
 }
 
 .question-form__checkbox input:focus ~ span {
-  opacity: 0.5;
+  outline: none;
+  -webkit-box-shadow: 0 0 0 2px #ffffff;
+  box-shadow: 0 0 0 2px #ffffff;
 }
 
 .question-form__checkbox .input-message {
@@ -2552,13 +2554,6 @@ button,
 
 .question-form__checkbox label:active {
   opacity: 0.5;
-}
-
-.question-form__checkbox label:focus {
-  background: rgba(25, 105, 202, 0.37);
-  outline: none;
-  -webkit-box-shadow: inset 0 0 0 2px #ffffff;
-  box-shadow: inset 0 0 0 2px #ffffff;
 }
 
 .question-form__checkbox span {
@@ -2829,7 +2824,9 @@ button,
 }
 
 .modal-form__checkbox input:focus ~ span {
-  opacity: 0.5;
+  outline: none;
+  -webkit-box-shadow: 0 0 0 2px #ffffff;
+  box-shadow: 0 0 0 2px #ffffff;
 }
 
 .modal-form__checkbox input:hover ~ svg {
