@@ -1682,7 +1682,7 @@ button,
 }
 
 .contacts-address li:last-child {
-  padding-bottom: 20px;
+  padding-bottom: 14px;
 }
 
 .contacts-address a {
@@ -3500,7 +3500,7 @@ button,
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin: 0;
+    margin: 0 0 0 0;
     padding: 22px 75px 21px 25px;
   }
 
@@ -3549,11 +3549,17 @@ button,
   .contacts-address ul {
     width: 270px;
     margin: 0 auto 0 auto;
+    gap: 10px;
   }
 
   .contacts-address li {
     font-size: 14px;
-    line-height: 19px;
+    line-height: 25px;
+    margin-top: -5px;
+  }
+
+  .contacts-address li:first-child {
+    margin-bottom: 8px;
   }
 
   .contacts-address a {
@@ -3564,6 +3570,7 @@ button,
   .contacts-address span {
     display: block;
     margin-bottom: 5px;
+    line-height: 19px;
   }
 
   .intro {
