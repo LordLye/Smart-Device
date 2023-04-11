@@ -3760,8 +3760,11 @@ button,
   }
 
   .card-service--accessories {
-    background-position: -875px -388px;
-    background-size: 550% 320%;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(100%, rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/card-service-accessories.jpg") no-repeat;
+    background: -o-linear-gradient(top, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/card-service-accessories.jpg") no-repeat;
+    background: linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/card-service-accessories.jpg") no-repeat;
+    background-size: cover;
+    width: 100%;
   }
 
   .card-service__link {
@@ -3958,11 +3961,11 @@ button,
   }
 
   .card-service--accessories {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(100%, rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/board-background@2x.jpg") no-repeat;
-    background: -o-linear-gradient(top, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/board-background@2x.jpg") no-repeat;
-    background: linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/board-background@2x.jpg") no-repeat;
-    background-position: -875px -388px;
-    background-size: 550% 320%;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(100%, rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/card-service-accessories@2x.jpg") no-repeat;
+    background: -o-linear-gradient(top, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/card-service-accessories@2x.jpg") no-repeat;
+    background: linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/card-service-accessories@2x.jpg") no-repeat;
+    background-size: cover;
+    width: 100%;
   }
 }
 

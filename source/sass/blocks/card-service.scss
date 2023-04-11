@@ -150,14 +150,15 @@
   }
 
   @include vp-767 {
-    background-position: -875px -388px;
-    background-size: 550% 320%;
+    background: linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/card-service-accessories.jpg") no-repeat;
+    background-size: cover;
+    width: 100%;
   }
 
   @media (max-width: ($vp-768 - 1)) and (min-resolution: $retina-dppx) {
-    background: linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/board-background@2x.jpg") no-repeat;
-    background-position: -875px -388px;
-    background-size: 550% 320%;
+    background: linear-gradient(180deg, rgba(4, 24, 39, 0.5) 100%, rgba(4, 24, 39, 0.5) 100%), url("../img/card-service-accessories@2x.jpg") no-repeat;
+    background-size: cover;
+    width: 100%;
   }
 }
 
