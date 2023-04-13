@@ -3368,7 +3368,7 @@ button,
   }
 
   .footer__container {
-    max-width: 600px;
+    max-width: 768px;
     padding: 35px 0 35px 0;
   }
 
@@ -3376,7 +3376,7 @@ button,
     padding-right: 0;
     border-top: 1px solid rgba(248, 253, 255, 0.7);
     border-bottom: 1px solid rgba(248, 253, 255, 0.7);
-    max-width: 700px;
+    max-width: 768px;
   }
 
   .footer__contacts.is-active [data-accordion=button]::before {
@@ -3385,7 +3385,7 @@ button,
 
   .footer__chapters {
     border-top: 1px solid rgba(248, 253, 255, 0.7);
-    max-width: 700px;
+    max-width: 768px;
   }
 
   .footer__chapters.is-active [data-accordion=button]::before {
