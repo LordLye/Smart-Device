@@ -3014,7 +3014,7 @@ button,
   .contacts {
     gap: 20px;
     padding-right: 0;
-    width: 62.02%;
+    width: 61%;
   }
 
   .contacts__email,
@@ -3364,7 +3364,7 @@ button,
   }
 
   .contacts {
-    width: 80.7%;
+    width: 80%;
   }
 
   .footer__container {
